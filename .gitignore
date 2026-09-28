@@ -1,0 +1,29 @@
+# Data: never commit the dataset (course rule)
+data/*
+!data/README.md
+
+# Model weights and checkpoints (>100 MB must be hosted externally)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+checkpoints/
+outputs/
+runs/
+wandb/
+
+# Credentials
+.env
+*.key
+hf_token*
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store

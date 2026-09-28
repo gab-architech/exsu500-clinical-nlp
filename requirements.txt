@@ -1,0 +1,8 @@
+# Pin exact versions once the environment is stable (pip freeze > requirements.txt)
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+scikit-learn>=1.4
+datasets>=2.19
+transformers>=4.40
+torch>=2.2
