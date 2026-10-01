@@ -27,3 +27,6 @@ venv/
 
 # OS
 .DS_Store
+
+# Personal Claude Code notes (each member keeps their own)
+CLAUDE.local.md
