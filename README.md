@@ -1,55 +1,90 @@
-# [Project title: e.g. Classifying X in clinical text]
+# Clinical Note Specialty Classification
 
 EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
-Team: Gabriel Barrere, Jessica Oentoro, Yuhan Zhang
+**Team:** Gabriel Barrere, Jessica Oentoro, Yuhan Zhang
 
-> Course prototype for research and educational purposes only. Not a medical device. Not for clinical use.
+> **Course prototype for research and educational purposes only. Not a medical device. Not for clinical use.**
+
+## At a glance
+
+| | |
+|---|---|
+| **Problem** | Route clinical documents to the right specialty team |
+| **Task** | Predict the medical specialty of a note from its free text |
+| **Task type** | Single-label, multi-class text classification (6 to 10 classes, fixed after EDA) |
+| **Dataset** | MTSamples medical transcriptions, ~5,000 notes, ~40 raw specialty labels |
+| **Licence** | CC0: Public Domain (as listed on Kaggle) |
+| **Access** | Public download with a free Kaggle account, no credentialing or data use agreement |
+| **Privacy** | Sample transcriptions, not real patient records, no PHI |
 
 ## Problem
 
-**Task statement:** We predict **[what]** from **[which input text]** for **[who: clinicians, patients, researchers]**, because **[why it matters clinically]**.
+Clinical documents and referrals must reach the right specialty team. Misrouted documents delay care and create manual rework for referral intake and health information management staff. We classify a note's specialty from its text alone, as decision support for routing teams, with a human always in the loop.
 
-**Task type:** [binary / multi-class / multi-label classification / summarisation]
+**Research question:** How much of the reported performance on this task comes from duplicates and label leakage, and does a domain-pretrained transformer still beat TF-IDF once these are controlled?
 
 ## Dataset
 
-| Field | Value |
-|---|---|
-| Name | [dataset name] |
-| Source | [URL] |
-| Licence | [e.g. CC BY 4.0] |
-| Size | [n documents, n classes] |
-| Access | Public, no credentialing or data use agreement |
+**MTSamples** ([Kaggle: Medical Transcriptions, tboyle10](https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions), file `mtsamples.csv`), scraped from [mtsamples.com](https://www.mtsamples.com).
+Columns: `description`, `medical_specialty`, `sample_name`, `transcription`, `keywords`.
 
-The dataset is **not** committed to this repo. See [`data/README.md`](data/README.md) for download instructions.
+The data is **not stored in this repo**. Download steps: [`data/README.md`](data/README.md).
+
+**Known issues we will address before modelling:**
+
+1. Some labels are document types, not specialties (e.g. "Discharge Summary").
+2. "Surgery" (~22% of rows) overlaps with surgical subspecialties.
+3. Some transcriptions are duplicated under several labels.
+4. `keywords`, `description` and some note headers reveal the label (leakage).
+5. Several specialties have very few samples.
+
+The class mapping, deduplication, Surgery handling and leakage masking will be decided after EDA, documented here, and frozen before any model is trained.
+
+## Planned approach
+
+| Model | Role |
+|---|---|
+| Majority class, keyword rule | Baselines |
+| TF-IDF + logistic regression / linear SVM | Classical ML |
+| Fine-tuned Bio_ClinicalBERT (or similar domain model) | Deep learning |
+| Zero-/few-shot LLM | Optional comparator |
+
+**Evaluation protocol**
+- Stratified train / validation / test split, with duplicates kept within one split
+- Test set used **once**, at the end. All tuning on validation.
+- Primary metric: **macro-F1**. Secondary: per-class precision, recall, F1; one-vs-rest AUROC and AUPRC.
+- Uncertainty: multiple random seeds and bootstrap 95% confidence intervals
+- Confusion matrix with error analysis, plus a reliability diagram for calibration
+
+## Repository
+
+```
+README.md
+LICENSE                          MIT
+requirements.txt                 pinned before final submission
+data/README.md                   download instructions (data itself is gitignored)
+notebooks/
+  01_data_check.ipynb            dataset loads, class balance, lengths, duplicates
+  02_eda.ipynb                   (planned)
+  03_baselines.ipynb             (planned)
+  04_tfidf.ipynb                 (planned)
+  05_transformer.ipynb           (planned)
+  06_test_evaluation.ipynb       (planned) only notebook that touches the test set
+docs/
+  CONTRIBUTIONS.md               CRediT + Use of Generative AI statements
+  model_card.md                  (planned)
+```
 
 ## Team roles
 
 | Role | Member |
 |---|---|
-| Data lead | [name] |
-| Modelling lead | [name] |
-| Interface lead | [name] |
-| Writing lead | [name] |
+| Data lead / Modelling lead | Gabriel Barrere, Yuhan Zhang (split to be confirmed) |
+| Interface lead | Gabriel Barrere, Yuhan Zhang |
+| Writing lead | Jessica Oentoro |
 
-Every member contributes to code and manuscript; roles define accountability.
+All members contribute code and writing and commit under their own accounts.
 
-## Repository structure
+## Status
 
-```
-notebooks/   Run in numbered order (01_, 02_, ...)
-data/        Download instructions only; raw data is git-ignored
-docs/        CRediT, Use of GenAI statement, model card (later)
-```
-
-## How to reproduce
-
-1. `pip install -r requirements.txt` (or open the notebooks in Google Colab)
-2. Follow `data/README.md` to download the data
-3. Run `notebooks/01_data_check.ipynb`
-
-*Headline results table and interface link will be added before Dec 11.*
-
-## Licence
-
-Code released under the MIT licence (see `LICENSE`). Dataset remains under its own licence.
+**October 2, 2026:** topic and dataset selected, repo set up. Reproduction steps and results will be added as the project progresses.
