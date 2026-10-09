@@ -17,6 +17,7 @@ wandb/
 .env
 *.key
 hf_token*
+kaggle.json
 
 # Python / Jupyter
 __pycache__/
