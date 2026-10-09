@@ -1,7 +1,7 @@
 # Clinical Note Specialty Classification
 
 EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
-**Team:** Gabriel Barrere, Jessica Oentoro, Yuhan Zhang
+**Team:** Gabriel Barrere, Emilia Mastromatteo, Jessica Oentoro, Yuhan Zhang
 
 > **Course prototype for research and educational purposes only. Not a medical device. Not for clinical use.**
 
@@ -42,12 +42,7 @@ The class mapping, deduplication, Surgery handling and leakage masking will be d
 
 ## Planned approach
 
-| Model | Role |
-|---|---|
-| Majority class, keyword rule | Baselines |
-| TF-IDF + logistic regression / linear SVM | Classical ML |
-| Fine-tuned Bio_ClinicalBERT (or similar domain model) | Deep learning |
-| Zero-/few-shot LLM | Optional comparator |
+**Models:** TBD (decided by Modelling lead).
 
 **Evaluation protocol**
 - Stratified train / validation / test split, with duplicates kept within one split
@@ -66,10 +61,8 @@ data/README.md                   download instructions (data itself is gitignore
 notebooks/
   01_data_check.ipynb            dataset loads, class balance, lengths, duplicates
   02_eda.ipynb                   (planned)
-  03_baselines.ipynb             (planned)
-  04_tfidf.ipynb                 (planned)
-  05_transformer.ipynb           (planned)
-  06_test_evaluation.ipynb       (planned) only notebook that touches the test set
+  03_ onward                     (planned) one notebook per model, set by Modelling lead
+  NN_test_evaluation.ipynb       (planned) last notebook, only one that touches the test set
 docs/
   CONTRIBUTIONS.md               CRediT + Use of Generative AI statements
   model_card.md                  (planned)
@@ -79,9 +72,10 @@ docs/
 
 | Role | Member |
 |---|---|
-| Data lead / Modelling lead | Gabriel Barrere, Yuhan Zhang (split to be confirmed) |
-| Interface lead | Gabriel Barrere, Yuhan Zhang |
+| Data lead, team coordinator | Gabriel Barrere |
+| Modelling lead | Yuhan Zhang |
 | Writing lead | Jessica Oentoro |
+| Interface lead, writing support | Emilia Mastromatteo |
 
 All members contribute code and writing and commit under their own accounts.
 
