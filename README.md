@@ -75,7 +75,7 @@ docs/
 | Data lead, team coordinator | Gabriel Barrere |
 | Modelling lead | Yuhan Zhang |
 | Writing lead | Jessica Oentoro |
-| Interface lead, writing support | Emilia Mastromatteo |
+| Interface lead, writing support | Karman Kang |
 
 All members contribute code and writing and commit under their own accounts.
 
