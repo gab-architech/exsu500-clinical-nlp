@@ -6,9 +6,11 @@ Fill in as work happens (must agree with commit history and peer evaluations).
 
 | Member | CRediT roles |
 |---|---|
-| Gabriel Barrere | [Conceptualization, Writing – original draft] |
-| Jessica Oentoro | [Conceptualization ] |
-| Yuhan Zhang | [Conceptualization ] |
+| Gabriel Barrere | [Conceptualization, Writing – original draft, Coordinator] |
+| Jessica Oentoro | [Conceptualization, Modelling Lead ] |
+| Yuhan Zhang | [Conceptualization, Writing Lead] |
+| Karman Kang | [Interface Lead, Writing Support ] |
+
 
 ## Use of Generative AI statement
 
