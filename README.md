@@ -11,7 +11,7 @@ EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
 |---|---|
 | **Problem** | Route clinical documents to the right specialty team |
 | **Task** | Predict the medical specialty of a note from its free text |
-| **Task type** | Single-label, multi-class text classification (6 to 10 classes, fixed after EDA) |
+| **Task type** | Single-label, multi-class text classification (11 classes; final list pending clinical review) |
 | **Dataset** | MTSamples medical transcriptions, ~5,000 notes, ~40 raw specialty labels |
 | **Licence** | CC0: Public Domain (as listed on Kaggle) |
 | **Access** | Public download with a free Kaggle account, no credentialing or data use agreement |

@@ -27,7 +27,7 @@ Guiding principle from the spec: novelty is NOT required. Competence, honesty an
 ## Current status (update as decisions are made)
 
 - Task statement: predict the medical specialty of a clinical note from its free text, as decision support for document routing and referral intake teams (human in the loop)
-- Task type: single-label, multi-class text classification (6 to 10 classes, fixed after EDA)
+- Task type: single-label, multi-class text classification (11 classes; final list pending clinical review)
 - Dataset: MTSamples, Kaggle tboyle10/medicaltranscriptions (`mtsamples.csv`), CC0 as listed on Kaggle. Known issues (document-type labels, Surgery overlap, duplicates, label leakage in keywords/description/headers, rare classes) are listed in README.md
 - Splits and metrics: planned (stratified split, duplicates kept within one split, macro-F1 primary), not yet frozen
 - Next deliverable: Nov 9 Midterm Report. data/README.md and 01_data_check.ipynb still have placeholders.
