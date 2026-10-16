@@ -1,7 +1,7 @@
 # Clinical Note Specialty Classification
 
 EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
-**Team:** Gabriel Barrere, Karman Kang, Jessica Oentoro, Yuhan Zhang
+**Team:** Gabriel Barrere, Yuhan Zhang, Jessica Oentoro, Karman Kang
 
 > **Course prototype for research and educational purposes only. Not a medical device. Not for clinical use.**
 
