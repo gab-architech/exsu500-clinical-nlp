@@ -6,7 +6,7 @@ Official CRediT roles only ([credit.niso.org](https://credit.niso.org)), one lin
 
 - **G. Barrere:** Conceptualization, Data curation, Project administration, Software, Writing (original draft)
 - **J. Oentoro:** Conceptualization, Writing (review and editing)
-- **Y. Zhang:** Conceptualization
+- **Y. Zhang:** Conceptualization, Data curation, Formal analysis, Software, Visualization
 - **K. Kang:** [to be added as work happens]
 
 ## Use of Generative AI statement
@@ -14,3 +14,4 @@ Official CRediT roles only ([credit.niso.org](https://credit.niso.org)), one lin
 | Tool + version | Date | Used for | How output was verified |
 |---|---|---|---|
 | Claude Code, Claude Opus 5.5 | Sep 27 to Oct 9 | repo setup, README, data README, CLAUDE.md conventions, 01_data_check configuration | verified by review and a Colab run |
+| Claude Code | Oct 15 | EDA on MTSamples: label cleaning, duplicate/Surgery/doc-type/leakage analysis, class-list drafting, cross-label review table | re-run the analysis top-to-bottom; decisions still need team confirmation |
