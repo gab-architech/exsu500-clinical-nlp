@@ -2,15 +2,12 @@
 
 ## CRediT contribution statement
 
-Fill in as work happens (must agree with commit history and peer evaluations).
+Official CRediT roles only ([credit.niso.org](https://credit.niso.org)), one line per author, as required by the course outline. The project lead roles (data, modelling, interface, writing) are listed in the README, not here. Every member must hold at least one role. Update as work happens: this must agree with the commit history and peer evaluations.
 
-| Member | CRediT roles |
-|---|---|
-| Gabriel Barrere | [Conceptualization, Writing – original draft, Coordinator] |
-| Jessica Oentoro | [Conceptualization, Modelling Lead] |
-| Yuhan Zhang | [Conceptualization, Writing Lead] |
-| Karman Kang | [Interface Lead, Writing Support] |
-
+- **G. Barrere:** Conceptualization, Data curation, Project administration, Software, Writing (original draft)
+- **J. Oentoro:** Conceptualization, Writing (review and editing)
+- **Y. Zhang:** Conceptualization
+- **K. Kang:** [to be added as work happens]
 
 ## Use of Generative AI statement
 
