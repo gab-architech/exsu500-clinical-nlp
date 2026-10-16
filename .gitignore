@@ -31,3 +31,10 @@ venv/
 
 # Personal Claude Code notes (each member keeps their own)
 CLAUDE.local.md
+
+# Label validation exports contain note text: never commit them.
+# Only IDs + labels go in the repo (e.g. labels/*.csv with no text column).
+validation/
+*validation*.csv
+*review*.csv
+!labels/*.csv
