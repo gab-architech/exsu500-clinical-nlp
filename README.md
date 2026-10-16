@@ -82,3 +82,10 @@ All members contribute code and writing and commit under their own accounts.
 ## Status
 
 **October 2, 2026:** topic and dataset selected, repo set up. Reproduction steps and results will be added as the project progresses.
+
+## Use of Generative AI statement
+
+| Tool + version | Date | Used for | How output was verified |
+|---|---|---|---|
+| Claude Code, Claude Opus 5.5 | Sep 27 to Oct 9 | repo setup, README, data README, CLAUDE.md conventions, 01_data_check configuration | verified by review and a Colab run |
+| Claude Code | Oct 15 | EDA on MTSamples: label cleaning, duplicate/Surgery/doc-type/leakage analysis, class-list drafting, cross-label review table | re-run the analysis top-to-bottom; decisions still need team confirmation |
