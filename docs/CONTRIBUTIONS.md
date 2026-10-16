@@ -9,6 +9,7 @@ Fill in as work happens (must agree with commit history and peer evaluations).
 | Gabriel Barrere | [e.g. Conceptualization, Writing – original draft] |
 | Jessica Oentoro | [ ] |
 | Yuhan Zhang | [ ] |
+| Karman Kang | [ ] |
 
 ## Use of Generative AI statement
 

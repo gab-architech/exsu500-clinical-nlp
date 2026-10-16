@@ -1,7 +1,7 @@
 # Clinical Note Specialty Classification
 
 EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
-**Team:** Gabriel Barrere, Emilia Mastromatteo, Jessica Oentoro, Yuhan Zhang
+**Team:** Gabriel Barrere, Karman Kang, Jessica Oentoro, Yuhan Zhang
 
 > **Course prototype for research and educational purposes only. Not a medical device. Not for clinical use.**
 
@@ -75,7 +75,7 @@ docs/
 | Data lead, team coordinator | Gabriel Barrere |
 | Modelling lead | Yuhan Zhang |
 | Writing lead | Jessica Oentoro |
-| Interface lead, writing support | Emilia Mastromatteo |
+| Interface lead, writing support | Karman Kang |
 
 All members contribute code and writing and commit under their own accounts.
 

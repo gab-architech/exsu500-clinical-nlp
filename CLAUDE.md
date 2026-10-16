@@ -11,11 +11,12 @@ Personal preferences for individual team members live in each person's `CLAUDE.l
 
 | Member | GitHub | Role |
 |---|---|---|
-| Gabriel Barrere | gab-architech | Data / Modelling lead (split TBC), Interface lead |
+| Gabriel Barrere | gab-architech | Data lead, team coordinator |
+| Yuhan Zhang | yuhanniubility | Modelling lead (models TBD) |
 | Jessica Oentoro | jessoen | Writing lead |
-| Yuhan Zhang | yuhanniubility | Data / Modelling lead (split TBC), Interface lead |
+| Karman Kang | karman27 | Interface lead, writing support |
 
-Roles to assign: Data lead, Modelling lead, Interface lead, Writing lead (3 people, 4 roles: one person doubles up). Every member still contributes code and writing; roles are accountability.
+Every member still contributes code and writing; roles are accountability.
 
 ## Project goal
 
