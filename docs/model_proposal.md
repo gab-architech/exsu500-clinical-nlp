@@ -51,10 +51,11 @@ Caveat supported by the literature: transformers are not guaranteed to beat
 linear baselines on clinical text (Gao et al., IEEE JBHI 2021); keeping the
 linear family makes that comparison explicit. Task-specific supervised
 fine-tuning is also the recommended approach over LLM zero-shot prompting on
-clinical reports (Sushil et al., JAMIA 2024), and a recent MTSamples
-benchmark reports that earlier high scores collapse once leakage is
-controlled (Barman & Barman, arXiv 2026) - which is precisely our research
-question.
+clinical reports (Sushil et al., JAMIA 2024), LLM workflows for specialty
+referral itself still over- and under-triage (Gaber et al., npj Digital
+Medicine 2025), and a recent MTSamples benchmark reports that earlier high
+scores collapse once leakage is controlled (Barman & Barman, arXiv 2026) -
+which is precisely our research question.
 
 ## Excluded: random forest
 
@@ -117,6 +118,18 @@ studies that used MTSamples itself.
   text classification," J. Biomed. Inform., vol. 149, Art. no. 104576, 2024,
   doi: 10.1016/j.jbi.2024.104576. (recent: supports reporting uncertainty for
   clinical text classifiers, as our evaluation protocol does)
+- S. Dahl, M. Bøgsted, T. Sagi, and C. Vesteghem, "Performance of Natural
+  Language Processing for Information Extraction From Electronic Health
+  Records Within Cancer: Systematic Review," JMIR Med. Inform., vol. 13,
+  Art. no. e68707, 2025, doi: 10.2196/68707. (recent: systematic review
+  comparing rule-based, traditional ML, CRF, neural and transformer model
+  families on EHR text - supports our explicit family comparison design)
+- F. Gaber et al., "Evaluating large language model workflows in clinical
+  decision support for triage and referral and diagnosis," npj Digit. Med.,
+  vol. 8, Art. no. 263, 2025, doi: 10.1038/s41746-025-01684-1. (recent:
+  benchmark of LLM workflows for specialty referral from clinical notes on
+  MIMIC; models over- and under-triage and struggle with numeric lab values -
+  supports our supervised fine-tuning route over LLM prompting)
 - P. K. Barman and P. K. Barman, "CLiGNet: Clinical Label-Interaction Graph
   Network for Medical Specialty Classification from Clinical Transcriptions,"
   arXiv:2603.22752, 2026, preprint, not peer-reviewed. (recent preprint on
