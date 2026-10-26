@@ -11,7 +11,7 @@ EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
 |---|---|
 | **Problem** | Route clinical documents to the right specialty team |
 | **Task** | Predict the medical specialty of a note from its free text |
-| **Task type** | Single-label, multi-class text classification (11 classes; final list pending clinical review) |
+| **Task type** | Single-label, multi-class text classification (11 classes; final list confirmed by manual validation) |
 | **Dataset** | MTSamples medical transcriptions, ~5,000 notes, ~40 raw specialty labels |
 | **Licence** | CC0: Public Domain (as listed on Kaggle) |
 | **Access** | Public download with a free Kaggle account, no credentialing or data use agreement |
@@ -35,10 +35,25 @@ The data is **not stored in this repo**. Download steps: [`data/README.md`](data
 1. Some labels are document types, not specialties (e.g. "Discharge Summary").
 2. "Surgery" (~22% of rows) overlaps with surgical subspecialties.
 3. Some transcriptions are duplicated under several labels.
-4. `keywords`, `description` and some note headers reveal the label (leakage).
+4. `keywords`, `description` and, in 8.7% of notes, the transcription itself reveal the label (leakage).
 5. Several specialties have very few samples.
 
-The class mapping, deduplication, Surgery handling and leakage masking will be decided after EDA, documented here, and frozen before any model is trained.
+The class mapping, deduplication, Surgery handling and leakage control were decided after EDA and are documented in [docs/data_cleaning.md](docs/data_cleaning.md); the final dataset is frozen before any model is trained.
+
+## Data cleaning pipeline
+
+| Step | Action | Remaining | Change |
+|---|---|---|---|
+| 0 | Raw dataset | 4,999 rows | |
+| 1 | Strip leading spaces in labels | 4,999 rows | 0 |
+| 2 | Drop rows with no transcription | 4,966 rows | -33 |
+| 3 | Drop document-type labels (6 labels) | 4,028 rows | -938 |
+| 4 | Drop the Surgery label (1,039 byte-identical duplicates stay under their real specialty) | 2,940 rows | -1,088 |
+| 5 | Deduplicate to unique note texts | 2,279 texts | |
+| 6 | Manual review of conflicting notes (Jessica Oentoro, Karman Kang) | 606 texts reviewed | |
+| 7 | Map raw labels to 11 final classes | **2,230 notes** | |
+
+Excluded in the final assembly: 97 texts = 65 with no specialty home (including 14 Bariatrics surgery notes) + 4 reviewer DROP + 21 general-surgery + 7 thyroid-surgery. Every step, its rationale and the final class distribution are in [docs/data_cleaning.md](docs/data_cleaning.md).
 
 ## Planned approach
 
@@ -83,9 +98,12 @@ All members contribute code and writing and commit under their own accounts.
 
 **October 2, 2026:** topic and dataset selected, repo set up. Reproduction steps and results will be added as the project progresses.
 
+**October 26, 2026:** EDA and label cleaning complete: final dataset of 2,230 notes across 11 classes. The pipeline and every decision are documented in [docs/data_cleaning.md](docs/data_cleaning.md).
+
 ## Use of Generative AI statement
 
 | Tool + version | Date | Used for | How output was verified |
 |---|---|---|---|
 | Claude Code, Claude Opus 5.5 | Sep 27 to Oct 9 | repo setup, README, data README, CLAUDE.md conventions, 01_data_check configuration | verified by review and a Colab run |
 | Claude Code | Oct 15 | EDA on MTSamples: label cleaning, duplicate/Surgery/doc-type/leakage analysis, class-list drafting, cross-label review table | re-run the analysis top-to-bottom; decisions still need team confirmation |
+| Claude Code | Oct 16 to Oct 26 | assisted with data cleaning; all final label decisions made by humans (three AI-flagged labels were corrected after confirmation by the modelling lead) | pipeline re-run top to bottom (2,230 notes, 11 classes) |
