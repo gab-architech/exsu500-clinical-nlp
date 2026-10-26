@@ -1,0 +1,2231 @@
+text_id,label
+000694c6,Gastroenterology
+002d8666,Cardiovascular / Pulmonary
+003903e9,Orthopedic
+003acc04,Orthopedic
+004a827b,Urology / Nephrology
+005266af,Neurology
+0066f844,ENT / Ophthalmology
+00c2f7e6,Orthopedic
+00d05a8e,Cardiovascular / Pulmonary
+00ea712c,Cardiovascular / Pulmonary
+00ed9677,Urology / Nephrology
+00f99e7c,Orthopedic
+01555848,General Medicine
+015de361,Cardiovascular / Pulmonary
+017be82f,General Medicine
+0181b7bf,Orthopedic
+01919569,General Medicine
+01ce752d,ENT / Ophthalmology
+01ef8061,ENT / Ophthalmology
+01fca094,Orthopedic
+0250add7,Cardiovascular / Pulmonary
+0281ebd9,Obstetrics / Gynecology / Pediatrics
+028fd8f8,Neurology
+0295b1f0,Urology / Nephrology
+02af4672,Hematology - Oncology
+02bd6408,Cardiovascular / Pulmonary
+02c77fbd,Neurology
+02c8276d,Urology / Nephrology
+02c872c1,Cardiovascular / Pulmonary
+02ddd866,Orthopedic
+02e9716a,Orthopedic
+02fb3f58,Gastroenterology
+031ad23c,Urology / Nephrology
+0328b687,Obstetrics / Gynecology / Pediatrics
+035e296c,General Medicine
+036ecd3f,Gastroenterology
+03992077,Cardiovascular / Pulmonary
+03b005e4,Hematology - Oncology
+03df8616,ENT / Ophthalmology
+03dff077,Orthopedic
+041f59c0,Cardiovascular / Pulmonary
+0429eff3,Gastroenterology
+04677e0d,Orthopedic
+04829e87,General Medicine
+04fbd915,General Medicine
+05250b7d,Cardiovascular / Pulmonary
+05868886,Obstetrics / Gynecology / Pediatrics
+0591fc7b,Obstetrics / Gynecology / Pediatrics
+05bed7d9,Cardiovascular / Pulmonary
+05cc5123,Orthopedic
+05cfaf1c,Orthopedic
+062181b5,Orthopedic
+062c9068,Orthopedic
+067423b8,Gastroenterology
+06916aeb,Cardiovascular / Pulmonary
+06f3971a,Cardiovascular / Pulmonary
+073bd46c,Psychiatry / Psychology
+074db18d,Obstetrics / Gynecology / Pediatrics
+07593914,Cardiovascular / Pulmonary
+07934d70,Orthopedic
+0798a811,Neurology
+07a75d3b,General Medicine
+07a8852e,Orthopedic
+07afc626,Orthopedic
+07b217a7,Cardiovascular / Pulmonary
+07ec639a,Orthopedic
+08182e3a,General Medicine
+0826e168,Obstetrics / Gynecology / Pediatrics
+08298724,Urology / Nephrology
+082cc0f0,General Medicine
+085510b5,Gastroenterology
+088b850a,Urology / Nephrology
+08da5859,Neurology
+08eb575e,Gastroenterology
+09012ed4,Hematology - Oncology
+0902c90e,Cardiovascular / Pulmonary
+09302667,General Medicine
+093586e1,Urology / Nephrology
+093b5d1b,Cardiovascular / Pulmonary
+094f8df4,General Medicine
+09690c51,Cardiovascular / Pulmonary
+097ac90c,ENT / Ophthalmology
+097d4877,Hematology - Oncology
+097e5810,Radiology
+09ac74b8,Obstetrics / Gynecology / Pediatrics
+09c9d73d,Orthopedic
+0a0d2a94,Psychiatry / Psychology
+0a19718b,Cardiovascular / Pulmonary
+0a2c6b4c,Radiology
+0aa48bbe,Neurology
+0b22163f,General Medicine
+0b2a7dfa,Neurology
+0b3188eb,General Medicine
+0b5b1f42,Urology / Nephrology
+0b5faaf5,Neurology
+0bce4d1d,ENT / Ophthalmology
+0bdef135,Neurology
+0bfe1df9,General Medicine
+0bfe4967,Urology / Nephrology
+0c596c29,ENT / Ophthalmology
+0ca54497,General Medicine
+0cd5dc28,Orthopedic
+0ce44c2c,Gastroenterology
+0cf07e13,Obstetrics / Gynecology / Pediatrics
+0cf0f302,Orthopedic
+0cfb81e6,Radiology
+0cfd6262,Psychiatry / Psychology
+0d056453,Gastroenterology
+0d5dcb28,Orthopedic
+0dc4a28c,Gastroenterology
+0dc5dbee,Urology / Nephrology
+0ddea090,General Medicine
+0e0cecc6,Cardiovascular / Pulmonary
+0e17c6e9,Urology / Nephrology
+0e22f395,Orthopedic
+0e3128a9,Neurology
+0e73b347,Urology / Nephrology
+0e7ddbc5,Gastroenterology
+0ecf0212,Hematology - Oncology
+0ed5c3fa,Neurology
+0f028319,Orthopedic
+0f05b7ab,Urology / Nephrology
+0f06a450,General Medicine
+0f201e3a,Obstetrics / Gynecology / Pediatrics
+0f5080c2,Orthopedic
+0f58687e,Cardiovascular / Pulmonary
+0f73f185,General Medicine
+0f928ea2,Gastroenterology
+0fea8a5c,General Medicine
+0ffcd2c9,Cardiovascular / Pulmonary
+1014cc8a,Obstetrics / Gynecology / Pediatrics
+1019ea00,Orthopedic
+102e0e3b,Neurology
+1066a165,ENT / Ophthalmology
+106c6ca6,Orthopedic
+107c57f2,Orthopedic
+10850c9d,Obstetrics / Gynecology / Pediatrics
+10cf6374,General Medicine
+1103aee9,Cardiovascular / Pulmonary
+111d6fad,Gastroenterology
+111ec574,General Medicine
+1127e4a0,Neurology
+1135a3d2,ENT / Ophthalmology
+11531ac6,General Medicine
+117bd60b,Orthopedic
+119d74e0,Obstetrics / Gynecology / Pediatrics
+11d14e58,Orthopedic
+11f429dd,Obstetrics / Gynecology / Pediatrics
+124336b1,Orthopedic
+1248287c,General Medicine
+128a0e2f,Cardiovascular / Pulmonary
+128b904d,Gastroenterology
+12b14b43,Obstetrics / Gynecology / Pediatrics
+12be7f18,Obstetrics / Gynecology / Pediatrics
+12cb9d57,Urology / Nephrology
+1302f0d9,Orthopedic
+130c210e,Cardiovascular / Pulmonary
+132dab13,Orthopedic
+133463f1,Obstetrics / Gynecology / Pediatrics
+135f5de6,Obstetrics / Gynecology / Pediatrics
+136a2aa0,Hematology - Oncology
+138fb83b,Orthopedic
+13b06423,ENT / Ophthalmology
+13b28b30,General Medicine
+13c69212,Radiology
+13f50e43,Obstetrics / Gynecology / Pediatrics
+142f8b71,Obstetrics / Gynecology / Pediatrics
+14338f17,ENT / Ophthalmology
+14481c44,General Medicine
+146e94ec,Obstetrics / Gynecology / Pediatrics
+1475a6fa,ENT / Ophthalmology
+147d58e3,General Medicine
+149b0331,Gastroenterology
+14c4f9c5,Cardiovascular / Pulmonary
+14e0a062,General Medicine
+14e33771,Urology / Nephrology
+14ed0866,General Medicine
+15008b47,Urology / Nephrology
+15095b86,Radiology
+150ca80b,Urology / Nephrology
+1550d867,Orthopedic
+155b472e,Orthopedic
+156b00ea,Hematology - Oncology
+157a2ca7,Radiology
+1586c4c7,Neurology
+15ca12cf,ENT / Ophthalmology
+15d8f86b,Urology / Nephrology
+15e16c8b,Obstetrics / Gynecology / Pediatrics
+16076c26,Obstetrics / Gynecology / Pediatrics
+1607ade6,Radiology
+1613f441,Cardiovascular / Pulmonary
+161dee21,Orthopedic
+161f8c96,Cardiovascular / Pulmonary
+1621f23c,General Medicine
+16224282,General Medicine
+164c9f93,General Medicine
+166c9fb0,Psychiatry / Psychology
+16b15cdd,ENT / Ophthalmology
+16b94898,Cardiovascular / Pulmonary
+16cc7476,Cardiovascular / Pulmonary
+16cc84ec,Orthopedic
+16cd7ae4,Radiology
+16e67fc5,General Medicine
+1708980e,Neurology
+17252f99,Obstetrics / Gynecology / Pediatrics
+17502292,ENT / Ophthalmology
+176884cf,Neurology
+17f4a68b,Gastroenterology
+1817939d,General Medicine
+182d31fe,Orthopedic
+18384a8b,General Medicine
+183fb8c5,Obstetrics / Gynecology / Pediatrics
+186acc2e,Neurology
+18a9d70f,Urology / Nephrology
+18d79959,Cardiovascular / Pulmonary
+1934445c,Orthopedic
+1937ad10,General Medicine
+193b68d9,Neurology
+19506d16,Orthopedic
+196ef48f,Cardiovascular / Pulmonary
+199ba486,Cardiovascular / Pulmonary
+19bd3800,Hematology - Oncology
+19c13a52,Radiology
+19c3cf94,Hematology - Oncology
+19d2aefa,Psychiatry / Psychology
+19e20034,Cardiovascular / Pulmonary
+1a340347,Cardiovascular / Pulmonary
+1aa298b1,Psychiatry / Psychology
+1ab1deec,General Medicine
+1ab38f2b,Obstetrics / Gynecology / Pediatrics
+1ab3d391,General Medicine
+1ae31b6f,General Medicine
+1af1157e,Neurology
+1af9aeab,Cardiovascular / Pulmonary
+1b34fe1c,Gastroenterology
+1b356e20,General Medicine
+1b62635b,General Medicine
+1b8935d2,General Medicine
+1ba31d8a,Radiology
+1bc08492,Cardiovascular / Pulmonary
+1bcdfb3b,Orthopedic
+1bd9e1cb,General Medicine
+1bfe379b,Gastroenterology
+1c20ef3a,Cardiovascular / Pulmonary
+1c3281e3,Gastroenterology
+1c39c407,Gastroenterology
+1c821d93,Orthopedic
+1c945b81,Orthopedic
+1ca0c3c7,General Medicine
+1cac91e3,Orthopedic
+1caf26d5,General Medicine
+1cbae565,Gastroenterology
+1cf36970,Obstetrics / Gynecology / Pediatrics
+1d026a03,Neurology
+1d184cc5,Neurology
+1d23c2f0,Gastroenterology
+1d243187,Urology / Nephrology
+1d38996b,Orthopedic
+1d3a3861,Orthopedic
+1d6dcd7c,Orthopedic
+1dc7db2b,ENT / Ophthalmology
+1dd1d8de,Urology / Nephrology
+1dd839d7,Radiology
+1de49f86,General Medicine
+1e0166fc,Urology / Nephrology
+1e0e002c,Cardiovascular / Pulmonary
+1e57bb7c,Cardiovascular / Pulmonary
+1e6d8f6a,Neurology
+1e7cbb69,Gastroenterology
+1e8068b1,Radiology
+1e83a728,Cardiovascular / Pulmonary
+1e9ab1a1,General Medicine
+1eb307fd,Psychiatry / Psychology
+1ec32afc,Urology / Nephrology
+1ed44e13,ENT / Ophthalmology
+1ed81384,Orthopedic
+1f1ae0ef,Obstetrics / Gynecology / Pediatrics
+1f32fa31,ENT / Ophthalmology
+1f382315,Hematology - Oncology
+1f3ac6ec,Cardiovascular / Pulmonary
+1f3ce4da,Orthopedic
+1f85fb25,General Medicine
+1f920fe3,Hematology - Oncology
+1fd4d1cd,Cardiovascular / Pulmonary
+1fd9116c,Radiology
+1fea106a,Cardiovascular / Pulmonary
+1ff3082e,Orthopedic
+20023787,ENT / Ophthalmology
+2006c6ca,ENT / Ophthalmology
+20219edf,ENT / Ophthalmology
+2040aaf6,General Medicine
+2044aeaa,Cardiovascular / Pulmonary
+204a98a0,Gastroenterology
+20595a83,ENT / Ophthalmology
+207c1ae1,ENT / Ophthalmology
+208b9713,Hematology - Oncology
+209bab22,Gastroenterology
+20ae9fdf,Radiology
+20df380a,Orthopedic
+210e1a95,Neurology
+211919cc,General Medicine
+211e036d,General Medicine
+2128b773,ENT / Ophthalmology
+21328853,General Medicine
+213738af,Obstetrics / Gynecology / Pediatrics
+21628d16,Gastroenterology
+21c66702,General Medicine
+21da1f43,Orthopedic
+21e36a57,Urology / Nephrology
+21e7b5fb,Obstetrics / Gynecology / Pediatrics
+21ee57fc,Urology / Nephrology
+21f0c812,Orthopedic
+221eee6a,Orthopedic
+222438cb,ENT / Ophthalmology
+222fd497,Urology / Nephrology
+22301201,Radiology
+223480ce,Cardiovascular / Pulmonary
+22363a01,Urology / Nephrology
+223a5c73,Cardiovascular / Pulmonary
+225728b5,Urology / Nephrology
+2259fc02,Orthopedic
+22aa8533,Hematology - Oncology
+22e2c1e1,ENT / Ophthalmology
+230922ce,Cardiovascular / Pulmonary
+230afa68,General Medicine
+2311b936,Cardiovascular / Pulmonary
+231c3b5a,Radiology
+2364b072,Orthopedic
+237890c4,Gastroenterology
+237f7afd,Orthopedic
+23ec81f8,Orthopedic
+23ed828c,Neurology
+243553b6,Neurology
+2447a0bd,ENT / Ophthalmology
+24623672,Cardiovascular / Pulmonary
+24a4ebc2,Cardiovascular / Pulmonary
+24b32ac1,Orthopedic
+24c1d7c4,Obstetrics / Gynecology / Pediatrics
+24d8a979,ENT / Ophthalmology
+24f62516,Orthopedic
+24f67584,Gastroenterology
+250de101,General Medicine
+2515dd15,General Medicine
+25682501,Orthopedic
+25717448,Urology / Nephrology
+25b12f90,General Medicine
+25d232bd,General Medicine
+25e3cd94,Hematology - Oncology
+26223e8a,Cardiovascular / Pulmonary
+2638cdc0,Orthopedic
+2656392d,Cardiovascular / Pulmonary
+26617e77,General Medicine
+26952959,Orthopedic
+272a979b,Cardiovascular / Pulmonary
+273641b8,Obstetrics / Gynecology / Pediatrics
+2739f5d8,Neurology
+274dcceb,Gastroenterology
+2769fd3a,ENT / Ophthalmology
+27993392,Cardiovascular / Pulmonary
+27a67f24,Cardiovascular / Pulmonary
+27b17dae,Urology / Nephrology
+27e5fb44,Orthopedic
+280ce1b1,Hematology - Oncology
+28105179,Urology / Nephrology
+2814af96,General Medicine
+2817abb6,Gastroenterology
+2833c044,General Medicine
+2892180b,Neurology
+289937a7,ENT / Ophthalmology
+28bbbc4d,ENT / Ophthalmology
+28bc4427,Orthopedic
+28c94a2c,Orthopedic
+28ec5ee0,Obstetrics / Gynecology / Pediatrics
+2918a0d6,Urology / Nephrology
+291c0a69,ENT / Ophthalmology
+2935dc27,Orthopedic
+2983a676,General Medicine
+29b62ec1,Cardiovascular / Pulmonary
+29d4abfd,Obstetrics / Gynecology / Pediatrics
+2a228f67,Cardiovascular / Pulmonary
+2a8ea9e6,Urology / Nephrology
+2a8fcf51,Gastroenterology
+2a9ce6d6,ENT / Ophthalmology
+2af02cfa,Hematology - Oncology
+2af8e81a,Cardiovascular / Pulmonary
+2afdebe9,Cardiovascular / Pulmonary
+2b26877a,ENT / Ophthalmology
+2b275b1e,General Medicine
+2b7ee232,Orthopedic
+2b8d6797,General Medicine
+2bff1298,Orthopedic
+2c0bf2a2,General Medicine
+2c18a2b8,Urology / Nephrology
+2c3bd779,Cardiovascular / Pulmonary
+2c3cd86d,Orthopedic
+2c4fc851,Obstetrics / Gynecology / Pediatrics
+2c6f7e05,Orthopedic
+2c71f09c,Urology / Nephrology
+2c7882f5,Orthopedic
+2c8b9b1e,Cardiovascular / Pulmonary
+2c93bf26,Cardiovascular / Pulmonary
+2cbbbf98,Orthopedic
+2d1ad439,Obstetrics / Gynecology / Pediatrics
+2d3a7031,Cardiovascular / Pulmonary
+2d40f4fd,Urology / Nephrology
+2d7123ab,Orthopedic
+2d86d368,Urology / Nephrology
+2deaa3e2,Neurology
+2df8e21a,Neurology
+2e32985f,Gastroenterology
+2e3c00b9,Hematology - Oncology
+2e4fb37c,ENT / Ophthalmology
+2e53d620,Urology / Nephrology
+2e7655be,Cardiovascular / Pulmonary
+2e79cd51,Cardiovascular / Pulmonary
+2e7e7112,Orthopedic
+2eae9c9f,General Medicine
+2ee115f9,Urology / Nephrology
+2ef837d8,Orthopedic
+2f443ed4,Hematology - Oncology
+2f50e968,Urology / Nephrology
+2fa56f90,General Medicine
+2fe2913f,General Medicine
+30276faa,Obstetrics / Gynecology / Pediatrics
+302920fd,Cardiovascular / Pulmonary
+304927ca,Obstetrics / Gynecology / Pediatrics
+304d2828,General Medicine
+304d7b5f,Cardiovascular / Pulmonary
+30804b77,Urology / Nephrology
+30b81af0,ENT / Ophthalmology
+30cf3412,General Medicine
+3100d240,Urology / Nephrology
+311ec2d6,Neurology
+313664cb,Obstetrics / Gynecology / Pediatrics
+313994b2,Orthopedic
+315b1b68,Obstetrics / Gynecology / Pediatrics
+316651a9,General Medicine
+318a008f,Orthopedic
+318fa676,Cardiovascular / Pulmonary
+3200eed2,Orthopedic
+3202f0e6,Cardiovascular / Pulmonary
+32293ac0,Orthopedic
+322af4cb,Cardiovascular / Pulmonary
+32377471,Orthopedic
+325322bf,Cardiovascular / Pulmonary
+3257f48e,Neurology
+325d2c8a,Cardiovascular / Pulmonary
+32afe677,General Medicine
+32b63ddd,Psychiatry / Psychology
+32b9829f,ENT / Ophthalmology
+32d2c711,Urology / Nephrology
+32da0aa7,Neurology
+32fac379,Orthopedic
+32fb6be4,Cardiovascular / Pulmonary
+3308d58a,Hematology - Oncology
+3318f86c,Cardiovascular / Pulmonary
+33631e17,Gastroenterology
+3398c8a2,Cardiovascular / Pulmonary
+33a793e3,Hematology - Oncology
+33a995f0,Gastroenterology
+33ac8a66,General Medicine
+33cd5f8a,Urology / Nephrology
+33da2a49,Urology / Nephrology
+33dcbf53,General Medicine
+33f96b05,Orthopedic
+3413d943,Neurology
+34251f8b,ENT / Ophthalmology
+343a287e,Obstetrics / Gynecology / Pediatrics
+34609c84,Gastroenterology
+34b9fe4a,ENT / Ophthalmology
+34c1c279,Obstetrics / Gynecology / Pediatrics
+34f7ee10,Gastroenterology
+34ff7648,Neurology
+35091496,Orthopedic
+3513cd60,Cardiovascular / Pulmonary
+351f4bad,General Medicine
+35359a8f,Gastroenterology
+354ca97f,Cardiovascular / Pulmonary
+35605cfc,Obstetrics / Gynecology / Pediatrics
+35852599,Hematology - Oncology
+359b1f36,Gastroenterology
+35bfd74f,Orthopedic
+35e6f4b8,Urology / Nephrology
+35e90eed,ENT / Ophthalmology
+361b7617,Gastroenterology
+362cbaf7,Obstetrics / Gynecology / Pediatrics
+36694640,Orthopedic
+3687a48b,ENT / Ophthalmology
+36dc253c,Neurology
+36de0fec,Cardiovascular / Pulmonary
+370115c5,ENT / Ophthalmology
+3715669c,Obstetrics / Gynecology / Pediatrics
+371ad519,Radiology
+3729f6a2,Radiology
+37347c95,Cardiovascular / Pulmonary
+373570e0,Radiology
+3752e170,Hematology - Oncology
+375311b7,Obstetrics / Gynecology / Pediatrics
+3753f80b,General Medicine
+377d05ef,Urology / Nephrology
+37aa7da6,Obstetrics / Gynecology / Pediatrics
+37d0a926,Cardiovascular / Pulmonary
+37e1ddcb,Orthopedic
+37e4ab60,ENT / Ophthalmology
+37fb2bca,General Medicine
+37fff6a5,Gastroenterology
+3852eeb0,Neurology
+3863cf54,Orthopedic
+38650982,General Medicine
+3877ca2b,Obstetrics / Gynecology / Pediatrics
+389afc97,Urology / Nephrology
+389cc288,Cardiovascular / Pulmonary
+38bc04bd,Gastroenterology
+38eddc9b,Obstetrics / Gynecology / Pediatrics
+38f9812f,ENT / Ophthalmology
+3901a6b2,Neurology
+3928c977,Urology / Nephrology
+394c6c62,Orthopedic
+3981bbe0,ENT / Ophthalmology
+39923d87,Hematology - Oncology
+39abf7bb,Neurology
+39c0e043,General Medicine
+39cafbd3,Orthopedic
+3a000321,Obstetrics / Gynecology / Pediatrics
+3a0a003f,Cardiovascular / Pulmonary
+3a171fd5,Psychiatry / Psychology
+3a370d2e,Orthopedic
+3a4832a1,ENT / Ophthalmology
+3ae332be,Gastroenterology
+3b1452e0,Neurology
+3b1af897,Gastroenterology
+3b7f24a1,Obstetrics / Gynecology / Pediatrics
+3b9c0518,Obstetrics / Gynecology / Pediatrics
+3c016603,Radiology
+3c35915e,Urology / Nephrology
+3c3e5b47,Obstetrics / Gynecology / Pediatrics
+3c57c2c9,Orthopedic
+3c60be54,Obstetrics / Gynecology / Pediatrics
+3c72b79b,Radiology
+3c93996c,Cardiovascular / Pulmonary
+3caaa470,Orthopedic
+3cb462bc,Neurology
+3cbf06fe,ENT / Ophthalmology
+3ccafd98,Gastroenterology
+3d1b16a6,Cardiovascular / Pulmonary
+3d1f1960,Gastroenterology
+3d1fa469,Neurology
+3d345455,Obstetrics / Gynecology / Pediatrics
+3d499af1,Orthopedic
+3d54d7bd,Neurology
+3d63381b,ENT / Ophthalmology
+3d79e036,Orthopedic
+3d7cc9f3,Gastroenterology
+3d80ca82,Cardiovascular / Pulmonary
+3da7edce,ENT / Ophthalmology
+3dc67ebe,General Medicine
+3dcfe2bb,Cardiovascular / Pulmonary
+3de3d2b1,Gastroenterology
+3decfb40,Orthopedic
+3e27b81e,Cardiovascular / Pulmonary
+3e391659,Neurology
+3e518ad1,Obstetrics / Gynecology / Pediatrics
+3e53f45f,Obstetrics / Gynecology / Pediatrics
+3e55f665,Urology / Nephrology
+3e829347,Gastroenterology
+3e8e6507,Radiology
+3e9ac663,Neurology
+3ea0a456,Cardiovascular / Pulmonary
+3eb978be,Neurology
+3ed8851a,Obstetrics / Gynecology / Pediatrics
+3eddb40e,Cardiovascular / Pulmonary
+3ee1eb0e,Gastroenterology
+3f029312,Gastroenterology
+3f0b3019,Hematology - Oncology
+3f35705a,Cardiovascular / Pulmonary
+3f5e0c8e,Orthopedic
+3f68f2f9,General Medicine
+3fb0425e,Urology / Nephrology
+40076b85,Gastroenterology
+40848d46,General Medicine
+40852804,ENT / Ophthalmology
+40895209,Urology / Nephrology
+40a258e7,Orthopedic
+40eae8be,Gastroenterology
+40f2133f,ENT / Ophthalmology
+40fe1109,Gastroenterology
+410e6ee3,Urology / Nephrology
+41102e15,Cardiovascular / Pulmonary
+413b71b1,General Medicine
+414aa309,ENT / Ophthalmology
+417dc105,ENT / Ophthalmology
+41b2456e,Hematology - Oncology
+41b7fcf1,Hematology - Oncology
+41d0b082,Radiology
+41e47b04,Urology / Nephrology
+42199482,Urology / Nephrology
+421c5a36,ENT / Ophthalmology
+422ffc6a,Gastroenterology
+424f12c0,Cardiovascular / Pulmonary
+4252b551,Urology / Nephrology
+4265737e,Orthopedic
+428a8e64,Obstetrics / Gynecology / Pediatrics
+4290f82d,Orthopedic
+42916fbb,General Medicine
+42d9b0d4,Cardiovascular / Pulmonary
+42e4cd84,Urology / Nephrology
+42ecf16f,Urology / Nephrology
+42eed236,Neurology
+42fd2c0a,General Medicine
+43059c8f,ENT / Ophthalmology
+43186410,Gastroenterology
+435f6cd8,Cardiovascular / Pulmonary
+436df9ea,Gastroenterology
+4382ff58,Hematology - Oncology
+439adff4,Radiology
+43ab872d,Gastroenterology
+441758bb,Neurology
+4428abb1,Neurology
+442cd9a0,Urology / Nephrology
+4443ff43,Psychiatry / Psychology
+4447ab75,Hematology - Oncology
+445f582b,Cardiovascular / Pulmonary
+446113ac,ENT / Ophthalmology
+448f71eb,ENT / Ophthalmology
+4491673d,Radiology
+44bd4930,Radiology
+44caad8a,Orthopedic
+44ce7098,General Medicine
+44f6749a,Cardiovascular / Pulmonary
+4537afac,Psychiatry / Psychology
+454814fd,Neurology
+4549961b,ENT / Ophthalmology
+45567a55,Neurology
+45642639,Hematology - Oncology
+4566ac30,Urology / Nephrology
+4586ea84,Neurology
+45b589a7,ENT / Ophthalmology
+45e0cd8c,Cardiovascular / Pulmonary
+45f04b7b,Obstetrics / Gynecology / Pediatrics
+463482ba,General Medicine
+464ea79b,Gastroenterology
+4658fed4,Radiology
+46683fa7,Cardiovascular / Pulmonary
+4693f2da,Hematology - Oncology
+46af2319,Hematology - Oncology
+46d37087,Radiology
+46e0dace,ENT / Ophthalmology
+46f4e1c6,Cardiovascular / Pulmonary
+471a34c9,Gastroenterology
+47239771,Gastroenterology
+472b3ac4,Neurology
+47369c57,Urology / Nephrology
+475f4ce5,Radiology
+478235ca,Obstetrics / Gynecology / Pediatrics
+479480fc,Urology / Nephrology
+479eb570,Urology / Nephrology
+47d0aac0,ENT / Ophthalmology
+47db7d6b,Cardiovascular / Pulmonary
+47ff8c74,Cardiovascular / Pulmonary
+480d5aee,Orthopedic
+48605beb,Neurology
+4860cb9c,Radiology
+48767827,Neurology
+4890d04e,Radiology
+4892bf0f,General Medicine
+4894146b,ENT / Ophthalmology
+48bb8c1a,Radiology
+48cdf764,Neurology
+490dbf56,Neurology
+4954279d,Psychiatry / Psychology
+498ed8b3,Obstetrics / Gynecology / Pediatrics
+49a3dad4,Radiology
+49d9f52b,Neurology
+49e7555a,Obstetrics / Gynecology / Pediatrics
+4a26336f,General Medicine
+4a2aee39,Urology / Nephrology
+4a318419,Cardiovascular / Pulmonary
+4a3fadec,Urology / Nephrology
+4a596e32,Cardiovascular / Pulmonary
+4a5c9084,Cardiovascular / Pulmonary
+4a8ea89c,Orthopedic
+4aa48e23,Neurology
+4ac13d00,Urology / Nephrology
+4aee57dc,Cardiovascular / Pulmonary
+4b38fc76,Neurology
+4b481988,Orthopedic
+4b515231,General Medicine
+4b6be795,Neurology
+4b74b73d,Neurology
+4b9ac582,Cardiovascular / Pulmonary
+4bac5643,Cardiovascular / Pulmonary
+4bb53c54,General Medicine
+4bbac6a5,Orthopedic
+4bbf3620,Gastroenterology
+4bc04abe,Cardiovascular / Pulmonary
+4bc07edf,Neurology
+4bebf428,Orthopedic
+4bee496c,Orthopedic
+4bf1f2b9,Hematology - Oncology
+4bf7e252,General Medicine
+4bf9de6d,Cardiovascular / Pulmonary
+4c0d97e8,Hematology - Oncology
+4c13f348,General Medicine
+4c15768a,Cardiovascular / Pulmonary
+4c1724cf,Radiology
+4c1e5c94,Gastroenterology
+4c24ef0a,ENT / Ophthalmology
+4c3af846,ENT / Ophthalmology
+4c3e04e3,Orthopedic
+4c558b76,Urology / Nephrology
+4c861772,General Medicine
+4ca1213c,Orthopedic
+4ca7b3db,Orthopedic
+4ccb78c0,Cardiovascular / Pulmonary
+4cf642ae,Orthopedic
+4d3e2e36,Urology / Nephrology
+4d55427b,Neurology
+4d57814b,Neurology
+4d90ed85,Hematology - Oncology
+4dbe4a0a,Hematology - Oncology
+4de7cd46,Gastroenterology
+4e0d8026,Orthopedic
+4e1b86b3,General Medicine
+4e35b5fd,General Medicine
+4e3ac15d,Hematology - Oncology
+4e94c46f,ENT / Ophthalmology
+4eff2fed,Neurology
+4f00f2a2,ENT / Ophthalmology
+4f1c288f,Obstetrics / Gynecology / Pediatrics
+4f32f0f5,Orthopedic
+4f4cff44,General Medicine
+4f57af35,Gastroenterology
+4f62b5b7,Obstetrics / Gynecology / Pediatrics
+4f889e2b,Radiology
+4fab8526,General Medicine
+4fcf2903,General Medicine
+4fd76c91,Obstetrics / Gynecology / Pediatrics
+502ab4b4,Orthopedic
+5039c1e7,ENT / Ophthalmology
+50468d64,Cardiovascular / Pulmonary
+50494ef1,Gastroenterology
+5057ffc3,Hematology - Oncology
+50637a61,Psychiatry / Psychology
+5092eb81,General Medicine
+50d59448,Neurology
+517085e8,Gastroenterology
+5185b761,ENT / Ophthalmology
+5190cfa2,Cardiovascular / Pulmonary
+51a119b7,ENT / Ophthalmology
+51c724fe,Orthopedic
+51cdd573,Psychiatry / Psychology
+51d0d570,Gastroenterology
+520488b2,Orthopedic
+5219b14c,Cardiovascular / Pulmonary
+5227efe0,Gastroenterology
+52508ae5,Neurology
+52731872,Urology / Nephrology
+5299710d,Neurology
+52a29b14,Neurology
+52a56540,Orthopedic
+52bdc1ed,ENT / Ophthalmology
+52c90f93,Psychiatry / Psychology
+52f270a6,Gastroenterology
+5321e736,General Medicine
+532b9bbb,ENT / Ophthalmology
+53466128,Hematology - Oncology
+539efe89,Psychiatry / Psychology
+54290fbc,Urology / Nephrology
+54366e63,Orthopedic
+54748d73,Neurology
+54a21369,Orthopedic
+54b2d137,Orthopedic
+54f5d030,Gastroenterology
+550f7495,Orthopedic
+552eb368,Urology / Nephrology
+5554c0f5,General Medicine
+55692f8d,Cardiovascular / Pulmonary
+5575d7fd,ENT / Ophthalmology
+559a6a61,Neurology
+55a8b3d8,Cardiovascular / Pulmonary
+55d44637,ENT / Ophthalmology
+56128bc9,General Medicine
+561ea969,Cardiovascular / Pulmonary
+562dbbab,Obstetrics / Gynecology / Pediatrics
+563d82b6,Neurology
+56421290,Cardiovascular / Pulmonary
+56b2de2d,General Medicine
+56bf1f1b,Cardiovascular / Pulmonary
+56ddf996,Cardiovascular / Pulmonary
+56de0da9,Cardiovascular / Pulmonary
+56f4d40e,Radiology
+57053ac6,Orthopedic
+571e3269,General Medicine
+57b82cd9,ENT / Ophthalmology
+57e29715,ENT / Ophthalmology
+57ff6c8c,Gastroenterology
+582e0757,Urology / Nephrology
+58344f8e,ENT / Ophthalmology
+58553fb2,Cardiovascular / Pulmonary
+586639d4,Obstetrics / Gynecology / Pediatrics
+588fa4a7,Gastroenterology
+5896288c,Cardiovascular / Pulmonary
+5897f03d,Obstetrics / Gynecology / Pediatrics
+58a99bf0,Urology / Nephrology
+58c118d3,Orthopedic
+590057cf,General Medicine
+5913bef2,Cardiovascular / Pulmonary
+592bc0bc,Gastroenterology
+59525cd3,Cardiovascular / Pulmonary
+595a9ced,Hematology - Oncology
+595d793c,Gastroenterology
+5960f36b,Cardiovascular / Pulmonary
+596dcd30,Orthopedic
+59c48ad8,Gastroenterology
+5a0845a1,Orthopedic
+5a2cdef2,Hematology - Oncology
+5a6b5d12,General Medicine
+5a72c50d,ENT / Ophthalmology
+5a878e8e,Cardiovascular / Pulmonary
+5aa832bd,Urology / Nephrology
+5ac88001,Neurology
+5ad49b84,Neurology
+5ad7e74c,Orthopedic
+5b05a8e6,Cardiovascular / Pulmonary
+5b29b8b6,Urology / Nephrology
+5b2a708b,ENT / Ophthalmology
+5b48c782,Cardiovascular / Pulmonary
+5b797417,Orthopedic
+5b8176e4,Neurology
+5bc2c666,Orthopedic
+5bd4f43b,Obstetrics / Gynecology / Pediatrics
+5be2f0dd,Gastroenterology
+5bef9a3a,Urology / Nephrology
+5c03770a,ENT / Ophthalmology
+5c0e9f41,Cardiovascular / Pulmonary
+5c1c34dc,Orthopedic
+5c4b99f6,Orthopedic
+5c605c66,Cardiovascular / Pulmonary
+5ce67fa8,Orthopedic
+5cfe3a6c,Orthopedic
+5d00b839,ENT / Ophthalmology
+5d2bbcff,ENT / Ophthalmology
+5d4de175,Cardiovascular / Pulmonary
+5d53f511,General Medicine
+5d59ae6a,Obstetrics / Gynecology / Pediatrics
+5d63a20e,Orthopedic
+5db96659,Urology / Nephrology
+5dcf5bff,Cardiovascular / Pulmonary
+5ddb6e9b,Urology / Nephrology
+5de4f7da,Gastroenterology
+5de811c9,General Medicine
+5ded1e4e,Obstetrics / Gynecology / Pediatrics
+5e317430,Obstetrics / Gynecology / Pediatrics
+5e622b8a,Cardiovascular / Pulmonary
+5e690808,Orthopedic
+5e8c9c0d,Orthopedic
+5e8eaaa3,Neurology
+5e904713,General Medicine
+5e9a55b5,ENT / Ophthalmology
+5e9c0cee,Orthopedic
+5ecc5e0e,Hematology - Oncology
+5ede7ed5,Orthopedic
+5ee25ba2,General Medicine
+5ef35c69,Neurology
+5f06b5ab,ENT / Ophthalmology
+5f1bdf5d,Obstetrics / Gynecology / Pediatrics
+5f30eb75,Gastroenterology
+5fdcc5da,Cardiovascular / Pulmonary
+5ff802d4,General Medicine
+60009c3b,ENT / Ophthalmology
+60111863,Urology / Nephrology
+602f43db,Orthopedic
+60519e24,Gastroenterology
+60536946,General Medicine
+60599533,Radiology
+60828756,General Medicine
+60871de0,Urology / Nephrology
+608c7d2f,Orthopedic
+609d0037,General Medicine
+60a1f699,ENT / Ophthalmology
+60af11b1,Obstetrics / Gynecology / Pediatrics
+60b3b4e9,Obstetrics / Gynecology / Pediatrics
+616a95c4,Obstetrics / Gynecology / Pediatrics
+61849ec6,Urology / Nephrology
+61b857ab,Neurology
+61bb5f13,Orthopedic
+61dde247,Orthopedic
+61e56cd1,Orthopedic
+61e5ab44,Obstetrics / Gynecology / Pediatrics
+62092444,General Medicine
+62122d42,General Medicine
+62339c05,Cardiovascular / Pulmonary
+6281514e,Cardiovascular / Pulmonary
+62a8469b,Obstetrics / Gynecology / Pediatrics
+62dc0f77,Obstetrics / Gynecology / Pediatrics
+62e7004e,Radiology
+62f035eb,Radiology
+62f4420e,Urology / Nephrology
+6301c80a,Orthopedic
+630306c2,Urology / Nephrology
+632bc097,Cardiovascular / Pulmonary
+63407a61,Gastroenterology
+634633ca,Radiology
+639c0b71,General Medicine
+63c4e05e,Cardiovascular / Pulmonary
+63d3450b,Obstetrics / Gynecology / Pediatrics
+63de85d7,Orthopedic
+641168de,Cardiovascular / Pulmonary
+6418e0d3,Urology / Nephrology
+641c1e94,Obstetrics / Gynecology / Pediatrics
+641c21e1,Cardiovascular / Pulmonary
+643335e0,Obstetrics / Gynecology / Pediatrics
+64455921,Gastroenterology
+64d48549,General Medicine
+64dbb61c,Neurology
+65003be0,Obstetrics / Gynecology / Pediatrics
+6513049a,Cardiovascular / Pulmonary
+65134888,Orthopedic
+6535ebda,Cardiovascular / Pulmonary
+656a6558,Hematology - Oncology
+65c75a72,Orthopedic
+65db248d,Orthopedic
+65dc8508,Urology / Nephrology
+66036b83,Gastroenterology
+66316259,ENT / Ophthalmology
+6662db7c,Gastroenterology
+667d749b,Cardiovascular / Pulmonary
+66a8ef85,Orthopedic
+66c99c55,Gastroenterology
+66faad6b,Orthopedic
+6732df39,Gastroenterology
+67358eea,Cardiovascular / Pulmonary
+6745dbce,ENT / Ophthalmology
+67a23c15,Cardiovascular / Pulmonary
+67af3380,Radiology
+67def13c,Neurology
+68703b82,General Medicine
+68740aba,General Medicine
+689a3bea,ENT / Ophthalmology
+68a3dd79,Psychiatry / Psychology
+68b06f63,General Medicine
+68e219b1,Gastroenterology
+690a106b,Gastroenterology
+69335a41,Cardiovascular / Pulmonary
+69431a90,Gastroenterology
+6956b43e,Cardiovascular / Pulmonary
+696c6324,General Medicine
+69743ad6,Neurology
+697a039d,Neurology
+698724c0,Cardiovascular / Pulmonary
+698d8c51,Radiology
+699113ea,General Medicine
+69eccf32,Radiology
+69f1da5d,Orthopedic
+69f44a3b,Urology / Nephrology
+6a04fa7c,Gastroenterology
+6a10136d,Urology / Nephrology
+6a48fc21,Hematology - Oncology
+6a7716bc,Obstetrics / Gynecology / Pediatrics
+6aaa0be1,Neurology
+6ab033e1,Urology / Nephrology
+6acdfa3c,ENT / Ophthalmology
+6b12f6eb,Obstetrics / Gynecology / Pediatrics
+6b1f2f3b,General Medicine
+6b24ac39,Hematology - Oncology
+6b4fa18e,Neurology
+6b785964,Neurology
+6b86e2ca,Hematology - Oncology
+6b8eb501,Gastroenterology
+6baf773a,ENT / Ophthalmology
+6bc440dd,Radiology
+6c1e821e,Gastroenterology
+6c1fb395,Urology / Nephrology
+6c5d08d7,ENT / Ophthalmology
+6c7636e7,Orthopedic
+6cae9ea5,Obstetrics / Gynecology / Pediatrics
+6cb7842d,General Medicine
+6ce15b70,General Medicine
+6ce539de,Neurology
+6d18cc49,Cardiovascular / Pulmonary
+6d5877b6,Orthopedic
+6d5d9d6e,Urology / Nephrology
+6d6f9cd2,ENT / Ophthalmology
+6d70ca7d,Orthopedic
+6d852ad5,Orthopedic
+6db27b1c,Radiology
+6dc606c5,Radiology
+6dd5d7c7,Urology / Nephrology
+6dd6d0c8,Orthopedic
+6e5e9e2c,Radiology
+6e631daf,Obstetrics / Gynecology / Pediatrics
+6e723255,Cardiovascular / Pulmonary
+6e90a26a,Urology / Nephrology
+6ed7995c,Gastroenterology
+6f101767,Orthopedic
+6f16db9d,General Medicine
+6f55955d,Cardiovascular / Pulmonary
+6f687fe1,Neurology
+6f92ab65,Obstetrics / Gynecology / Pediatrics
+6fb36643,Cardiovascular / Pulmonary
+6fe8ebc6,General Medicine
+6fea1928,General Medicine
+6fef2d2c,General Medicine
+6ff5d593,Cardiovascular / Pulmonary
+700d75cd,Neurology
+702ec8c7,Urology / Nephrology
+7043520d,Orthopedic
+707932c0,ENT / Ophthalmology
+707a6069,Cardiovascular / Pulmonary
+70b62eca,General Medicine
+70cb2db5,ENT / Ophthalmology
+70e6e675,Gastroenterology
+71038eec,General Medicine
+7138e9da,Radiology
+713bb58d,Orthopedic
+713ec9da,General Medicine
+71669476,Neurology
+7182a12b,General Medicine
+718d04db,Hematology - Oncology
+71b064d6,Cardiovascular / Pulmonary
+71ca6516,Orthopedic
+71dcae57,Cardiovascular / Pulmonary
+7243ae69,Urology / Nephrology
+724f242f,Gastroenterology
+72ac4672,Radiology
+72c06490,Neurology
+72c3d642,ENT / Ophthalmology
+72edbd8d,General Medicine
+72fa805c,ENT / Ophthalmology
+72fbadd1,ENT / Ophthalmology
+735d68db,ENT / Ophthalmology
+73c86dd5,General Medicine
+73d307d0,Orthopedic
+73e98bf0,ENT / Ophthalmology
+73eddbda,General Medicine
+73ff8425,Gastroenterology
+7403ac2e,Urology / Nephrology
+7408d6d5,Radiology
+740e99f3,Neurology
+740f4503,Psychiatry / Psychology
+74518145,Urology / Nephrology
+746dd40d,Gastroenterology
+74727c2a,Hematology - Oncology
+747a60c7,Orthopedic
+748e9b0e,Psychiatry / Psychology
+749d7706,Obstetrics / Gynecology / Pediatrics
+74aa0478,General Medicine
+74ae8d5f,Hematology - Oncology
+74b6fc45,General Medicine
+74ba367e,Cardiovascular / Pulmonary
+74fe863b,Gastroenterology
+75140def,Obstetrics / Gynecology / Pediatrics
+754dac1b,Orthopedic
+75578a49,General Medicine
+7564d7eb,Radiology
+758614f1,Obstetrics / Gynecology / Pediatrics
+75a2aeff,Cardiovascular / Pulmonary
+75a67e37,Gastroenterology
+75d61b29,Gastroenterology
+75d9d273,Cardiovascular / Pulmonary
+75dc0933,General Medicine
+75faa831,Cardiovascular / Pulmonary
+76205ec4,Cardiovascular / Pulmonary
+7643629e,ENT / Ophthalmology
+764d7733,Orthopedic
+7654bb06,Hematology - Oncology
+765590d2,Neurology
+766571d3,Orthopedic
+7669c493,Cardiovascular / Pulmonary
+769b884f,Neurology
+76b5f763,ENT / Ophthalmology
+76bf7eb9,Cardiovascular / Pulmonary
+76d63b1a,General Medicine
+76f2186a,Orthopedic
+7718ad87,Gastroenterology
+7764ef56,Cardiovascular / Pulmonary
+77799068,Gastroenterology
+77ba1ded,General Medicine
+77f2017b,General Medicine
+77f6ebc6,ENT / Ophthalmology
+7816e8d1,Neurology
+7827c9bd,Orthopedic
+782eb4a9,Cardiovascular / Pulmonary
+78353348,Cardiovascular / Pulmonary
+7873a904,Urology / Nephrology
+7881f16b,Urology / Nephrology
+78856226,Obstetrics / Gynecology / Pediatrics
+7886a7d9,Orthopedic
+78919509,Obstetrics / Gynecology / Pediatrics
+78b78dc1,Radiology
+78cde883,Cardiovascular / Pulmonary
+78d16bbf,Cardiovascular / Pulmonary
+78e9c8a3,Orthopedic
+78f675be,Psychiatry / Psychology
+78fee4c4,ENT / Ophthalmology
+7900e42e,Obstetrics / Gynecology / Pediatrics
+794fc25e,Cardiovascular / Pulmonary
+79a1c1c6,General Medicine
+79ba98d3,Cardiovascular / Pulmonary
+79be135b,General Medicine
+79c76c52,Gastroenterology
+7a5505b0,General Medicine
+7a68348b,Cardiovascular / Pulmonary
+7a73fc7e,Orthopedic
+7acac5e2,General Medicine
+7afb5f1e,Orthopedic
+7afbacb7,Radiology
+7b2570e6,Cardiovascular / Pulmonary
+7b2ba9d6,Urology / Nephrology
+7b2f8c79,Cardiovascular / Pulmonary
+7b5e93dc,Orthopedic
+7b619089,General Medicine
+7b6f4501,Neurology
+7bf7dff6,ENT / Ophthalmology
+7c58a1d8,Cardiovascular / Pulmonary
+7c6503c3,General Medicine
+7c696aa4,Orthopedic
+7c789349,Orthopedic
+7c9711cf,Urology / Nephrology
+7c987573,Psychiatry / Psychology
+7cb848f6,Cardiovascular / Pulmonary
+7cdc1541,Cardiovascular / Pulmonary
+7d16b22d,ENT / Ophthalmology
+7d3c2ac8,Gastroenterology
+7d484d19,Gastroenterology
+7d4cbfc8,Gastroenterology
+7d5c2e30,Urology / Nephrology
+7da4a8e9,Orthopedic
+7dc8c0e8,Gastroenterology
+7dd20c5c,Urology / Nephrology
+7de045a9,ENT / Ophthalmology
+7de8b076,Urology / Nephrology
+7e03fbab,Cardiovascular / Pulmonary
+7e20ecf7,General Medicine
+7e5ce513,Cardiovascular / Pulmonary
+7e7b3712,Cardiovascular / Pulmonary
+7ebe2b91,Cardiovascular / Pulmonary
+7f01c2da,General Medicine
+7f277c2e,ENT / Ophthalmology
+7f3cf5b8,Orthopedic
+7f5f63d5,Orthopedic
+7fb62d6d,Cardiovascular / Pulmonary
+7fbfbb96,ENT / Ophthalmology
+7fce96da,Urology / Nephrology
+7fd22a37,Orthopedic
+7fdd78b2,Cardiovascular / Pulmonary
+802ad1c0,Cardiovascular / Pulmonary
+802e2aa7,ENT / Ophthalmology
+8030c244,ENT / Ophthalmology
+8042e2db,Urology / Nephrology
+804d5c17,General Medicine
+8065fbc6,ENT / Ophthalmology
+8098e462,Radiology
+80f46fe5,Orthopedic
+810e0933,General Medicine
+8125f723,Cardiovascular / Pulmonary
+8150fb53,Radiology
+8152d728,Psychiatry / Psychology
+817805f4,Urology / Nephrology
+818d3290,Neurology
+819bebbf,Urology / Nephrology
+81a218da,Neurology
+81afb989,Cardiovascular / Pulmonary
+81b52a46,Gastroenterology
+81f36557,ENT / Ophthalmology
+81fa1f09,Cardiovascular / Pulmonary
+821b79d8,General Medicine
+822ae5da,Orthopedic
+822e9adc,Hematology - Oncology
+822fbdd1,Urology / Nephrology
+8236ddcc,Cardiovascular / Pulmonary
+823d1fb1,Urology / Nephrology
+825ca3b7,Hematology - Oncology
+829b40e4,Orthopedic
+829c57eb,Gastroenterology
+82abae73,Orthopedic
+82d97a07,Neurology
+830daf9a,Hematology - Oncology
+833056bf,Cardiovascular / Pulmonary
+83665a16,Gastroenterology
+838296ce,Cardiovascular / Pulmonary
+83930a68,Radiology
+83ae5ceb,Orthopedic
+83d7a355,General Medicine
+83da5aec,ENT / Ophthalmology
+83de26c3,General Medicine
+840895c8,Radiology
+84b74fba,Urology / Nephrology
+84b99fa2,General Medicine
+84e7a721,Obstetrics / Gynecology / Pediatrics
+84f0552c,Radiology
+85275399,Obstetrics / Gynecology / Pediatrics
+852a8fb5,Cardiovascular / Pulmonary
+85771014,Hematology - Oncology
+857b0257,Cardiovascular / Pulmonary
+857d75e2,General Medicine
+857e32fc,Urology / Nephrology
+859f6205,Orthopedic
+85d58373,Orthopedic
+85e737f3,Radiology
+8608ba8e,Obstetrics / Gynecology / Pediatrics
+8625e259,Cardiovascular / Pulmonary
+8647e42e,Radiology
+86717e6a,Orthopedic
+86e9d6ab,Gastroenterology
+87210187,Cardiovascular / Pulmonary
+873c2943,General Medicine
+8759ce84,Hematology - Oncology
+875dd55c,ENT / Ophthalmology
+8775c0c0,Cardiovascular / Pulmonary
+877df002,Gastroenterology
+878b7368,Urology / Nephrology
+8795c7fb,Urology / Nephrology
+87a0fe3c,Neurology
+87d6c652,Orthopedic
+8802fb67,Orthopedic
+882f94b9,Orthopedic
+88556ffd,Orthopedic
+885c8f0c,Neurology
+888adf7c,Hematology - Oncology
+888ae912,Obstetrics / Gynecology / Pediatrics
+8892c7a5,Orthopedic
+88ceeaf6,Gastroenterology
+88d787c6,Cardiovascular / Pulmonary
+88e11a17,Cardiovascular / Pulmonary
+892ea406,Cardiovascular / Pulmonary
+893cdc66,ENT / Ophthalmology
+8951054b,Cardiovascular / Pulmonary
+898a6eaf,General Medicine
+89cb2fee,Neurology
+8a1ac65c,Orthopedic
+8a415414,Gastroenterology
+8a4988da,ENT / Ophthalmology
+8a4b15fc,Gastroenterology
+8a6479b2,Cardiovascular / Pulmonary
+8a9526eb,Obstetrics / Gynecology / Pediatrics
+8aea12b7,Cardiovascular / Pulmonary
+8aef92e4,Obstetrics / Gynecology / Pediatrics
+8af897b6,Cardiovascular / Pulmonary
+8b381e85,Radiology
+8b399458,ENT / Ophthalmology
+8b58473c,Cardiovascular / Pulmonary
+8b9ff750,Obstetrics / Gynecology / Pediatrics
+8bab600e,ENT / Ophthalmology
+8bab7667,Urology / Nephrology
+8bdc0fcd,Gastroenterology
+8bef7596,ENT / Ophthalmology
+8bfdd1b9,Gastroenterology
+8c196a99,Hematology - Oncology
+8c21d8d2,Cardiovascular / Pulmonary
+8c38a271,Radiology
+8c47acae,General Medicine
+8c4ae65f,Orthopedic
+8c6b7126,Urology / Nephrology
+8c79d8a8,Urology / Nephrology
+8c8c3f2c,Gastroenterology
+8c983948,Gastroenterology
+8cb66050,Obstetrics / Gynecology / Pediatrics
+8cc6f1db,Orthopedic
+8d01052e,Neurology
+8d1fb9ce,Radiology
+8d3f1fb2,Neurology
+8d4844de,Gastroenterology
+8d56c46a,Orthopedic
+8d56d618,Neurology
+8db4c717,Gastroenterology
+8dd5a91f,Urology / Nephrology
+8de0116b,Gastroenterology
+8dec5f34,Obstetrics / Gynecology / Pediatrics
+8deea1b2,General Medicine
+8dfbea79,Cardiovascular / Pulmonary
+8e3a2b16,ENT / Ophthalmology
+8e79a054,Orthopedic
+8e886690,ENT / Ophthalmology
+8e97dcdb,Cardiovascular / Pulmonary
+8eaf7ab1,Radiology
+8ed6bc11,Gastroenterology
+8edf4a4f,Neurology
+8f4b7141,Gastroenterology
+8f79072f,Orthopedic
+8faae087,Gastroenterology
+8fb6f1fb,ENT / Ophthalmology
+8fc8b04c,ENT / Ophthalmology
+8fcefe0a,Cardiovascular / Pulmonary
+904a2ece,Orthopedic
+90623470,ENT / Ophthalmology
+90771a27,Cardiovascular / Pulmonary
+908a5f26,Cardiovascular / Pulmonary
+909b98fb,General Medicine
+90c40932,Orthopedic
+90d7402a,Gastroenterology
+91495fcf,Hematology - Oncology
+91671cfe,ENT / Ophthalmology
+916e0a72,Neurology
+917b1cd6,ENT / Ophthalmology
+91a648be,ENT / Ophthalmology
+91bc6d13,ENT / Ophthalmology
+91cf6356,Neurology
+91f1fe71,Cardiovascular / Pulmonary
+9203282a,Radiology
+920395b1,Neurology
+921c62e6,ENT / Ophthalmology
+9223aac9,ENT / Ophthalmology
+92430d50,Gastroenterology
+92858050,Neurology
+92b04fc4,Cardiovascular / Pulmonary
+92c921c2,Psychiatry / Psychology
+937a5780,Cardiovascular / Pulmonary
+93a60f92,ENT / Ophthalmology
+93cacc1a,General Medicine
+93d0db5b,Hematology - Oncology
+93dba784,General Medicine
+93e56aa7,Urology / Nephrology
+93f2b168,Orthopedic
+942142c9,Neurology
+942cf819,General Medicine
+942d8f25,Radiology
+944d7601,General Medicine
+946b4eeb,ENT / Ophthalmology
+947f0113,General Medicine
+94898d02,Neurology
+949dc9b7,ENT / Ophthalmology
+94e47776,Gastroenterology
+9522d027,Cardiovascular / Pulmonary
+952ef9ce,Obstetrics / Gynecology / Pediatrics
+953d7683,Orthopedic
+95775796,Neurology
+959ce5f5,Gastroenterology
+95bb08a9,ENT / Ophthalmology
+95c89177,General Medicine
+95cda641,Hematology - Oncology
+964b1b8c,Urology / Nephrology
+9663954f,Cardiovascular / Pulmonary
+96991d73,Cardiovascular / Pulmonary
+96c1cf3b,Orthopedic
+96e10e53,General Medicine
+96e5d2c9,ENT / Ophthalmology
+96fc2a29,Gastroenterology
+972a66e6,Orthopedic
+97a682fd,Orthopedic
+97a7c7ba,General Medicine
+97b51ec8,General Medicine
+97c0540f,General Medicine
+97c9fa1d,Cardiovascular / Pulmonary
+97dd0484,Urology / Nephrology
+9809fac0,General Medicine
+98378292,Orthopedic
+98e7188e,Neurology
+98e7ad0a,Orthopedic
+98fee01a,General Medicine
+990496cb,Orthopedic
+990a5bb0,Cardiovascular / Pulmonary
+990f6724,ENT / Ophthalmology
+992f3b39,General Medicine
+9946c457,Orthopedic
+9958c721,General Medicine
+996a64f3,Cardiovascular / Pulmonary
+9982ab72,Orthopedic
+9988ea48,Gastroenterology
+99b82d29,Orthopedic
+99bbfd45,General Medicine
+99ea3545,Gastroenterology
+9a378c38,Orthopedic
+9a50efe1,Urology / Nephrology
+9a608a63,Obstetrics / Gynecology / Pediatrics
+9a771e6c,Orthopedic
+9a827aeb,Psychiatry / Psychology
+9a9f90b9,Gastroenterology
+9aab72dd,Cardiovascular / Pulmonary
+9adb9ec0,Obstetrics / Gynecology / Pediatrics
+9adf3fd3,Urology / Nephrology
+9ae56828,Gastroenterology
+9af1d632,Radiology
+9b1c4ec9,General Medicine
+9b48b52e,Gastroenterology
+9b6583f0,Urology / Nephrology
+9b79de0e,Orthopedic
+9b7d0e6b,Orthopedic
+9b8e924a,Neurology
+9ba9df9f,General Medicine
+9babe8be,Orthopedic
+9bb7a913,General Medicine
+9bb7f375,Radiology
+9bbd69a0,Obstetrics / Gynecology / Pediatrics
+9bdeda70,Urology / Nephrology
+9c43f6dc,Cardiovascular / Pulmonary
+9c483f7a,Cardiovascular / Pulmonary
+9c52ca86,Orthopedic
+9c639c8c,ENT / Ophthalmology
+9c8ea177,Neurology
+9cc8022a,ENT / Ophthalmology
+9cf5e9ef,General Medicine
+9d3fd640,Urology / Nephrology
+9d619099,ENT / Ophthalmology
+9d689af8,Cardiovascular / Pulmonary
+9ddf63bc,Urology / Nephrology
+9df422f4,Obstetrics / Gynecology / Pediatrics
+9e389672,General Medicine
+9e5d2c6a,Radiology
+9e766ba5,Urology / Nephrology
+9e7afbaa,Radiology
+9e8fbc13,ENT / Ophthalmology
+9e9b433c,Gastroenterology
+9ecf4eca,General Medicine
+9ee1a038,Cardiovascular / Pulmonary
+9ef02e6b,Hematology - Oncology
+9ef61fbf,Neurology
+9ef8e982,Gastroenterology
+9f27b73e,Gastroenterology
+9f372bb1,General Medicine
+9f7e2cfe,Cardiovascular / Pulmonary
+9f9153fc,ENT / Ophthalmology
+9fac1adc,Cardiovascular / Pulmonary
+9ffb6dbd,Obstetrics / Gynecology / Pediatrics
+a00f092c,Cardiovascular / Pulmonary
+a049e48a,Orthopedic
+a05c25b3,Orthopedic
+a06ba930,Orthopedic
+a0844cb5,Psychiatry / Psychology
+a08edfcd,Obstetrics / Gynecology / Pediatrics
+a0b431c5,Urology / Nephrology
+a0b6d6a5,Neurology
+a0ccb932,Orthopedic
+a0e7c19e,Gastroenterology
+a0ef11ae,Urology / Nephrology
+a1280259,ENT / Ophthalmology
+a14ea104,Cardiovascular / Pulmonary
+a15c632c,General Medicine
+a1654213,General Medicine
+a165e404,Cardiovascular / Pulmonary
+a192ea1c,Cardiovascular / Pulmonary
+a1bb8ff6,Orthopedic
+a1e15ce8,Urology / Nephrology
+a1e58ac1,General Medicine
+a1e7d805,Orthopedic
+a1f216e0,Cardiovascular / Pulmonary
+a241a3d8,Cardiovascular / Pulmonary
+a2434273,Orthopedic
+a24a9154,Gastroenterology
+a25203ac,General Medicine
+a2cbc0c6,Orthopedic
+a2f2f47d,Orthopedic
+a2fa8aec,Orthopedic
+a33061ee,Gastroenterology
+a3553a5a,Orthopedic
+a3728ce2,Orthopedic
+a391f039,ENT / Ophthalmology
+a39aeaa9,Urology / Nephrology
+a3b652fd,General Medicine
+a3bb589c,Obstetrics / Gynecology / Pediatrics
+a3c77d32,ENT / Ophthalmology
+a3dfcf68,ENT / Ophthalmology
+a4044de7,Orthopedic
+a4136df8,Gastroenterology
+a420d18f,ENT / Ophthalmology
+a423943e,Neurology
+a43850de,Neurology
+a452a6e4,Cardiovascular / Pulmonary
+a473cc87,Neurology
+a489b225,ENT / Ophthalmology
+a4930982,Hematology - Oncology
+a4b008c5,ENT / Ophthalmology
+a4b546fa,Cardiovascular / Pulmonary
+a4caaa3d,Cardiovascular / Pulmonary
+a4d04c59,Cardiovascular / Pulmonary
+a4d264be,Neurology
+a4da6b06,Cardiovascular / Pulmonary
+a50228a9,Neurology
+a502e20a,ENT / Ophthalmology
+a50cdce5,General Medicine
+a50f6fdf,Urology / Nephrology
+a54cbb15,ENT / Ophthalmology
+a57d6c9f,ENT / Ophthalmology
+a594c6c9,General Medicine
+a5bd146c,Urology / Nephrology
+a5d2a3f2,Orthopedic
+a5d2e293,Cardiovascular / Pulmonary
+a612d03d,Psychiatry / Psychology
+a62d7330,Cardiovascular / Pulmonary
+a645a6a2,Psychiatry / Psychology
+a65811da,Orthopedic
+a65b811b,Cardiovascular / Pulmonary
+a67af631,Neurology
+a67c63a6,Neurology
+a67e2af8,General Medicine
+a6844c01,Urology / Nephrology
+a687afa4,Urology / Nephrology
+a698c845,Urology / Nephrology
+a70777ae,General Medicine
+a7190dc8,Neurology
+a71ed1a4,Orthopedic
+a730db35,Cardiovascular / Pulmonary
+a737c705,Cardiovascular / Pulmonary
+a76158a3,Orthopedic
+a7b52434,General Medicine
+a7ccb0e1,Psychiatry / Psychology
+a7ce35b4,Orthopedic
+a7d1a5df,Urology / Nephrology
+a8013525,ENT / Ophthalmology
+a8134059,Neurology
+a86cbe19,Orthopedic
+a8a8b40e,Gastroenterology
+a8da1eb8,Neurology
+a8e40a3d,Orthopedic
+a8e6a72b,Radiology
+a8e78399,Orthopedic
+a90e1bca,Orthopedic
+a945ef3e,Neurology
+a95798eb,Orthopedic
+a95a0272,Obstetrics / Gynecology / Pediatrics
+a9bd0961,Gastroenterology
+a9bde3e9,General Medicine
+a9bf2a24,Cardiovascular / Pulmonary
+a9c86eb5,Urology / Nephrology
+a9eef2f9,Urology / Nephrology
+a9fea4a7,Radiology
+aa035eb9,Orthopedic
+aa1086b6,Radiology
+aa1f443f,Psychiatry / Psychology
+aa36407d,Orthopedic
+aa63ba8d,Obstetrics / Gynecology / Pediatrics
+aa76651f,ENT / Ophthalmology
+aa9ace5a,Neurology
+aaba2362,Cardiovascular / Pulmonary
+aacc4812,Orthopedic
+aaf5bd49,Neurology
+ab0d106b,ENT / Ophthalmology
+ab29fb96,Psychiatry / Psychology
+ab404920,General Medicine
+ab64452f,Gastroenterology
+ab84bdff,Obstetrics / Gynecology / Pediatrics
+abbb5ab6,General Medicine
+abc86d66,General Medicine
+abcdb7a0,Gastroenterology
+ac0fb796,ENT / Ophthalmology
+ac1ee305,Neurology
+ac371234,General Medicine
+ac550f61,Hematology - Oncology
+ac5e6d9a,Hematology - Oncology
+ac88cb8e,ENT / Ophthalmology
+acc20539,Radiology
+acd59229,Urology / Nephrology
+ad1f8eed,Neurology
+ad564c39,Gastroenterology
+ad915589,Neurology
+ad9311a3,Orthopedic
+adcffdd0,Cardiovascular / Pulmonary
+ade69768,Cardiovascular / Pulmonary
+adf89c73,Cardiovascular / Pulmonary
+ae0330d4,Orthopedic
+ae05a608,Orthopedic
+ae0f83f4,Cardiovascular / Pulmonary
+ae529e6d,ENT / Ophthalmology
+aeaf6153,General Medicine
+aec154c7,Gastroenterology
+aed2bbba,Gastroenterology
+af03f0c1,General Medicine
+af0bb732,Cardiovascular / Pulmonary
+af1a4ece,Urology / Nephrology
+af2bbf9a,Neurology
+af2befa7,General Medicine
+af2d7505,ENT / Ophthalmology
+af3809fd,Gastroenterology
+af5c33b4,Orthopedic
+afa3b15d,Orthopedic
+afaa8ae3,Neurology
+afe33590,Cardiovascular / Pulmonary
+b0006bdc,Orthopedic
+b00705b8,Cardiovascular / Pulmonary
+b0378e9f,Hematology - Oncology
+b05931e0,Obstetrics / Gynecology / Pediatrics
+b08c12e3,Neurology
+b0ccb25e,General Medicine
+b0cddf9d,Psychiatry / Psychology
+b15b81fe,Orthopedic
+b1a841bd,Neurology
+b1c7d3c5,ENT / Ophthalmology
+b22d807d,Radiology
+b230513c,Neurology
+b26085cf,Neurology
+b27e6e20,Neurology
+b2a2edcb,General Medicine
+b2a35287,Hematology - Oncology
+b2be58b8,Orthopedic
+b2c01b82,Obstetrics / Gynecology / Pediatrics
+b2e7a121,Cardiovascular / Pulmonary
+b2ec25dd,Obstetrics / Gynecology / Pediatrics
+b316bb43,Urology / Nephrology
+b321ae2f,Gastroenterology
+b340f052,Gastroenterology
+b34b2973,Cardiovascular / Pulmonary
+b35614aa,General Medicine
+b39ac596,Urology / Nephrology
+b3a3ca1e,General Medicine
+b3c6afcf,Neurology
+b3fb5e90,Obstetrics / Gynecology / Pediatrics
+b4156845,Obstetrics / Gynecology / Pediatrics
+b41f2883,Cardiovascular / Pulmonary
+b447cf9c,ENT / Ophthalmology
+b454bac5,ENT / Ophthalmology
+b458ef6f,Obstetrics / Gynecology / Pediatrics
+b4676f0e,General Medicine
+b47fb67c,Gastroenterology
+b486c077,Urology / Nephrology
+b48934a8,Neurology
+b48d55bb,Cardiovascular / Pulmonary
+b48eae3a,ENT / Ophthalmology
+b4b39e4f,Psychiatry / Psychology
+b4dd3246,Orthopedic
+b4efa9a4,Orthopedic
+b5013087,General Medicine
+b5039779,Urology / Nephrology
+b50f98ba,Obstetrics / Gynecology / Pediatrics
+b5458b67,Orthopedic
+b5468c6d,Cardiovascular / Pulmonary
+b54f960c,Neurology
+b5582000,Orthopedic
+b581de69,ENT / Ophthalmology
+b5e0bb13,Neurology
+b60927a5,ENT / Ophthalmology
+b6158e61,Obstetrics / Gynecology / Pediatrics
+b68b208a,Orthopedic
+b6c979ed,ENT / Ophthalmology
+b6cb0686,ENT / Ophthalmology
+b6e6312a,Cardiovascular / Pulmonary
+b6eef8be,Cardiovascular / Pulmonary
+b6ef1cbc,Cardiovascular / Pulmonary
+b70be925,Cardiovascular / Pulmonary
+b74053c5,Neurology
+b767c243,Orthopedic
+b77052c9,Cardiovascular / Pulmonary
+b781bbd4,Obstetrics / Gynecology / Pediatrics
+b78f2699,Orthopedic
+b7a6ae42,Cardiovascular / Pulmonary
+b7c81fdf,General Medicine
+b7de41e7,Urology / Nephrology
+b7f65478,Urology / Nephrology
+b7fb5977,General Medicine
+b81b9232,Neurology
+b84458f8,Psychiatry / Psychology
+b861a5e1,General Medicine
+b8899c2d,Cardiovascular / Pulmonary
+b8a59209,Neurology
+b8b860ba,Cardiovascular / Pulmonary
+b8ca1fc8,ENT / Ophthalmology
+b8deb817,Cardiovascular / Pulmonary
+b8dff455,Gastroenterology
+b8fdc5b3,Gastroenterology
+b91386dd,General Medicine
+b93a20d2,Gastroenterology
+b9abb00a,General Medicine
+b9bcd97f,Orthopedic
+b9e77257,Neurology
+b9fca2f9,Obstetrics / Gynecology / Pediatrics
+ba0abcf5,Gastroenterology
+ba1b792c,Urology / Nephrology
+ba224aef,General Medicine
+ba29b4f1,Gastroenterology
+ba38a223,Cardiovascular / Pulmonary
+ba414dee,Obstetrics / Gynecology / Pediatrics
+ba725782,ENT / Ophthalmology
+baa55741,Psychiatry / Psychology
+bb04c698,Obstetrics / Gynecology / Pediatrics
+bb1136e8,Obstetrics / Gynecology / Pediatrics
+bb11fd73,Obstetrics / Gynecology / Pediatrics
+bb1db059,Orthopedic
+bb2b69a1,Orthopedic
+bb3baeb6,ENT / Ophthalmology
+bb44a805,Orthopedic
+bb513d0e,General Medicine
+bb5ce5f5,Orthopedic
+bb62c3f8,Radiology
+bb73bda8,Urology / Nephrology
+bb945505,Gastroenterology
+bbc8e05e,Obstetrics / Gynecology / Pediatrics
+bc1587f0,Obstetrics / Gynecology / Pediatrics
+bc54a14c,Psychiatry / Psychology
+bc71360a,ENT / Ophthalmology
+bca7dc49,Obstetrics / Gynecology / Pediatrics
+bcab23db,Orthopedic
+bcc35db5,Obstetrics / Gynecology / Pediatrics
+bcd87da0,Orthopedic
+bcfb6ce9,Orthopedic
+bd1b542c,Gastroenterology
+bd3285f0,Hematology - Oncology
+bd4b0ac3,Cardiovascular / Pulmonary
+bd72b097,Cardiovascular / Pulmonary
+bd74fc60,ENT / Ophthalmology
+bd79bd16,Orthopedic
+bd8011cc,Radiology
+bd860cca,ENT / Ophthalmology
+bd87905d,Cardiovascular / Pulmonary
+bda50a99,General Medicine
+bdb41cbe,ENT / Ophthalmology
+bdda6d18,Obstetrics / Gynecology / Pediatrics
+be0e340d,Obstetrics / Gynecology / Pediatrics
+be2daa98,Cardiovascular / Pulmonary
+be41fba4,Cardiovascular / Pulmonary
+be69d744,Orthopedic
+bea5f140,Psychiatry / Psychology
+bebe7d4e,Gastroenterology
+bec07f1e,Cardiovascular / Pulmonary
+bf162214,Radiology
+bf19c9c8,Hematology - Oncology
+bf1d7ea2,Orthopedic
+bfb50eb4,Orthopedic
+bfc86b57,Urology / Nephrology
+bff47b99,Cardiovascular / Pulmonary
+c003766a,Hematology - Oncology
+c00c5aa4,Cardiovascular / Pulmonary
+c018dff3,Cardiovascular / Pulmonary
+c061395c,Cardiovascular / Pulmonary
+c06bc4bf,ENT / Ophthalmology
+c078ec76,Neurology
+c086764b,Urology / Nephrology
+c0cdf1c6,Obstetrics / Gynecology / Pediatrics
+c0da5e1f,Hematology - Oncology
+c0e5d0c3,Psychiatry / Psychology
+c0ed17e8,Radiology
+c0f85d63,ENT / Ophthalmology
+c0fa60d4,Obstetrics / Gynecology / Pediatrics
+c0fb78e3,Urology / Nephrology
+c10102fb,Orthopedic
+c151055e,Cardiovascular / Pulmonary
+c1514cd7,Cardiovascular / Pulmonary
+c1975273,General Medicine
+c1b55734,Radiology
+c1f743f3,Cardiovascular / Pulmonary
+c1fd9f63,ENT / Ophthalmology
+c2021868,Radiology
+c238febe,Urology / Nephrology
+c24e9e1d,Cardiovascular / Pulmonary
+c250c41b,Neurology
+c282fc84,General Medicine
+c2a4174d,Orthopedic
+c2b99703,ENT / Ophthalmology
+c331f7bc,Cardiovascular / Pulmonary
+c3394107,Radiology
+c339c993,Urology / Nephrology
+c3558470,Gastroenterology
+c35b2347,Obstetrics / Gynecology / Pediatrics
+c367fed2,Neurology
+c373722c,Cardiovascular / Pulmonary
+c3787e26,Orthopedic
+c384359e,Orthopedic
+c385d4e6,Psychiatry / Psychology
+c38c4e68,Cardiovascular / Pulmonary
+c3bf2cf8,Cardiovascular / Pulmonary
+c3ed68dd,Cardiovascular / Pulmonary
+c3f0e5ab,Urology / Nephrology
+c41b7b44,General Medicine
+c4307170,Radiology
+c438dd47,Gastroenterology
+c48bd1e0,Psychiatry / Psychology
+c499ee41,Cardiovascular / Pulmonary
+c50fe3bc,Urology / Nephrology
+c51d0c97,Radiology
+c5296230,Orthopedic
+c52ae766,Psychiatry / Psychology
+c5300aac,General Medicine
+c53af84d,General Medicine
+c56caf49,ENT / Ophthalmology
+c595d77c,Cardiovascular / Pulmonary
+c5d2fe7b,Cardiovascular / Pulmonary
+c6121973,Neurology
+c62bbb06,Orthopedic
+c63cd6f6,Orthopedic
+c670540e,Cardiovascular / Pulmonary
+c69f66c0,Gastroenterology
+c6dac2ad,Orthopedic
+c72fb809,Gastroenterology
+c7361b6b,ENT / Ophthalmology
+c7388252,Neurology
+c753b813,Orthopedic
+c79812c7,Gastroenterology
+c79cf3d4,ENT / Ophthalmology
+c7bfda52,Orthopedic
+c7c9c788,Orthopedic
+c7d49c83,ENT / Ophthalmology
+c7e20a3c,Urology / Nephrology
+c7f784a7,Neurology
+c7fce772,Radiology
+c8005281,Neurology
+c82278fe,Neurology
+c8405183,Cardiovascular / Pulmonary
+c85f3c14,ENT / Ophthalmology
+c86cb894,Hematology - Oncology
+c874bafb,Cardiovascular / Pulmonary
+c87b1697,Urology / Nephrology
+c884b761,Urology / Nephrology
+c8a79132,Radiology
+c8e2ec1e,Urology / Nephrology
+c932a3c7,Orthopedic
+c93e1b38,Neurology
+c97f3105,Cardiovascular / Pulmonary
+c9bdb4e2,ENT / Ophthalmology
+c9be9cb9,Urology / Nephrology
+c9f45f3a,Gastroenterology
+c9fb57aa,Orthopedic
+ca11f387,Orthopedic
+ca133350,Neurology
+ca4e5300,Orthopedic
+ca537eae,General Medicine
+ca680d43,Orthopedic
+ca88b0f5,Gastroenterology
+ca8c9a11,Cardiovascular / Pulmonary
+cab129b6,Cardiovascular / Pulmonary
+cac63f89,Neurology
+cb034cb2,Hematology - Oncology
+cb0a7255,Obstetrics / Gynecology / Pediatrics
+cb17b96a,ENT / Ophthalmology
+cb5d8610,Hematology - Oncology
+cb628e6d,ENT / Ophthalmology
+cb6c3bad,Urology / Nephrology
+cbc14d9d,Cardiovascular / Pulmonary
+cbd02d07,Orthopedic
+cbd4a59d,Urology / Nephrology
+cc185ef6,Orthopedic
+cc4bca2d,Hematology - Oncology
+cc4d959b,Cardiovascular / Pulmonary
+cc5c99b0,Urology / Nephrology
+cc8adc7b,General Medicine
+ccc127ad,Orthopedic
+cd0da0e6,Urology / Nephrology
+cd40f13d,Neurology
+cd66af44,Obstetrics / Gynecology / Pediatrics
+cd72dcaf,General Medicine
+cd7e3851,ENT / Ophthalmology
+cd83171e,Radiology
+cda46b2f,Gastroenterology
+cdd80e33,Urology / Nephrology
+cde2e7a7,Orthopedic
+ce2f5be5,General Medicine
+ce630ab5,Gastroenterology
+ce692f2b,ENT / Ophthalmology
+ce92bbfd,Urology / Nephrology
+cec61b2c,General Medicine
+cecd58cd,Urology / Nephrology
+ced0f2dd,Gastroenterology
+cef02b66,Obstetrics / Gynecology / Pediatrics
+cfb65cdf,Obstetrics / Gynecology / Pediatrics
+cfc981b0,Gastroenterology
+d099029f,Gastroenterology
+d0e7fbe5,Neurology
+d0e7fd40,General Medicine
+d0f9c93c,Cardiovascular / Pulmonary
+d0fbc19e,Hematology - Oncology
+d1037913,General Medicine
+d1257282,Cardiovascular / Pulmonary
+d14a33be,Urology / Nephrology
+d170a676,Cardiovascular / Pulmonary
+d1a7ec87,Cardiovascular / Pulmonary
+d1c191c5,ENT / Ophthalmology
+d1c7fe29,Cardiovascular / Pulmonary
+d1d5161e,Orthopedic
+d1e999c1,Orthopedic
+d2044cd6,Urology / Nephrology
+d220bfde,Gastroenterology
+d245422f,General Medicine
+d27e6cd5,Urology / Nephrology
+d2a3e691,ENT / Ophthalmology
+d2af97fd,ENT / Ophthalmology
+d2b79904,Hematology - Oncology
+d2baeeb8,Cardiovascular / Pulmonary
+d2ea9e46,Neurology
+d301ed2e,Neurology
+d3101c9e,Obstetrics / Gynecology / Pediatrics
+d36b3a47,Cardiovascular / Pulmonary
+d37b2015,ENT / Ophthalmology
+d38997c5,Cardiovascular / Pulmonary
+d3d8f8d1,General Medicine
+d3e78c57,Psychiatry / Psychology
+d3f8002c,General Medicine
+d4141561,Cardiovascular / Pulmonary
+d453a36b,General Medicine
+d4897e70,Orthopedic
+d49a7e29,Orthopedic
+d4bc0528,Hematology - Oncology
+d4bcd156,General Medicine
+d4d97011,ENT / Ophthalmology
+d4fb25ed,Radiology
+d5075aee,ENT / Ophthalmology
+d5183958,General Medicine
+d5242b2e,Neurology
+d52576d1,Neurology
+d525d574,ENT / Ophthalmology
+d5457655,Gastroenterology
+d5649f26,ENT / Ophthalmology
+d564ca16,ENT / Ophthalmology
+d5a3ffd2,Obstetrics / Gynecology / Pediatrics
+d5c3a89c,Neurology
+d5eaa81f,Orthopedic
+d5f75119,Obstetrics / Gynecology / Pediatrics
+d6064658,ENT / Ophthalmology
+d60fe1cb,Obstetrics / Gynecology / Pediatrics
+d62d494f,Neurology
+d64820a7,Neurology
+d65706b0,Urology / Nephrology
+d67983d3,Orthopedic
+d6a21768,Orthopedic
+d7020944,ENT / Ophthalmology
+d7208f25,ENT / Ophthalmology
+d73c6ec9,Urology / Nephrology
+d78cc90e,Orthopedic
+d7c2593d,Urology / Nephrology
+d83682b5,ENT / Ophthalmology
+d85b2806,Urology / Nephrology
+d883b5c2,Hematology - Oncology
+d8904b69,Cardiovascular / Pulmonary
+d8ee9c65,Cardiovascular / Pulmonary
+d8fbf5bb,Gastroenterology
+d93d5a8c,Hematology - Oncology
+d94b1c54,Radiology
+d96de28e,Hematology - Oncology
+d9a1fd6c,ENT / Ophthalmology
+d9d5e9aa,Obstetrics / Gynecology / Pediatrics
+d9daa520,General Medicine
+d9e0f9c3,Neurology
+da232ebf,Orthopedic
+da4f0fdc,Neurology
+da75f864,Obstetrics / Gynecology / Pediatrics
+da9afa55,Obstetrics / Gynecology / Pediatrics
+daab58e8,Hematology - Oncology
+dab18753,Gastroenterology
+dad2fd99,Gastroenterology
+daed3d0c,ENT / Ophthalmology
+daf294f1,Hematology - Oncology
+db0a5155,Gastroenterology
+db1a34c4,General Medicine
+db3538c4,Orthopedic
+db970280,General Medicine
+db99db9d,Urology / Nephrology
+dba3debe,Cardiovascular / Pulmonary
+dbb1d972,Obstetrics / Gynecology / Pediatrics
+dc16a073,Urology / Nephrology
+dc3de0a4,General Medicine
+dc7d844a,Orthopedic
+dcbcffa2,Gastroenterology
+dce64153,General Medicine
+dd07984a,Radiology
+dd0dddaf,Neurology
+dd20c87c,Obstetrics / Gynecology / Pediatrics
+dd282d8e,Gastroenterology
+dd39cfdc,Cardiovascular / Pulmonary
+dd6d2b8e,ENT / Ophthalmology
+dd7229b8,Obstetrics / Gynecology / Pediatrics
+dd75fd65,ENT / Ophthalmology
+dd83c0a8,Hematology - Oncology
+dd8b31f8,Orthopedic
+dd8ddf56,Cardiovascular / Pulmonary
+dda14b6c,Gastroenterology
+ddb457cf,Cardiovascular / Pulmonary
+ddb78540,Obstetrics / Gynecology / Pediatrics
+ddc33ac8,Hematology - Oncology
+de0ef75a,Orthopedic
+dea77b3a,Neurology
+df0c6ac0,Orthopedic
+df1ba8d1,Hematology - Oncology
+df250ccd,Orthopedic
+df315fec,Orthopedic
+df74e53c,Obstetrics / Gynecology / Pediatrics
+df999bfb,Neurology
+dfa0e945,Radiology
+dfce045b,Orthopedic
+dff122d2,Orthopedic
+e0012e38,Psychiatry / Psychology
+e01e482f,Orthopedic
+e026c396,General Medicine
+e0297122,Obstetrics / Gynecology / Pediatrics
+e033be20,Orthopedic
+e05a39b0,Radiology
+e0907d30,Cardiovascular / Pulmonary
+e0c59577,Radiology
+e0db6fd1,Obstetrics / Gynecology / Pediatrics
+e1015dca,Orthopedic
+e1059b3b,Cardiovascular / Pulmonary
+e1549ff6,General Medicine
+e156823b,Gastroenterology
+e1721d70,Obstetrics / Gynecology / Pediatrics
+e1788347,Cardiovascular / Pulmonary
+e1c1dc2b,Urology / Nephrology
+e1ebba97,Neurology
+e21186e3,Neurology
+e221f3fa,Obstetrics / Gynecology / Pediatrics
+e232bbb1,Gastroenterology
+e2395ae8,Gastroenterology
+e24360e6,General Medicine
+e25a9037,ENT / Ophthalmology
+e25bacb3,Cardiovascular / Pulmonary
+e25e6587,Obstetrics / Gynecology / Pediatrics
+e2720b14,Orthopedic
+e27a898d,General Medicine
+e2ad5101,Cardiovascular / Pulmonary
+e2ee9dd2,Urology / Nephrology
+e342e318,Hematology - Oncology
+e36bab12,Radiology
+e36e5410,Orthopedic
+e3722513,Cardiovascular / Pulmonary
+e3726978,Obstetrics / Gynecology / Pediatrics
+e39f9022,Cardiovascular / Pulmonary
+e3b41e23,Radiology
+e3b50811,Gastroenterology
+e3b62b4c,Obstetrics / Gynecology / Pediatrics
+e3c17c8a,Cardiovascular / Pulmonary
+e41c3d13,Psychiatry / Psychology
+e41f7a2f,General Medicine
+e42a1873,Neurology
+e44d3dfb,Radiology
+e44ec213,Urology / Nephrology
+e453a5d6,Cardiovascular / Pulmonary
+e490e501,General Medicine
+e4bb55e8,Neurology
+e4c62e0b,Orthopedic
+e4eafb98,Orthopedic
+e4f53ad9,ENT / Ophthalmology
+e4fcc828,Neurology
+e502d346,Orthopedic
+e53a777c,Orthopedic
+e557837e,ENT / Ophthalmology
+e560d45c,Psychiatry / Psychology
+e56226d9,Obstetrics / Gynecology / Pediatrics
+e586a7db,General Medicine
+e5a96fdd,Psychiatry / Psychology
+e5eedfe4,Gastroenterology
+e63f0404,General Medicine
+e65f7739,Obstetrics / Gynecology / Pediatrics
+e666733e,Neurology
+e692aeca,ENT / Ophthalmology
+e69331df,Gastroenterology
+e6b23afd,Orthopedic
+e6e21e21,Cardiovascular / Pulmonary
+e741cfc4,Urology / Nephrology
+e7d75329,Orthopedic
+e7d7d3ea,Obstetrics / Gynecology / Pediatrics
+e8094189,General Medicine
+e80bbcc7,ENT / Ophthalmology
+e813945c,Psychiatry / Psychology
+e8158bdd,Radiology
+e8688c0e,Neurology
+e88d3fe3,General Medicine
+e8a1ce91,Cardiovascular / Pulmonary
+e8db1c5b,Hematology - Oncology
+e8fbbea7,Psychiatry / Psychology
+e9101a7a,ENT / Ophthalmology
+e916d841,Cardiovascular / Pulmonary
+e926bdb3,Cardiovascular / Pulmonary
+e93fe8aa,Orthopedic
+e977dd6e,Hematology - Oncology
+e97bc31d,ENT / Ophthalmology
+e984ddcb,Cardiovascular / Pulmonary
+e9bae301,Hematology - Oncology
+e9c852f7,General Medicine
+ea09a52f,Obstetrics / Gynecology / Pediatrics
+ea146b5f,Gastroenterology
+ea1845a9,Cardiovascular / Pulmonary
+ea1bee9d,Orthopedic
+ea2ca749,Neurology
+eaa618ff,Psychiatry / Psychology
+eadd97ab,Urology / Nephrology
+eaf42acd,General Medicine
+eb1c754f,Urology / Nephrology
+eb2e65d4,Orthopedic
+eb600489,Orthopedic
+eb6a8cd7,Radiology
+eba56e45,General Medicine
+ebebac5f,Orthopedic
+ebf0bad7,Urology / Nephrology
+ebf9e20c,Orthopedic
+ec3d1105,General Medicine
+ec776a6b,Obstetrics / Gynecology / Pediatrics
+ecc916d0,Orthopedic
+ecec3bc3,Orthopedic
+ecf15bb4,Neurology
+ecfeface,Obstetrics / Gynecology / Pediatrics
+ed32e9c3,Gastroenterology
+ed5ce619,General Medicine
+ed600507,Psychiatry / Psychology
+ed835ab5,Neurology
+ed93cfd8,General Medicine
+edb24987,Orthopedic
+edbf9a76,Urology / Nephrology
+eddd0818,Cardiovascular / Pulmonary
+ee07a6a4,Radiology
+ee343dfb,Gastroenterology
+ee4ff892,Cardiovascular / Pulmonary
+ee61fec4,Obstetrics / Gynecology / Pediatrics
+ee7283de,Radiology
+ee8f67bc,Obstetrics / Gynecology / Pediatrics
+ee962092,Urology / Nephrology
+ee9d1c18,Orthopedic
+eec11f1b,Neurology
+eecfbf22,Cardiovascular / Pulmonary
+ef04dec8,Cardiovascular / Pulmonary
+ef287fe3,Obstetrics / Gynecology / Pediatrics
+ef2919eb,General Medicine
+ef35c0fa,Cardiovascular / Pulmonary
+ef4d7490,Orthopedic
+efb7ef16,Orthopedic
+efcea10d,Orthopedic
+efceb518,Neurology
+efeb160a,Cardiovascular / Pulmonary
+f057d2c0,Psychiatry / Psychology
+f0863346,General Medicine
+f09552ce,Gastroenterology
+f0cb3c40,Neurology
+f0fc9c01,Neurology
+f11986bf,Cardiovascular / Pulmonary
+f141b5b4,Obstetrics / Gynecology / Pediatrics
+f15abc09,Urology / Nephrology
+f1899d93,Cardiovascular / Pulmonary
+f18f12b9,Radiology
+f190658e,Cardiovascular / Pulmonary
+f1b380f7,ENT / Ophthalmology
+f1e6e86d,ENT / Ophthalmology
+f1eac71d,General Medicine
+f2251106,General Medicine
+f244c367,Cardiovascular / Pulmonary
+f2579ff5,Cardiovascular / Pulmonary
+f2857907,Orthopedic
+f2a777ea,Cardiovascular / Pulmonary
+f2c203b2,Radiology
+f2c5a772,General Medicine
+f2e25e3a,General Medicine
+f2eac18f,Orthopedic
+f2ed4bae,Orthopedic
+f3095f80,Neurology
+f340a593,General Medicine
+f34a644b,Cardiovascular / Pulmonary
+f3a08c6d,Cardiovascular / Pulmonary
+f3a152b0,Urology / Nephrology
+f3db56a0,Cardiovascular / Pulmonary
+f3ea3d75,Urology / Nephrology
+f422fb46,ENT / Ophthalmology
+f4ab7c33,General Medicine
+f4b1cf9b,Radiology
+f4b41dda,Cardiovascular / Pulmonary
+f4b9bfe5,Gastroenterology
+f4cc7c60,ENT / Ophthalmology
+f4dbf352,Neurology
+f4ef9001,General Medicine
+f50160e6,ENT / Ophthalmology
+f523c621,General Medicine
+f586d43d,Urology / Nephrology
+f5ac8814,Cardiovascular / Pulmonary
+f5b29ddf,Gastroenterology
+f5e31f51,Gastroenterology
+f5f189b4,Cardiovascular / Pulmonary
+f6048c3d,Cardiovascular / Pulmonary
+f642f10f,Orthopedic
+f66a2ee2,Urology / Nephrology
+f686d951,Gastroenterology
+f6950bb9,Hematology - Oncology
+f69ad223,Hematology - Oncology
+f6a3ef87,Orthopedic
+f6aeb701,General Medicine
+f6b0cc08,Urology / Nephrology
+f6d0b88f,General Medicine
+f6d3334d,Cardiovascular / Pulmonary
+f6d7518d,General Medicine
+f702d960,Radiology
+f721964e,Orthopedic
+f737be9a,General Medicine
+f741f78a,General Medicine
+f76de605,Neurology
+f7928e01,Neurology
+f7d2f63c,Orthopedic
+f83cc758,Gastroenterology
+f8461e1c,Orthopedic
+f8abae88,General Medicine
+f8d3a4f1,Urology / Nephrology
+f8eb2a35,ENT / Ophthalmology
+f91c1cf8,Cardiovascular / Pulmonary
+f963c272,Gastroenterology
+f97204b4,General Medicine
+f98eeae5,Urology / Nephrology
+f99db98e,Cardiovascular / Pulmonary
+f9be66ab,General Medicine
+f9d71050,Cardiovascular / Pulmonary
+f9fc8629,General Medicine
+fa1f0f35,General Medicine
+fa296105,General Medicine
+fa2a7423,Gastroenterology
+fa3301eb,General Medicine
+faa3e152,General Medicine
+fac706dd,Cardiovascular / Pulmonary
+fac7beea,General Medicine
+faf1e210,Neurology
+fb027916,Neurology
+fb5d6228,Cardiovascular / Pulmonary
+fb7b5cc1,General Medicine
+fbdbbb9f,Orthopedic
+fc006520,Orthopedic
+fc019d32,Urology / Nephrology
+fc0da4ba,Orthopedic
+fc1e98a6,General Medicine
+fc5c7615,Gastroenterology
+fc7b3a30,ENT / Ophthalmology
+fc80b2fa,Cardiovascular / Pulmonary
+fc9d1aff,Gastroenterology
+fcafb8dc,Orthopedic
+fcb60bc5,General Medicine
+fce3c8ee,Neurology
+fceab55b,ENT / Ophthalmology
+fcf2db09,Urology / Nephrology
+fd12fd87,ENT / Ophthalmology
+fd17bb35,Gastroenterology
+fd1d8824,General Medicine
+fd1e6ced,ENT / Ophthalmology
+fd21eaf8,Cardiovascular / Pulmonary
+fd71a762,Hematology - Oncology
+fd96c005,Cardiovascular / Pulmonary
+fdab6e08,Cardiovascular / Pulmonary
+fdc817fa,Gastroenterology
+fdce77a3,Gastroenterology
+fddfc9ba,Obstetrics / Gynecology / Pediatrics
+fe799b04,Orthopedic
+fe977ede,Gastroenterology
+fe9fb5c8,Hematology - Oncology
+fecb3921,Hematology - Oncology
+fefcf83b,Cardiovascular / Pulmonary
+ff1c012d,General Medicine
+ff377860,Orthopedic
+ff3eb8fb,Radiology
+ff55f2e4,Cardiovascular / Pulmonary
+ff6ed503,Hematology - Oncology
+ff87e226,Cardiovascular / Pulmonary
+ff98188d,Obstetrics / Gynecology / Pediatrics
+ff9f95a0,Obstetrics / Gynecology / Pediatrics
+ffc21c93,Obstetrics / Gynecology / Pediatrics
+ffe435c6,Hematology - Oncology
