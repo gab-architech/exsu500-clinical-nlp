@@ -49,9 +49,12 @@ spec's baseline options explicitly include rule models.
 
 Caveat supported by the literature: transformers are not guaranteed to beat
 linear baselines on clinical text (Gao et al., IEEE JBHI 2021); keeping the
-linear family makes that comparison explicit. PLM benchmark designs on
-clinical text support this setup (Li et al., JAMIA 2023; Lentzen et al.,
-JAMIA Open 2022).
+linear family makes that comparison explicit. Task-specific supervised
+fine-tuning is also the recommended approach over LLM zero-shot prompting on
+clinical reports (Sushil et al., JAMIA 2024), and a recent MTSamples
+benchmark reports that earlier high scores collapse once leakage is
+controlled (Barman & Barman, arXiv 2026) - which is precisely our research
+question.
 
 ## Excluded: random forest
 
@@ -84,27 +87,40 @@ the research question itself.
 All citations below are real and verifiable, but the course rule requires
 that a team member has actually read every cited paper. Reading is tracked in
 Issue #17; the citations move from "candidate" to "cited" only after reading.
+Four foundational classics support the method choices; three recent papers
+(2024-2026) support the same claims with current evidence, including two
+studies that used MTSamples itself.
 
 - E. Alsentzer et al., "Publicly Available Clinical BERT Embeddings," in
   Proc. 2nd Clinical NLP Workshop (NAACL-HLT 2019), Minneapolis, MN, USA,
-  2019, pp. 72-78, doi: 10.18653/v1/W19-1909.
+  2019, pp. 72-78, doi: 10.18653/v1/W19-1909. (foundational: ClinicalBERT
+  original; domain pretraining helps clinical tasks but not all)
 - T. Joachims, "Text Categorization with Support Vector Machines: Learning
   with Many Relevant Features," in Proc. ECML-98 (LNCS 1398), Chemnitz,
-  Germany, 1998, pp. 137-142, doi: 10.1007/BFb0026683.
+  Germany, 1998, pp. 137-142, doi: 10.1007/BFb0026683. (foundational: why
+  linear SVMs suit high-dimensional sparse text)
 - A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov, "Bag of Tricks for
   Efficient Text Classification," in Proc. 15th Conf. European Chapter of the
   ACL (EACL 2017), Valencia, Spain, 2017, pp. 427-431,
-  doi: 10.18653/v1/E17-2068.
+  doi: 10.18653/v1/E17-2068. (foundational: linear models are strong text
+  baselines)
 - S. Gao et al., "Limitations of Transformers on Clinical Text
   Classification," IEEE J. Biomed. Health Inform., vol. 25, no. 9,
-  pp. 3596-3607, 2021, doi: 10.1109/JBHI.2021.3062322.
-- Y. Li, R. M. Wehbe, F. S. Ahmad, H. Wang, and Y. Luo, "A comparative study
-  of pretrained language models for long clinical text," J. Amer. Med.
-  Inform. Assoc., vol. 30, no. 2, pp. 340-347, 2023,
-  doi: 10.1093/jamia/ocac225.
-- M. Lentzen et al., "Critical assessment of transformer-based AI models for
-  German clinical notes," JAMIA Open, vol. 5, no. 4, 2022, Art. no. ooac087,
-  doi: 10.1093/jamiaopen/ooac087.
-- Yuan et al., "Transformers and large language models are efficient feature
-  extractors for electronic health record studies," Commun. Med., vol. 5,
-  Art. no. 83, 2025, doi: 10.1038/s43856-025-00790-1.
+  pp. 3596-3607, 2021, doi: 10.1109/JBHI.2021.3062322. (transformers did not
+  beat simpler models on clinical text)
+- M. Sushil et al., "A comparative study of large language model-based
+  zero-shot inference and task-specific supervised classification of breast
+  cancer pathology reports," J. Amer. Med. Inform. Assoc., vol. 31, no. 10,
+  pp. 2315-2327, 2024, doi: 10.1093/jamia/ocae146. (recent: task-specific
+  supervised fine-tuning versus LLM zero-shot on clinical reports)
+- A. Peluso et al., "Deep learning uncertainty quantification for clinical
+  text classification," J. Biomed. Inform., vol. 149, Art. no. 104576, 2024,
+  doi: 10.1016/j.jbi.2024.104576. (recent: supports reporting uncertainty for
+  clinical text classifiers, as our evaluation protocol does)
+- P. K. Barman and P. K. Barman, "CLiGNet: Clinical Label-Interaction Graph
+  Network for Medical Specialty Classification from Clinical Transcriptions,"
+  arXiv:2603.22752, 2026, preprint, not peer-reviewed. (recent preprint on
+  MTSamples itself: shows prior MTSamples results were inflated by SMOTE
+  before splitting; their leakage-free benchmark uses Bio_ClinicalBERT as the
+  encoder and reports macro-F1 0.279 on 40 classes - direct support for our
+  research question and our leakage handling)
