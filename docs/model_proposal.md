@@ -85,23 +85,26 @@ All citations below are real and verifiable, but the course rule requires
 that a team member has actually read every cited paper. Reading is tracked in
 Issue #17; the citations move from "candidate" to "cited" only after reading.
 
-- Alsentzer, E., Murphy, J., Boag, W., et al. "Publicly Available Clinical
-  BERT Embeddings." NAACL 2019 Clinical NLP Workshop (W19-1909).
-  https://aclanthology.org/W19-1909/
-- Joachims, T. "Text Categorization with Support Vector Machines: Learning
-  with Many Relevant Features." ECML-98, LNCS 1398.
-  https://doi.org/10.1007/BFb0026683
-- Joulin, A., Grave, E., Bojanowski, P., Mikolov, T. "Bag of Tricks for
-  Efficient Text Classification." EACL 2017 (E17-2068).
-  https://aclanthology.org/E17-2068/
-- Gao, S., Alawad, M., Young, M.T., et al. "Limitations of Transformers on
-  Clinical Text Classification." IEEE Journal of Biomedical and Health
-  Informatics, 2021.
-- Li, Y., Wehbe, R.M., Ahmad, F.S., Wang, H., Luo, Y. "A comparative study of
-  pretrained language models for long clinical text." JAMIA 30(2), 2023.
-- Lentzen, M., Madan, S., Lage-Rupprecht, V., et al. "Critical assessment of
-  transformer-based AI models for German clinical notes." JAMIA Open 5(4),
-  2022.
-- Yuan, Z., et al. "Transformers and large language models are efficient
-  feature extractors for electronic health record studies." Communications
-  Medicine 5:83, 2025.
+- E. Alsentzer et al., "Publicly Available Clinical BERT Embeddings," in
+  Proc. 2nd Clinical NLP Workshop (NAACL-HLT 2019), Minneapolis, MN, USA,
+  2019, pp. 72-78, doi: 10.18653/v1/W19-1909.
+- T. Joachims, "Text Categorization with Support Vector Machines: Learning
+  with Many Relevant Features," in Proc. ECML-98 (LNCS 1398), Chemnitz,
+  Germany, 1998, pp. 137-142, doi: 10.1007/BFb0026683.
+- A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov, "Bag of Tricks for
+  Efficient Text Classification," in Proc. 15th Conf. European Chapter of the
+  ACL (EACL 2017), Valencia, Spain, 2017, pp. 427-431,
+  doi: 10.18653/v1/E17-2068.
+- S. Gao et al., "Limitations of Transformers on Clinical Text
+  Classification," IEEE J. Biomed. Health Inform., vol. 25, no. 9,
+  pp. 3596-3607, 2021, doi: 10.1109/JBHI.2021.3062322.
+- Y. Li, R. M. Wehbe, F. S. Ahmad, H. Wang, and Y. Luo, "A comparative study
+  of pretrained language models for long clinical text," J. Amer. Med.
+  Inform. Assoc., vol. 30, no. 2, pp. 340-347, 2023,
+  doi: 10.1093/jamia/ocac225.
+- M. Lentzen et al., "Critical assessment of transformer-based AI models for
+  German clinical notes," JAMIA Open, vol. 5, no. 4, 2022, Art. no. ooac087,
+  doi: 10.1093/jamiaopen/ooac087.
+- Yuan et al., "Transformers and large language models are efficient feature
+  extractors for electronic health record studies," Commun. Med., vol. 5,
+  Art. no. 83, 2025, doi: 10.1038/s43856-025-00790-1.
