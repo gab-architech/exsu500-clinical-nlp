@@ -42,18 +42,39 @@ The class mapping, deduplication, Surgery handling and leakage control were deci
 
 ## Data cleaning pipeline
 
-| Step | Action | Remaining | Change |
-|---|---|---|---|
-| 0 | Raw dataset | 4,999 rows | |
-| 1 | Strip leading spaces in labels | 4,999 rows | 0 |
-| 2 | Drop rows with no transcription | 4,966 rows | -33 |
-| 3 | Drop document-type labels (6 labels) | 4,028 rows | -938 |
-| 4 | Drop the Surgery label (1,039 byte-identical duplicates stay under their real specialty) | 2,940 rows | -1,088 |
-| 5 | Deduplicate to unique note texts | 2,279 texts | |
-| 6 | Manual review of conflicting notes (Jessica Oentoro, Karman Kang) | 606 texts reviewed | |
-| 7 | Map raw labels to 11 final classes | **2,230 notes** | |
+| Step | Action | Tool / rule | Remaining | Change |
+|---|---|---|---|---|
+| 0 | Raw dataset | — | 4,999 rows | |
+| 1 | Strip leading spaces in labels | `str.strip()` | 4,999 rows | 0 |
+| 2 | Drop rows with no transcription | `.notna()` filter | 4,966 rows | -33 |
+| 3 | Drop document-type labels (6 labels) | label blacklist | 4,028 rows | -938 |
+| 4 | Drop the Surgery label | byte-level duplicate matching (1,039 of 1,088 rows are identical to another specialty's note) | 2,940 rows | -1,088 |
+| 5 | Deduplicate to unique note texts | `normalize_text` + `groupby` | 2,279 texts | |
+| 6 | Manual review of conflicting notes (Jessica Oentoro, Karman Kang) | offline browser tool; keyword-rule first pass (48.5% agreement with human labels) | 606 texts reviewed | |
+| 7 | Map raw labels to 11 final classes | `CLASS_MAP` + thyroid-surgery rule + `text_id` | **2,230 notes** | |
 
-Excluded in the final assembly: 97 texts = 65 with no specialty home (including 14 Bariatrics surgery notes) + 4 reviewer DROP + 21 general-surgery + 7 thyroid-surgery. Every step, its rationale and the final class distribution are in [docs/data_cleaning.md](docs/data_cleaning.md).
+Excluded in the final assembly: 97 texts = 65 with no specialty home
+(including 14 Bariatrics surgery notes) + 4 reviewer DROP + 21 general
+surgery + 7 thyroid surgery.
+
+Final class distribution:
+
+| Class | Notes | Share |
+|---|---:|---:|
+| Cardiovascular / Pulmonary | 358 | 16.1% |
+| Orthopedic | 345 | 15.5% |
+| General Medicine | 286 | 12.8% |
+| ENT / Ophthalmology | 221 | 9.9% |
+| Gastroenterology | 204 | 9.1% |
+| Urology / Nephrology | 198 | 8.9% |
+| Neurology | 194 | 8.7% |
+| Obstetrics / Gynecology / Pediatrics | 174 | 7.8% |
+| Radiology | 105 | 4.7% |
+| Hematology - Oncology | 95 | 4.3% |
+| Psychiatry / Psychology | 50 | 2.2% |
+| **Total** | **2,230** | 100% |
+
+Full rationale, tools and keyword tables: [docs/data_cleaning.md](docs/data_cleaning.md).
 
 ## Planned approach
 
