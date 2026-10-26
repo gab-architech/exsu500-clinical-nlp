@@ -75,7 +75,7 @@ Full rationale, tools and keyword tables: [docs/data_cleaning.md](docs/data_clea
 
 ## Planned approach
 
-**Models:** TBD (decided by Modelling lead).
+**Models:** majority-class reference line + a keyword-rule baseline (mutual-information-selected keywords, voting, majority fallback); TF-IDF + logistic regression and TF-IDF + linear SVM; fine-tuned ClinicalBERT. Full proposal with literature: [docs/model_proposal.md](docs/model_proposal.md).
 
 **Evaluation protocol**
 - Stratified train / validation / test split, with duplicates kept within one split

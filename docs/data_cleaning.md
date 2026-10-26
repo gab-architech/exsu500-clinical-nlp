@@ -302,11 +302,14 @@ measured in EDA:
    of re-splitting.
 
 2. **Training:** the frozen split feeds the three model families: a
-   statistical/trivial baseline, classical ML (TF-IDF + logistic regression
-   and TF-IDF + linear SVM), and a fine-tuned ClinicalBERT. Evaluation uses
-   macro-F1 as the primary metric with bootstrap confidence intervals; models
-   are tuned on the validation split only, and the test split is touched once,
-   at the end (Issues #2, #3, #22).
+   keyword-rule baseline (mutual-information-selected keywords, voting,
+   majority fallback, plus the majority-class reference line), classical ML
+   (TF-IDF + logistic regression and TF-IDF + linear SVM), and a fine-tuned
+   ClinicalBERT. The full proposal with literature is in
+   `docs/model_proposal.md`. Evaluation uses macro-F1 as the primary metric
+   with bootstrap confidence intervals; models are tuned on the validation
+   split only, and the test split is touched once, at the end (Issues #2, #3,
+   #22).
 
 ## Appendix: keyword tables and mappings
 
