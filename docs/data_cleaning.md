@@ -169,17 +169,21 @@ over-assigns Radiology for any imaging keyword and uses General Medicine as a
 fallback when no table matches. The suggestions must not be reported as model
 predictions in the manuscript; they are a rule-based first pass.
 
-**Result:** 603 notes assigned to a class and 3 marked DROP in the first
-review. Three labels were then corrected after an audit by the LLM assistant
-and confirmation by the modelling lead: two were found by reading the 28
-unique-Surgery assignments (inguinal hernia repair General Medicine to
-Gastroenterology; rectovaginal fistula Urology / Nephrology to Obstetrics /
-Gynecology) and one by a keyword scan of the General Medicine class (buttock
-abscess incision-and-drainage to DROP), leaving 602 assigned and 4 DROP
-(corrections in Appendix A.6). Of the reviewed notes, 12 were assigned
-General Medicine in the first review and 10 remain after the corrections;
-those 10 are non-surgical medical notes (nine clearly medical, one burn-care
-follow-up).
+**Round 1 (reviewers):** Jessica Oentoro and Karman Kang each reviewed one
+batch of 303 notes. Result: 603 notes assigned to a class and 3 marked DROP.
+
+**Round 2 (audit and corrections):** the LLM assistant audited the round-1
+assignments (reading the 28 unique-Surgery assignments, and a keyword scan of
+the General Medicine class) and flagged three suspicious labels; the modelling
+lead confirmed each correction. Two were found by reading (inguinal hernia
+repair General Medicine to Gastroenterology; rectovaginal fistula Urology /
+Nephrology to Obstetrics / Gynecology) and one by the keyword scan (buttock
+abscess incision-and-drainage to DROP). After the corrections: 602 assigned
+and 4 DROP (corrections in Appendix A.6).
+
+Of the reviewed notes, 12 were assigned General Medicine in round 1 and 10
+remain after round 2; those 10 are non-surgical medical notes (nine clearly
+medical, one burn-care follow-up).
 
 ## Step 7: map raw labels to the 11 final classes
 
