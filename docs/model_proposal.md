@@ -33,10 +33,10 @@ spec's baseline options explicitly include rule models.
   models on short text (Joulin et al., EACL 2017); logistic regression is
   naturally calibrated, which feeds the reliability diagram required by the
   evaluation protocol, and its coefficients are interpretable.
-- **TF-IDF + linear SVM**: the classical text classifier, same TF-IDF
-  features as the logistic regression with a max-margin decision rule instead
-  of a probability model; about a minute of CPU - shows whether the decision
-  rule matters within the linear family.
+- **TF-IDF + linear SVM**: the classical text classifier; its suitability for
+  high-dimensional sparse text has been established for decades (Joachims,
+  ECML 1998). Same features as the logistic regression, different decision
+  rule, about a minute of CPU - shows whether the classifier family matters.
 
 ## 3. Deep learning
 
@@ -50,11 +50,12 @@ spec's baseline options explicitly include rule models.
 Caveat supported by the literature: transformers are not guaranteed to beat
 linear baselines on clinical text (Gao et al., IEEE JBHI 2021); keeping the
 linear family makes that comparison explicit. Task-specific supervised
-fine-tuning is taken over LLM prompting for reproducibility (free Colab
-budget, no closed API, results anyone can rerun), and a recent MTSamples
-benchmark reports that earlier high scores collapse once leakage is
-controlled (Barman & Barman, arXiv 2026) - which is precisely our research
-question.
+fine-tuning is also the recommended approach over LLM zero-shot prompting on
+clinical reports (Sushil et al., JAMIA 2024), LLM workflows for specialty
+referral itself still over- and under-triage (Gaber et al., npj Digital
+Medicine 2025), and a recent MTSamples benchmark reports that earlier high
+scores collapse once leakage is controlled (Barman & Barman, arXiv 2026) -
+which is precisely our research question.
 
 ## Excluded: random forest
 
@@ -84,44 +85,72 @@ the research question itself.
 
 ## What the literature supports
 
-Five references support the whole plan, not only the model choices:
+The nine references support three parts of the plan, not only the model
+choices:
 
 | Paper | Model choice | Leakage / masking experiment | Evaluation protocol |
 |---|---|---|---|
-| Alsentzer 2019 | ClinicalBERT | | |
+| Joachims 1998 | linear SVM | | |
 | Joulin 2017 | linear baselines | | |
+| Alsentzer 2019 | ClinicalBERT | | |
 | Gao 2021 | transformer may not win | labels hinge on a few keywords; attention diluted - motivates masking | |
-| Barman 2026 | Bio_ClinicalBERT encoder | MTSamples scores were leakage-inflated - motivates our leakage-free benchmark | |
+| Sushil 2024 | supervised fine-tuning route | | |
 | Peluso 2024 | | | uncertainty and calibration reporting |
+| Gaber 2025 | not LLM prompting (mis-triage) | | |
+| Dahl 2025 | family comparison design | | |
+| Barman 2026 | Bio_ClinicalBERT encoder | MTSamples scores were leakage-inflated - motivates our leakage-free benchmark | |
 
 ## Literature status
 
 All citations below are real and verifiable, but the course rule requires
 that a team member has actually read every cited paper. Reading is tracked in
 Issue #17; the citations move from "candidate" to "cited" only after reading.
-Two foundational papers support the linear and deep model families, and three
-recent papers (2021-2026) support the leakage experiment and the evaluation
-protocol, including a study on MTSamples itself.
+Four foundational classics support the method choices; three recent papers
+(2024-2026) support the same claims with current evidence, including two
+studies that used MTSamples itself.
 
 - E. Alsentzer et al., "Publicly Available Clinical BERT Embeddings," in
   Proc. 2nd Clinical NLP Workshop (NAACL-HLT 2019), Minneapolis, MN, USA,
-  2019, pp. 72-78, doi: 10.18653/v1/W19-1909. (ClinicalBERT original; domain
-  pretraining helps clinical tasks but not all)
+  2019, pp. 72-78, doi: 10.18653/v1/W19-1909. (foundational: ClinicalBERT
+  original; domain pretraining helps clinical tasks but not all)
+- T. Joachims, "Text Categorization with Support Vector Machines: Learning
+  with Many Relevant Features," in Proc. ECML-98 (LNCS 1398), Chemnitz,
+  Germany, 1998, pp. 137-142, doi: 10.1007/BFb0026683. (foundational: why
+  linear SVMs suit high-dimensional sparse text)
 - A. Joulin, E. Grave, P. Bojanowski, and T. Mikolov, "Bag of Tricks for
   Efficient Text Classification," in Proc. 15th Conf. European Chapter of the
   ACL (EACL 2017), Valencia, Spain, 2017, pp. 427-431,
-  doi: 10.18653/v1/E17-2068. (linear models are strong text baselines)
+  doi: 10.18653/v1/E17-2068. (foundational: linear models are strong text
+  baselines)
 - S. Gao et al., "Limitations of Transformers on Clinical Text
   Classification," IEEE J. Biomed. Health Inform., vol. 25, no. 9,
   pp. 3596-3607, 2021, doi: 10.1109/JBHI.2021.3062322. (transformers did not
-  beat simpler models on clinical text; labels hinge on few keywords)
+  beat simpler models on clinical text)
+- M. Sushil et al., "A comparative study of large language model-based
+  zero-shot inference and task-specific supervised classification of breast
+  cancer pathology reports," J. Amer. Med. Inform. Assoc., vol. 31, no. 10,
+  pp. 2315-2327, 2024, doi: 10.1093/jamia/ocae146. (recent: task-specific
+  supervised fine-tuning versus LLM zero-shot on clinical reports)
 - A. Peluso et al., "Deep learning uncertainty quantification for clinical
   text classification," J. Biomed. Inform., vol. 149, Art. no. 104576, 2024,
-  doi: 10.1016/j.jbi.2024.104576. (uncertainty reporting for clinical text
-  classifiers, as our evaluation protocol does)
+  doi: 10.1016/j.jbi.2024.104576. (recent: supports reporting uncertainty for
+  clinical text classifiers, as our evaluation protocol does)
+- S. Dahl, M. Bøgsted, T. Sagi, and C. Vesteghem, "Performance of Natural
+  Language Processing for Information Extraction From Electronic Health
+  Records Within Cancer: Systematic Review," JMIR Med. Inform., vol. 13,
+  Art. no. e68707, 2025, doi: 10.2196/68707. (recent: systematic review
+  comparing rule-based, traditional ML, CRF, neural and transformer model
+  families on EHR text - supports our explicit family comparison design)
+- F. Gaber et al., "Evaluating large language model workflows in clinical
+  decision support for triage and referral and diagnosis," npj Digit. Med.,
+  vol. 8, Art. no. 263, 2025, doi: 10.1038/s41746-025-01684-1. (recent:
+  benchmark of LLM workflows for specialty referral from clinical notes on
+  MIMIC; models over- and under-triage and struggle with numeric lab values -
+  supports our supervised fine-tuning route over LLM prompting)
 - P. K. Barman and P. K. Barman, "CLiGNet: Clinical Label-Interaction Graph
   Network for Medical Specialty Classification from Clinical Transcriptions,"
-  arXiv:2603.22752, 2026, preprint, not peer-reviewed. (MTSamples itself:
-  prior high scores were inflated by SMOTE before splitting; leakage-free
-  benchmark uses Bio_ClinicalBERT and reports macro-F1 0.279 on 40 classes -
-  direct support for our research question and leakage handling)
+  arXiv:2603.22752, 2026, preprint, not peer-reviewed. (recent preprint on
+  MTSamples itself: shows prior MTSamples results were inflated by SMOTE
+  before splitting; their leakage-free benchmark uses Bio_ClinicalBERT as the
+  encoder and reports macro-F1 0.279 on 40 classes - direct support for our
+  research question and our leakage handling)
