@@ -52,10 +52,7 @@ The class mapping, deduplication, Surgery handling and leakage control were deci
 | 5 | Deduplicate to unique note texts | `normalize_text` + `groupby` | 2,279 texts | |
 | 6 | Manual review of conflicting notes (Jessica Oentoro, Karman Kang) | offline browser tool; keyword-rule first pass (48.5% agreement with human labels) | 606 texts reviewed | |
 | 7 | Map raw labels to 11 final classes | `CLASS_MAP` + thyroid-surgery rule + `text_id` | **2,230 notes** | |
-
-Excluded in the final assembly: 97 texts = 65 with no specialty home
-(including 14 Bariatrics surgery notes) + 4 reviewer DROP + 21 general
-surgery + 7 thyroid surgery.
+| | ↳ of which 97 texts are excluded here: 65 no specialty home (incl. 14 Bariatrics surgery notes) + 4 reviewer DROP + 21 general surgery + 7 thyroid surgery | | | |
 
 Final class distribution:
 
