@@ -126,5 +126,4 @@ All members contribute code and writing and commit under their own accounts.
 | Tool + version | Date | Used for | How output was verified |
 |---|---|---|---|
 | Claude Code, Claude Opus 5.5 | Sep 27 to Oct 9 | repo setup, README, data README, CLAUDE.md conventions, 01_data_check configuration | verified by review and a Colab run |
-| Claude Code | Oct 15 | EDA on MTSamples: label cleaning, duplicate/Surgery/doc-type/leakage analysis, class-list drafting, cross-label review table | re-run the analysis top-to-bottom; decisions still need team confirmation |
-| Claude Code | Oct 16 to Oct 26 | assisted with data cleaning; all final label decisions made by humans (three AI-flagged labels were corrected after confirmation by the modelling lead) | pipeline re-run top to bottom (2,230 notes, 11 classes) |
+| Claude Code | Oct 15 to Oct 26 | EDA and data cleaning: label cleaning, duplicate/Surgery/doc-type/leakage analysis, class-list drafting, cross-label review tool, final labels; all final label decisions made by humans (three AI-flagged labels were corrected after confirmation by the modelling lead) | pipeline re-run top to bottom (2,230 notes, 11 classes) |
