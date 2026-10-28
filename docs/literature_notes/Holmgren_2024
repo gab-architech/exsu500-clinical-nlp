@@ -1,0 +1,13 @@
+# [Short title]
+
+- **Citation:** Authors, "Title," Venue, Year. DOI or arXiv ID.
+- **Read by:** [name], [date]
+- **Peer-reviewed?** yes / no (preprint)
+
+**What they did:** dataset, task, methods (2 to 3 sentences).
+
+**Main result:** the key number(s), with the metric named.
+
+**Limitation:** the main weakness or caveat.
+
+**Relevance to our project:** how it supports or challenges our task, data handling, models or evaluation.
