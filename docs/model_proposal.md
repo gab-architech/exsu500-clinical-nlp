@@ -133,7 +133,7 @@ studies that used MTSamples itself.
   supervised fine-tuning versus LLM zero-shot on clinical reports)
 - A. Peluso et al., "Deep learning uncertainty quantification for clinical
   text classification," J. Biomed. Inform., vol. 149, Art. no. 104576, 2024,
-  doi: 10.1016/j.jbi.2024.104576. (recent: supports reporting uncertainty for
+  doi: 10.1016/j.jbi.2023.104576. (recent: supports reporting uncertainty for
   clinical text classifiers, as our evaluation protocol does)
 - S. Dahl, M. Bøgsted, T. Sagi, and C. Vesteghem, "Performance of Natural
   Language Processing for Information Extraction From Electronic Health
