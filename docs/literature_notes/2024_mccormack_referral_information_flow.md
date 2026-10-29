@@ -1,7 +1,7 @@
-# [Characterizing barriers to closing cross-institutional referral loops: Workflow and information flow analysis]
+# Characterizing barriers to closing cross-institutional referral loops: Workflow and information flow analysis
 
 - **Citation:** McCormack C, Savoy A, Mathew A, et al. Characterizing barriers to closing cross-institutional referral loops: Workflow and information flow analysis. Appl Ergon. 2024;115:104177. doi:10.1016/j.apergo.2023.104177
-- **Read by:** [Jessica], [28 October 2027]
+- **Read by:** Jessica, 28 October 2027
 - **Peer-reviewed?** yes (Q1 journal)
 
 **What they did:** Workflow and information-flow analysis based on interviews with referring clinicians and specialist consultants.
