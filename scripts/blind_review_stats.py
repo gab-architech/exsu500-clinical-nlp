@@ -8,7 +8,7 @@ Compares Gabriel's blind labels with the answer key and reports:
     python scripts/blind_review_stats.py --blind my_blind_labels.csv --key answer_key.csv
 
 Inputs (ID + label files only, no note text):
-  --blind  columns: text_id, label
+  --blind  columns: text_id, label  (or final_label, as exported by the review tool)
   --key    columns: text_id, label, stratum   (stratum = "reviewed" or "auto")
 
 The answer key's label is the label currently in labels/final_labels.csv;
@@ -54,7 +54,9 @@ def main():
     parser.add_argument("--key", required=True, help="CSV with text_id, label, stratum (answer key)")
     args = parser.parse_args()
 
-    blind = pd.read_csv(args.blind)[["text_id", "label"]].rename(columns={"label": "blind"})
+    blind = pd.read_csv(args.blind)
+    # The review tool exports the label column as "final_label"; accept either name
+    blind = blind.rename(columns={"final_label": "label"})[["text_id", "label"]].rename(columns={"label": "blind"})
     key = pd.read_csv(args.key)[["text_id", "label", "stratum"]].rename(columns={"label": "key"})
 
     # Labels compared as plain strings, trimmed (DROP counts as its own label)
