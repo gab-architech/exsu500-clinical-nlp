@@ -1,7 +1,7 @@
 # CLiGNet: Specialty Classification from Clinical Transcriptions (MTSamples)
 
 - **Citation:** P. K. Barman and P. K. Barman, "CLiGNet: Clinical Label-Interaction Graph Network for Medical Specialty Classification from Clinical Transcriptions," arXiv:2603.22752, 2026. Preprint.
-- **Read by:** pending (draft written by the LLM assistant from the full text; fill in after a team member reads the paper)
+- **Read by:** Gabriel Barrere, 2026-11-03
 - **Peer-reviewed?** no (preprint, not peer-reviewed)
 
 **What they did:** built a leakage-free benchmark on MTSamples itself (4,966 records, 40 specialties, imbalance 181:1), using a Bio_ClinicalBERT encoder plus a graph network over a specialty label graph, with focal loss and inverse-frequency weighting instead of SMOTE. They explicitly critique earlier MTSamples papers that applied SMOTE before the train/test split.
