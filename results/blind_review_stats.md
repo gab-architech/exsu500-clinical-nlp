@@ -41,7 +41,7 @@ Gabriel Barrere blind-labelled a stratified sample of 220 notes from the final d
 
 - **General Medicine merge (14 notes).** Auto-mapped notes whose raw label is merged into General Medicine by design (`CLASS_MAP`: General Medicine, Pain Management, Physical Medicine - Rehab, Sleep Medicine, Endocrinology, Rheumatology, Diets and Nutritions, Allergy / Immunology) were placed elsewhere by the blind reviewer. The modelling lead confirmed the merge is deliberate (small labels with no better home). These are reported as a definitional difference, not label errors; no labels were changed and the blind labels were kept as recorded. Which raw label each of the 14 came from was not checked (needs the raw dataset).
 - **Radiology (6 of 8 reviewed-stratum disagreements).** Imaging reports can reasonably be filed under the imaging specialty or the clinical one. A limitation of the class definition.
-- **Decision:** no label fixes; the split (#2) is frozen on `labels/final_labels.csv` as of 47d04d8.
+- **Decision:** no label fixes; the split (#2) will be made from `labels/final_labels.csv` unchanged since 47d04d8.
 
 ## Reproduce (from the repo root)
 
