@@ -49,10 +49,12 @@ The class mapping, deduplication, Surgery handling and leakage control were deci
 | 2 | Drop rows with no transcription | `.notna()` filter | 4,966 rows | -33 |
 | 3 | Drop document-type labels (6 labels) | label blacklist | 4,028 rows | -938 |
 | 4 | Drop the Surgery label | byte-level duplicate matching (1,039 of 1,088 rows are identical to another specialty's note) | 2,940 rows | -1,088 |
-| 5 | Deduplicate to unique note texts | `normalize_text` + `groupby` | 2,279 texts | |
+| 5 | Deduplicate to unique note texts | `normalize_text` + `groupby` | 2,279 texts (+48 surgery-only) | |
 | 6 | Manual review of conflicting notes (Jessica Oentoro, Karman Kang) | offline browser tool; keyword-rule first pass (48.5% agreement with human labels) | 606 texts reviewed | |
-| 7 | Map raw labels to 11 final classes | `CLASS_MAP` + thyroid-surgery rule + `text_id` | **2,230 notes** | |
+| 7 | Map raw labels to 11 final classes | `CLASS_MAP` + thyroid-surgery rule + `text_id` | **2,230 notes** (2,327 candidates - 97 excluded) | |
 | | ↳ of which 97 texts are excluded here: 65 no specialty home (incl. 14 Bariatrics surgery notes) + 4 reviewer DROP + 21 general surgery + 7 thyroid surgery | | | |
+
+Pipeline figure: [`figures/fig2_cleaning_flow.png`](figures/fig2_cleaning_flow.png).
 
 Final class distribution:
 
