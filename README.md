@@ -21,7 +21,7 @@ EXSU 500 Fundamentals of AI in Medicine, McGill University, Fall 2026
 
 Clinical documents and referrals must reach the right specialty team. Misrouted documents delay care and create manual rework for referral intake and health information management staff. We classify a note's specialty from its text alone, as decision support for routing teams, with a human always in the loop.
 
-**Research question:** How much of the reported performance on this task comes from duplicates and label leakage, and how do model rankings change once these are controlled?
+**Research question:** Under a leakage-controlled evaluation, how accurately can a clinical note's medical specialty be predicted from its free text, how do model families compare, and how much does performance change when label strings in the text are masked?
 
 ## Dataset
 
