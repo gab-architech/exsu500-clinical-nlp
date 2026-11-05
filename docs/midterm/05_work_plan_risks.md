@@ -1,6 +1,5 @@
-> AI-drafted (Claude, planning thread, Nov 3). Owner: Gabriel to review and rewrite before Nov 4.
-> FLAG (row 5): label suggestions during review came from a keyword rule, not AI (`docs/data_cleaning.md` Step 6: "No LLM produced any label decision"). Rewrite as "Rule-based label suggestions could anchor reviewers".
-> FLAG (row 3): "Many notes exceed 512 tokens" is not measured yet (`docs/model_proposal.md` says most notes fit). Soften or measure before Nov 9.
+> AI-drafted (Claude, planning thread, Nov 3; risks table revised with Claude Code, Nov 5). Owner: Gabriel.
+> FLAG: fill in the 512-token share and the near-duplicate result once measured.
 
 # V. Work Plan and Risks
 
@@ -13,8 +12,9 @@
 | Risk | Mitigation |
 |---|---|
 | Small classes (smallest: 7 test notes) give unstable per-class scores | Macro-F1 as primary metric; bootstrap 95% CIs; per-class results reported |
-| General Medicine merges 8 source labels and is heterogeneous (14 blind-audit disagreements) | Per-class error analysis; report General Medicine performance separately |
-| Many notes exceed ClinicalBERT's 512-token limit | Truncation strategy fixed in advance; compared against TF-IDF models with no length limit |
+| General Medicine merges 8 raw labels and is heterogeneous (14 blind-audit disagreements) | Per-class error analysis; General Medicine reported separately |
+| Notes over 512 tokens are truncated by ClinicalBERT (share to be measured) | Truncation fixed in advance; compared with TF-IDF models, which have no length limit |
 | Limited free GPU compute | Small number of seeds; saved checkpoints |
-| Label suggestions were AI-assisted during review | Blind human audit (κ = 0.85); disclosed in the GenAI statement |
+| Rule-based suggestions could anchor reviewers (48.5% match with final labels) | Reviewers read each full note and could override; blind audit measured agreement (κ = 0.85) |
+| Near-duplicate notes across piles could inflate scores | Similarity check before training (result to be added) |
 | MTSamples are sample transcriptions, not real routing data | Stated as a limit on generalisability |
