@@ -1,6 +1,7 @@
 > AI-drafted (Claude Code, Nov 3). Owner: Yuhan Zhang to review and rewrite before Nov 4.
 > Budget: about 0.5 page. From `docs/model_proposal.md` and Issue #3. Joachims, Joulin and Peluso (cited in the proposal) are not cited yet; Yuhan read them on Nov 5, so he can add them.
 > Training scope: Standard, decided by the team (#26).
+> FLAG: add Yuhan's truncation strategy in one line (e.g. first 512 tokens) once he confirms (#22).
 
 # IV. Planned Methods
 

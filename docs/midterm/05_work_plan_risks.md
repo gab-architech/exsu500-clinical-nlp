@@ -1,5 +1,5 @@
 > AI-drafted (Claude, planning thread, Nov 3; risks table revised with Claude Code, Nov 5). Owner: Gabriel.
-> FLAG: replace the 512-token floor with the exact tokenizer count when Yuhan has it.
+> FLAG: "Truncation fixed in advance" needs Yuhan's one-line strategy (#22). No model runs or exact token count needed for the midterm.
 
 # V. Work Plan and Risks
 

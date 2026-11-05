@@ -109,7 +109,7 @@ Source: `docs/model_proposal.md`, Issue #3
 
 - Training scope: Standard (#26)
 - 5 models, 3 families: majority class (reference line) and keyword-rule baseline; TF-IDF + logistic regression and TF-IDF + linear SVM; fine-tuned Bio_ClinicalBERT
-- Note length: median 415 words; 810 notes (36.3%) exceed 512 words, a floor for the share over 512 BERT tokens (exact tokenizer count pending, Yuhan)
+- Note length: median 415 words; 810 notes (36.3%) exceed 512 words, a floor for the share over 512 BERT tokens (exact tokenizer count optional, not needed for the midterm)
 - Compute: Colab free tier, single T4; ClinicalBERT about 20 to 30 min per run (3 epochs), a few seeds in about 2 hours
 - External reference: CLiGNet best leakage-free macro-F1 0.279 on 40 raw classes (Barman 2026); not directly comparable with our 11 classes
 
