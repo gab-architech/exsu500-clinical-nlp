@@ -1,7 +1,7 @@
 # A Comparative Study of Pretrained Language Models for Long Clinical Text
 
 - **Citation:** Li, Y., Wehbe, R. M., Ahmad, F. S., Wang, H., & Luo, Y. (2023). A comparative study of pretrained language models for long clinical text. *Journal of the American Medical Informatics Association*, 30(2), 295–304. https://doi.org/10.1093/jamia/ocac225
-- **Read by:** Karman
+- **Read by:** Karman, Nov 5, 2026
 - **Peer-reviewed?** Yes, published in *JAMIA*.
 
 **What they did:** The authors pretrained two models, Clinical-Longformer and Clinical-BigBird, using approximately 2 million clinical notes from MIMIC-III. These models can process up to 4,096 tokens compared to the 512-token limit of standard BERT models. They compared the models across 10 clinical NLP datasets, including MedNLI, i2b2 2006/2010/2012/2014, emrQA-Relation, emrQA-Medication, emrQA-HeartDisease, OpenI, and MIMIC-AKI. The tasks included clinical inference, information extraction, question answering, and classification.
