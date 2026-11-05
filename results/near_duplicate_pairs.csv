@@ -1,0 +1,12 @@
+id_a,id_b,cosine,split_a,split_b,label_a,label_b
+a698c845,af1a4ece,0.987,train,test,Urology / Nephrology,Urology / Nephrology
+79be135b,fa1f0f35,0.977,train,test,General Medicine,General Medicine
+18384a8b,1b356e20,0.932,test,train,General Medicine,General Medicine
+0d5dcb28,7886a7d9,0.922,train,test,Orthopedic,Orthopedic
+5de811c9,f2251106,0.885,val,train,General Medicine,General Medicine
+017be82f,a50cdce5,0.882,train,val,General Medicine,General Medicine
+aeaf6153,bda50a99,0.876,val,test,General Medicine,General Medicine
+69f1da5d,a8e78399,0.856,train,test,Orthopedic,Orthopedic
+04829e87,eba56e45,0.834,test,val,General Medicine,General Medicine
+01555848,aeaf6153,0.813,test,val,General Medicine,General Medicine
+4549961b,f1b380f7,0.809,test,train,ENT / Ophthalmology,ENT / Ophthalmology
