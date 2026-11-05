@@ -3,16 +3,16 @@
 
 # CRediT author statement
 
-- **Gabriel Barrere:** Conceptualization, Data curation, Formal analysis, Validation, Software, Project administration, Writing (original draft), Writing (review and editing).
+- **Gabriel Barrere:** Conceptualization, Data curation, Formal analysis, Project administration, Software, Validation, Visualization, Writing (original draft), Writing (review and editing).
 - **Yuhan Zhang:** Conceptualization, Data curation, Formal analysis, Methodology, Software, Validation, Writing (original draft).
-- **Jessica Oentoro:** Investigation, Validation, Writing (original draft), Writing (review and editing).
+- **Jessica Oentoro:** Conceptualization, Investigation, Validation, Writing (original draft), Writing (review and editing).
 - **Karman Kang:** Investigation, Validation, Writing (original draft), Writing (review and editing).
 
 # Use of Generative AI statement
 
 The team used generative AI tools as follows:
 
-- **Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code:** first-pass literature search and draft summaries of candidate papers; first drafts of all report sections; code for the blind-review statistics and data split scripts; repository administration and issue tracking.
+- **Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code:** first-pass literature search and draft summaries of candidate papers; reference first drafts of all report sections, which section owners compared and merged with their own drafts; code for the blind-review statistics, data split and Figure 1; the numbers sheet and Table 1; compilation of the review copy; repository administration and issue tracking.
 - **Claude Code (Anthropic CLI), model backend selected per session (kimi-k3 and other models), Oct 15 to Nov 5:** data cleaning analysis and the cleaning pipeline, the two offline review tools, draft literature notes, the model proposal, and a targeted audit of the first-pass labels that flagged three suspicious labels. The modelling lead confirmed each correction. Session logs are available to the instructors on request.
 - No generative model assigned a final label. The starting label suggestions shown to reviewers came from a deterministic keyword rule, which agreed with the final human label in 48.5% of cases.
 
