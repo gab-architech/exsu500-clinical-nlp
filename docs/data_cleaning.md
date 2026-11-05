@@ -163,7 +163,7 @@ progress saved automatically, results exported as CSV). The review files
 (`text_id, final_label`) sit in `data/` and are git-ignored because they are
 part of the audit trail; only the final labels are committed.
 
-**First pass:** a keyword-rule suggestion (not an LLM) was shown with each
+**First pass:** a keyword-rule suggestion was shown with each
 note as a starting point. The suggestion scans the 10 keyword tables in
 `SUGGESTION_RULES` (Appendix A.5) in order and the first matching specialty
 wins; no match falls back to General Medicine. The confidence labels were
