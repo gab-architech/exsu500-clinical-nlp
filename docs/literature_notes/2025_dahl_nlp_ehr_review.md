@@ -1,7 +1,7 @@
 # NLP for Information Extraction from EHRs in Cancer: Systematic Review
 
 - **Citation:** S. Dahl, M. Bøgsted, T. Sagi, and C. Vesteghem, "Performance of Natural Language Processing for Information Extraction From Electronic Health Records Within Cancer: Systematic Review," JMIR Med. Inform., vol. 13, Art. no. e68707, 2025. DOI: 10.2196/68707.
-- **Read by:** pending (draft written by the LLM assistant from the full text; fill in after a team member reads the paper)
+- **Read by:** Yuhan Zhang, Nov 5, 2026
 - **Peer-reviewed?** yes
 
 **What they did:** systematic review of 33 studies extracting information from cancer EHR text, categorizing every model as rule-based, traditional ML, CRF, neural network or bidirectional transformer, and aggregating per-study best F1.

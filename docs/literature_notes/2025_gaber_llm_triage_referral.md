@@ -1,7 +1,7 @@
 # Evaluating LLM Workflows for Triage, Referral and Diagnosis
 
 - **Citation:** F. Gaber et al., "Evaluating large language model workflows in clinical decision support for triage and referral and diagnosis," npj Digit. Med., vol. 8, Art. no. 263, 2025. DOI: 10.1038/s41746-025-01684-1.
-- **Read by:** pending (draft written by the LLM assistant from the full text; fill in after a team member reads the paper)
+- **Read by:** Yuhan Zhang, Nov 5, 2026
 - **Peer-reviewed?** yes (Nature portfolio journal)
 
 **What they did:** benchmarked LLM workflows (multiple model versions, including retrieval-augmented generation) on 2,000 MIMIC-derived clinical cases, evaluating triage level prediction, specialist referral (specialty) prediction and diagnosis suggestion.

@@ -1,7 +1,7 @@
 # Deep Learning Uncertainty Quantification for Clinical Text Classification
 
 - **Citation:** A. Peluso et al., "Deep learning uncertainty quantification for clinical text classification," J. Biomed. Inform., vol. 149, Art. no. 104576, 2024. DOI: 10.1016/j.jbi.2023.104576.
-- **Read by:** pending (draft written by the LLM assistant from the full text; fill in after a team member reads the paper)
+- **Read by:** Yuhan Zhang, Nov 5, 2026
 - **Peer-reviewed?** yes (Q1 journal)
 
 **What they did:** applied post-hoc calibration and selective classification (abstention) methods to CNN and HiSAN models that classify cancer pathology reports from NCI SEER, benchmarking against an in-house deep abstaining classifier (DAC).
