@@ -88,9 +88,9 @@ Source: `results/blind_review_stats.md`
 - Sample: 220 notes, stratified: 60 human-reviewed, 160 auto-mapped
 - Human-reviewed: 86.7% agreement, Cohen's kappa 0.847 (95% bootstrap CI 0.742 to 0.941)
 - Auto-mapped: error rate 13.8%, 22/160 (95% Wilson CI 9.3% to 19.9%)
-- Auto-mapped, sensitivity (excluding the 14 General Medicine disagreements): 5.0%, 8/160 (2.6% to 9.6%)
+- Auto-mapped, sensitivity (excluding the 11 disagreements from labels merged into General Medicine): 6.9%, 11/160 (3.9% to 11.9%)
 - Pooled: 86.4% (190/220), kappa 0.848 (0.791 to 0.894)
-- Finding: 14 of the 30 disagreements are auto-mapped notes filed under General Medicine that the blind reviewer placed elsewhere (8 Orthopedic, 4 Cardiovascular / Pulmonary, 1 Neurology, 1 Obstetrics / Gynecology / Pediatrics). The class merges 8 raw labels by design, confirmed by the modelling lead: reported as a definitional difference. **No labels were corrected.** Raw labels checked Nov 5: 11 of the 14 come from merged labels (Pain Management 8, Physical Medicine - Rehab 1, Sleep Medicine 1, Diets and Nutritions 1) and 3 from raw General Medicine. Setting aside only the 11 gives 6.9%, 11/160 (3.9% to 11.9%); which figure to report is pending. All 8 sampled Pain Management notes disagreed (7 Orthopedic, 1 Neurology); 45 of the 286 General Medicine notes carry that label.
+- Finding: 14 of the 30 disagreements are auto-mapped notes filed under General Medicine that the blind reviewer placed elsewhere (8 Orthopedic, 4 Cardiovascular / Pulmonary, 1 Neurology, 1 Obstetrics / Gynecology / Pediatrics). The class merges 8 raw labels by design, confirmed by the modelling lead: reported as a definitional difference. **No labels were corrected.** Raw labels checked Nov 5: 11 of the 14 come from merged labels (Pain Management 8, Physical Medicine - Rehab 1, Sleep Medicine 1, Diets and Nutritions 1) and 3 from raw General Medicine. Only the 11 are set aside in the sensitivity estimate. All 8 sampled Pain Management notes disagreed (7 Orthopedic, 1 Neurology); 45 of the 286 General Medicine notes carry that label.
 - 6 of the 8 human-reviewed disagreements involve Radiology (imaging reports).
 
 ## 6. Literature

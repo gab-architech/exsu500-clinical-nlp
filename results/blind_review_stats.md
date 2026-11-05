@@ -13,7 +13,7 @@ Gabriel Barrere blind-labelled a stratified sample of 220 notes from the final d
 |---|---:|---:|---|
 | Human-reviewed | 60 | 86.7% | Cohen's kappa 0.847 (0.742 to 0.941) |
 | Auto-mapped | 160 | 86.3% | error rate 13.8%, 22 notes (9.3% to 19.9%) |
-| Auto-mapped, sensitivity | 160 | 95.0% | error rate 5.0%, 8 notes (2.6% to 9.6%), excluding the 14 General Medicine disagreements |
+| Auto-mapped, sensitivity | 160 | 93.1% | error rate 6.9%, 11 notes (3.9% to 11.9%), excluding the 11 disagreements from labels merged into General Medicine |
 | Pooled | 220 | 86.4% (190/220) | Cohen's kappa 0.848 (0.791 to 0.894) |
 
 ## Disagreements (30 of 220)
@@ -39,7 +39,7 @@ Gabriel Barrere blind-labelled a stratified sample of 220 notes from the final d
 
 ## Interpretation
 
-- **General Medicine (14 notes).** Auto-mapped notes filed under General Medicine were placed elsewhere by the blind reviewer. The class merges 8 raw labels by design (`CLASS_MAP`: General Medicine, Pain Management, Physical Medicine - Rehab, Sleep Medicine, Endocrinology, Rheumatology, Diets and Nutritions, Allergy / Immunology); the modelling lead confirmed the merge is deliberate (small labels with no better home). These are reported as a definitional difference; no labels were changed and the blind labels were kept as recorded. Which raw label each of the 14 came from was not checked (needs the raw dataset), so some may be raw General Medicine notes rather than merged ones.
+- **General Medicine (14 notes).** Auto-mapped notes filed under General Medicine were placed elsewhere by the blind reviewer. Raw labels (checked Nov 5 against `data/mtsamples.csv`): Pain Management 8, Physical Medicine - Rehab 1, Sleep Medicine 1, Diets and Nutritions 1, and raw General Medicine 3. The first 11 come from labels merged by design (`CLASS_MAP`, confirmed deliberate by the modelling lead) and are reported as a definitional difference, so the sensitivity estimate sets aside those 11. The 3 raw General Medicine notes are genuine disagreements and stay counted. No labels were changed and the blind labels were kept as recorded.
 - **Radiology (6 of 8 reviewed-stratum disagreements).** Imaging reports can reasonably be filed under the imaging specialty or the clinical one. A limitation of the class definition.
 - **Decision:** no label fixes; the split (#2) will be made from `labels/final_labels.csv` unchanged since 47d04d8.
 
