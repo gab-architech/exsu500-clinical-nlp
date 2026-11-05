@@ -17,3 +17,5 @@ The team used generative AI tools as follows:
 - No generative model assigned a final label. The starting label suggestions shown to reviewers came from a deterministic keyword rule, which agreed with the final human label in 48.5% of cases.
 
 Verification: every cited paper was read by a named team member, who corrected its summary against the full text. Every section was reviewed and rewritten by its owner. All numbers were checked against the project's numbers sheet, generated from the repository code. Scripts were reviewed and their outputs inspected. Label suggestions were reviewed by humans, the three flagged labels were checked against the note text and confirmed by the modelling lead, and a blind audit of 220 notes measured label agreement (Cohen's kappa 0.847 on the human-reviewed stratum). The authors take full responsibility for the content of this report.
+
+**Not AI-assisted:** the 606 manual label decisions, the blind audit of 220 notes, and the three correction decisions were made by team members. AI produced drafts, analysis code and audit flags only, and no AI output was submitted without review by its owner.

@@ -257,8 +257,8 @@ specialty with no natural merge target.
 | **Total** | **2,230** | 100% |
 
 Class imbalance is 7.2x (358 vs 50). The smallest class (Psychiatry /
-Psychology, 50 notes) yields roughly 30 train / 10 validation / 10 test under
-a 60/20/20 split, so its metrics will be noisy; this is handled with
+Psychology, 50 notes) has 35 train / 8 validation / 7 test notes under the
+frozen 70/15/15 split, so its metrics will be noisy; this is handled with
 macro-F1, bootstrap confidence intervals and class weighting rather than by
 changing the class list.
 
