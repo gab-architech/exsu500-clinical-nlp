@@ -80,9 +80,9 @@ Source: `results/blind_review_stats.md`
 - Sample: 220 notes, stratified: 60 human-reviewed, 160 auto-mapped
 - Human-reviewed: 86.7% agreement, Cohen's kappa 0.847 (95% bootstrap CI 0.742 to 0.941)
 - Auto-mapped: error rate 13.8%, 22/160 (95% Wilson CI 9.3% to 19.9%)
-- Auto-mapped, sensitivity (excluding 14 General Medicine merge cases): 5.0%, 8/160 (2.6% to 9.6%)
+- Auto-mapped, sensitivity (excluding the 14 General Medicine disagreements): 5.0%, 8/160 (2.6% to 9.6%)
 - Pooled: 86.4% (190/220), kappa 0.848 (0.791 to 0.894)
-- Finding: 14 of the 30 disagreements are notes merged into General Medicine by design (Pain Management, PM&R and other small labels) that the blind reviewer placed elsewhere (8 Orthopedic, 4 Cardiovascular / Pulmonary). Deliberate merge, confirmed by the modelling lead: reported as a definitional difference. **No labels were corrected.**
+- Finding: 14 of the 30 disagreements are auto-mapped notes filed under General Medicine that the blind reviewer placed elsewhere (8 Orthopedic, 4 Cardiovascular / Pulmonary, 1 Neurology, 1 Obstetrics / Gynecology / Pediatrics). The class merges 8 raw labels by design, confirmed by the modelling lead: reported as a definitional difference. **No labels were corrected.** Open: how many of the 14 came from Pain Management, PM&R or another merged label rather than raw General Medicine (needs the raw dataset).
 - 6 of the 8 human-reviewed disagreements involve Radiology (imaging reports).
 
 ## 6. Literature
@@ -98,6 +98,7 @@ Source: `docs/literature_notes/` ("Read by" lines)
 
 Source: `docs/model_proposal.md`, Issue #3
 
+- Training scope: Standard (#26)
 - 5 models, 3 families: majority class (reference line) and keyword-rule baseline; TF-IDF + logistic regression and TF-IDF + linear SVM; fine-tuned Bio_ClinicalBERT
 - Compute: Colab free tier, single T4; ClinicalBERT about 20 to 30 min per run (3 epochs), a few seeds in about 2 hours
 - External reference: CLiGNet best leakage-free macro-F1 0.279 on 40 raw classes (Barman 2026); not directly comparable with our 11 classes
