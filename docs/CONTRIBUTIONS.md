@@ -6,5 +6,5 @@ Official CRediT roles only ([credit.niso.org](https://credit.niso.org)), one lin
 
 - **G. Barrere:** Conceptualization, Data curation, Project administration, Software, Writing (original draft)
 - **J. Oentoro:** Conceptualization, Writing (review and editing)
-- **Y. Zhang:** Conceptualization, Data curation, Formal analysis, Software, Validation, Visualization
+- **Y. Zhang:** Conceptualization, Data curation, Formal analysis, Methodology, Software, Validation, Writing (original draft)
 - **K. Kang:** [to be added as work happens]

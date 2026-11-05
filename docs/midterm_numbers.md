@@ -23,11 +23,11 @@ Source: `docs/data_cleaning.md` (Steps 0 to 7, Step 7 exclusions)
 | 1 | Rows with no transcription | 33 | 4,966 rows |
 | 2 | Document-type labels (6, e.g. Consult, Discharge Summary) | 938 | 4,028 rows |
 | 3 | Surgery label (1,039 copies of notes already filed under a specialty; 49 surgery-only notes set aside) | 1,088 | 2,940 rows |
-| 4 | Duplicate texts collapsed (one row per unique normalized text) | | 2,279 texts (+49 surgery-only) |
+| 4 | Duplicate texts collapsed (one row per unique normalized text) | | 2,279 texts (+48 surgery-only) |
 | 5 | Manual review of conflicting notes (578 cross-label + 28 surgery-only) | | 606 reviewed |
 | 6 | Excluded at mapping: no specialty home (65, incl. 14 Bariatrics), general surgery (21), thyroid surgery (7), reviewer DROP (4) | 97 | **2,230 notes** |
 
-Open (flag): 2,279 + 49 = 2,328, minus 97 = 2,231, not 2,230. Raised with Yuhan; not yet explained in `docs/data_cleaning.md`. Report 2,230 (the actual file) and do not print the arithmetic until resolved.
+Resolved (Nov 5): the surgery-only rows add 48 unique texts, not 49. One ERCP note exists twice with a whitespace/punctuation difference, once under Surgery and once under Gastroenterology; after normalization it is the same text and is already counted among the 2,279. Arithmetic: 2,279 + 48 = 2,327, minus 97 = 2,230. Explained in `docs/data_cleaning.md` Step 5.
 
 Manual review detail: 2 reviewers (Jessica Oentoro, Karman Kang), 303 notes each; 602 assigned to a class, 4 DROP; 3 labels corrected in a second-review audit (Appendix A.6). A keyword-rule suggestion (not an AI model) was shown with each note; it agreed with the final human label 48.5% of the time (294/606).
 
@@ -129,7 +129,7 @@ Step & Removed & $n$ removed & $n$ left \\
 5 & Manual review of conflicts & & 606 reviewed \\
 6 & No specialty home, surgery-only, reviewer drop & 97 & \textbf{2,230} \\
 \bottomrule
-\multicolumn{4}{@{}p{0.95\columnwidth}@{}}{\scriptsize $^a$1,039 copies of notes filed under a specialty; 49 surgery-only notes set aside. $^b$Plus the 49 surgery-only notes.}
+\multicolumn{4}{@{}p{0.95\columnwidth}@{}}{\scriptsize $^a$1,039 copies of notes filed under a specialty; 49 surgery-only notes set aside. $^b$Plus the 48 surgery-only unique texts (49 raw rows; one normalizes to the same text as a Gastroenterology note).}
 \end{tabular}
 \end{table}
 ```

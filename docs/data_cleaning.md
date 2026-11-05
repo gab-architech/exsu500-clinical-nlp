@@ -143,6 +143,14 @@ labels carried by each unique text.
   `Radiology`); they go to manual review (Step 6).
 - **1,701 texts** have a single label; they map directly in Step 7.
 
+**The 49 surgery-only rows add 48 unique texts, not 49.** The 49 rows are
+unique at the raw-string level, but one ERCP note appears twice with a
+whitespace/punctuation difference, once under `Surgery` and once under
+`Gastroenterology`; after normalization the two rows are the same text, so it
+is already counted among the 2,279. The candidate pool is therefore
+2,279 + 48 = **2,327 texts**, and after the 97 exclusions in Step 7 the final
+count is 2,327 - 97 = **2,230 notes**.
+
 ## Step 6: manual review of conflicting notes
 
 **Queue:** 606 texts = 578 cross-label texts + 28 unique Surgery texts.

@@ -1,12 +1,10 @@
-> AI-drafted (Claude, planning thread, Nov 3). Owner: Jess to finalise; each member must confirm their own CRediT line. Placeholders in [brackets].
-> FLAG (CRediT): differs from `docs/CONTRIBUTIONS.md`, which gives Yuhan Formal analysis and Visualization and gives Jessica Conceptualization. Reconcile the two before Nov 9.
-> FLAG (GenAI, bullet 2 and verification): the labelling tool used a keyword rule, not a model (`docs/data_cleaning.md` Step 6). Claude Code built the tool; no AI suggested labels. Replace bullet 2 and "AI-suggested labels" accordingly.
-> FLAG (GenAI, bullet 3): Yuhan's notes say "draft written by the LLM assistant"; ask him which tool and version.
+> AI-drafted (Claude, planning thread, Nov 3). Owner: Jess to finalise; each member must confirm their own CRediT line.
+> Resolved Nov 5: Yuhan confirmed his CRediT line and his GenAI entry; the labelling tool used a keyword rule, not a model, so that false bullet was removed.
 
 # CRediT author statement
 
 - **Gabriel Barrere:** Conceptualization, Data curation, Formal analysis, Validation, Software, Project administration, Writing (original draft), Writing (review and editing).
-- **Yuhan Zhang:** Conceptualization, Data curation, Methodology, Software, Validation, Writing (original draft).
+- **Yuhan Zhang:** Conceptualization, Data curation, Formal analysis, Methodology, Software, Validation, Writing (original draft).
 - **Jessica Oentoro:** Investigation, Validation, Writing (original draft), Writing (review and editing).
 - **Karman Kang:** Investigation, Validation, Writing (original draft), Writing (review and editing).
 
@@ -15,7 +13,7 @@
 The team used generative AI tools as follows:
 
 - **Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code:** first-pass literature search and draft summaries of candidate papers; first drafts of all report sections; code for the blind-review statistics and data split scripts; repository administration and issue tracking.
-- **[Model and version used by the labelling tool]:** suggested a specialty label for each note during manual validation; reviewers accepted or overrode each suggestion.
-- **[Tool used for Yuhan's literature drafts, if different]:** draft summaries of additional papers.
+- **Claude Code (Anthropic CLI), model backend selected per session (kimi-k3 and other models), Oct 15 to Nov 5:** data cleaning analysis and the cleaning pipeline, the two offline review tools, draft literature notes, the model proposal, and a targeted audit of the first-pass labels that flagged three suspicious labels. The modelling lead confirmed each correction. Session logs are available to the instructors on request.
+- No generative model assigned a final label. The starting label suggestions shown to reviewers came from a deterministic keyword rule, which agreed with the final human label in 48.5% of cases.
 
-Verification: every cited paper was read by a named team member, who corrected its summary against the full text. Every section was reviewed and rewritten by its owner. All numbers were checked against the project's numbers sheet, generated from the repository code. Scripts were reviewed and their outputs inspected. AI-suggested labels were reviewed by humans, and a blind audit of 220 notes measured label agreement. The authors take full responsibility for the content of this report.
+Verification: every cited paper was read by a named team member, who corrected its summary against the full text. Every section was reviewed and rewritten by its owner. All numbers were checked against the project's numbers sheet, generated from the repository code. Scripts were reviewed and their outputs inspected. Label suggestions were reviewed by humans, the three flagged labels were checked against the note text and confirmed by the modelling lead, and a blind audit of 220 notes measured label agreement (Cohen's kappa 0.847 on the human-reviewed stratum). The authors take full responsibility for the content of this report.
