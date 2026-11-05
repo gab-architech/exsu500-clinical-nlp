@@ -73,6 +73,14 @@ Source: `splits/split_seed42.csv`, `scripts/make_split.py`
 | Psychiatry / Psychology | 35 | 8 | 7 | 50 |
 | **Total** | **1,560** | **335** | **335** | **2,230** |
 
+## 4b. Near-duplicates across piles
+
+Source: `results/near_duplicate_pairs.csv`, `scripts/check_near_duplicates.py`
+
+- TF-IDF cosine at or above 0.8: 11 cross-pile pairs, all same label; 9 test and 4 validation notes affected
+- At or above 0.9: 4 pairs, 4 test notes. At or above 0.95: 2 pairs, 2 test notes
+- Decision (Nov 5): keep the split; report test macro-F1 with and without the 9 test notes
+
 ## 5. Blind review
 
 Source: `results/blind_review_stats.md`
@@ -82,7 +90,7 @@ Source: `results/blind_review_stats.md`
 - Auto-mapped: error rate 13.8%, 22/160 (95% Wilson CI 9.3% to 19.9%)
 - Auto-mapped, sensitivity (excluding the 14 General Medicine disagreements): 5.0%, 8/160 (2.6% to 9.6%)
 - Pooled: 86.4% (190/220), kappa 0.848 (0.791 to 0.894)
-- Finding: 14 of the 30 disagreements are auto-mapped notes filed under General Medicine that the blind reviewer placed elsewhere (8 Orthopedic, 4 Cardiovascular / Pulmonary, 1 Neurology, 1 Obstetrics / Gynecology / Pediatrics). The class merges 8 raw labels by design, confirmed by the modelling lead: reported as a definitional difference. **No labels were corrected.** Open: how many of the 14 came from Pain Management, PM&R or another merged label rather than raw General Medicine (needs the raw dataset).
+- Finding: 14 of the 30 disagreements are auto-mapped notes filed under General Medicine that the blind reviewer placed elsewhere (8 Orthopedic, 4 Cardiovascular / Pulmonary, 1 Neurology, 1 Obstetrics / Gynecology / Pediatrics). The class merges 8 raw labels by design, confirmed by the modelling lead: reported as a definitional difference. **No labels were corrected.** Raw labels checked Nov 5: 11 of the 14 come from merged labels (Pain Management 8, Physical Medicine - Rehab 1, Sleep Medicine 1, Diets and Nutritions 1) and 3 from raw General Medicine. Setting aside only the 11 gives 6.9%, 11/160 (3.9% to 11.9%); which figure to report is pending. All 8 sampled Pain Management notes disagreed (7 Orthopedic, 1 Neurology); 45 of the 286 General Medicine notes carry that label.
 - 6 of the 8 human-reviewed disagreements involve Radiology (imaging reports).
 
 ## 6. Literature
@@ -93,6 +101,7 @@ Source: `docs/literature_notes/` ("Read by" lines)
 - Cited in the current drafts: 16 papers plus the dataset (17 references). Available but not cited yet: Joachims 1998, Joulin 2017, Peluso 2024, Dahl 2025, Gaber 2025
 - All DOIs and arXiv IDs checked against Crossref / arXiv
 - Course minimum: 15 references, mostly primary research from the last 5 years
+- Page limit: 3 pages, references included (CRediT and GenAI statements excluded)
 
 ## 7. Models and compute
 
@@ -100,6 +109,7 @@ Source: `docs/model_proposal.md`, Issue #3
 
 - Training scope: Standard (#26)
 - 5 models, 3 families: majority class (reference line) and keyword-rule baseline; TF-IDF + logistic regression and TF-IDF + linear SVM; fine-tuned Bio_ClinicalBERT
+- Note length: median 415 words; 810 notes (36.3%) exceed 512 words, a floor for the share over 512 BERT tokens (exact tokenizer count pending, Yuhan)
 - Compute: Colab free tier, single T4; ClinicalBERT about 20 to 30 min per run (3 epochs), a few seeds in about 2 hours
 - External reference: CLiGNet best leakage-free macro-F1 0.279 on 40 raw classes (Barman 2026); not directly comparable with our 11 classes
 
