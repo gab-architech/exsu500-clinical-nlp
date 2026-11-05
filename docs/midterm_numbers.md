@@ -2,7 +2,7 @@
 
 Single source of truth for every number in the midterm report (Nov 9). If a number is not here, it does not go in the report. Each section names its source file; update the source first, then this sheet.
 
-Last checked: Nov 3, 2026, against `labels/final_labels.csv` (unchanged since 47d04d8) and `splits/split_seed42.csv` (c029afe).
+Last checked: Nov 5, 2026 (literature counts; data numbers Nov 3), against `labels/final_labels.csv` (unchanged since 47d04d8) and `splits/split_seed42.csv` (c029afe).
 
 ## 1. Dataset
 
@@ -89,7 +89,8 @@ Source: `results/blind_review_stats.md`
 
 Source: `docs/literature_notes/` ("Read by" lines)
 
-- 21 notes; 16 read by a team member, 5 pending (Joachims 1998, Joulin 2017, Peluso 2024, Dahl 2025, Gaber 2025, all Yuhan's)
+- 21 notes, all with a named reader: Karman 9, Yuhan 5, Gabriel 4, Jessica 3 (Li 2023 still has no read date)
+- Cited in the current drafts: 16 papers plus the dataset (17 references). Available but not cited yet: Joachims 1998, Joulin 2017, Peluso 2024, Dahl 2025, Gaber 2025
 - All DOIs and arXiv IDs checked against Crossref / arXiv
 - Course minimum: 15 references, mostly primary research from the last 5 years
 

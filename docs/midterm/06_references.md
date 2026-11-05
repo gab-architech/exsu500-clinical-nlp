@@ -1,5 +1,5 @@
 > AI-drafted (Claude Code, Nov 3). Owner: Jessica Oentoro to review and rewrite before Nov 4.
-> IEEE style, numbered in order of first citation across 01 to 04 (Introduction first). Each entry's "Read by" is in an HTML comment from its literature note. Unread notes (Joachims, Joulin, Peluso, Dahl, Gaber) are excluded.
+> IEEE style, numbered in order of first citation across 01 to 04 (Introduction first). Each entry's "Read by" is in an HTML comment from its literature note. Joachims, Joulin, Peluso, Dahl and Gaber were read on Nov 5 and are not listed yet: add them only if a section cites them, then renumber.
 
 # References
 
