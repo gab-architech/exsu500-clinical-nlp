@@ -1,10 +1,10 @@
 # BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text
 
-**Citation:** Wu, J., Gu, B., Zhou, R., et al. (2025). BRIDGE: Benchmarking large language models for understanding real-world clinical practice text. arXiv preprint arXiv:2504.19467. https://doi.org/10.48550/arXiv.2504.19467
+**Citation:** Wu, J., Gu, B., Zhou, R., et al. (2026). BRIDGE: Benchmarking large language models for understanding real-world clinical practice texts. Nature Biomedical Engineering. https://doi.org/10.1038/s41551-026-01719-2
 
 **Read by:** Karman, Oct 29, 2026
 
-**Peer-reviewed?** The 2025 version reviewed here is a preprint. A peer-reviewed version was published in *Nature Biomedical Engineering* in 2026.
+**Peer-reviewed?** Yes, published in *Nature Biomedical Engineering* (2026).
 
 **What they did:** Developed BRIDGE, a benchmark to evaluate LLMs on real clinical text rather than medical exam questions. They compared 95 LLMs across 87 tasks from 59 clinical datasets, covering nine languages and 14 medical specialties. Models were evaluated using zero-shot, five-shot, and chain-of-thought prompting.
 
