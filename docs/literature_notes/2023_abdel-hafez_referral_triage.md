@@ -8,6 +8,6 @@
 
 **Main result:** Keyword-based Levenshtein similarity achieved the highest agreement with historical referral categories at 53.8%, compared to a random baseline of 33.3%. Most supervised models achieved agreement between 33% and 40%.
 
-**Limitation:** Only 1,689 of the 17,378 referrals (9.7%) had historical CPC classifications, limiting the amount of labelled data available. Historical categories were also inconsistent with clinical guidelines in some cases, meaning agreement with previous classifications does not necessarily reflect clinical accuracy.
+**Limitation:** Only 1,689 of the 17,378 referrals (9.7%) had historical CPC classifications, limiting the amount of labelled data available. The authors also identified cases where historical triage decisions differed from CPC guidelines. Therefore, agreement with historical classifications may not accurately reflect clinical urgency.
 
-**Relevance to our project:** This paper shows the challenges of using NLP to classify clinical referrals when labels are limited or inconsistent. Although our project focuses on predicting medical specialties rather than urgency, it supports comparing simpler text-based approaches with more complex models and highlights the importance of validating our labels before training.
+**Relevance to our project:** This study highlights the potential difficulties of using historical clinical labels for supervised learning, particularly when they are incomplete or inconsistent with established guidelines. Although our project focuses on predicting medical specialties rather than urgency, it supports comparing simpler text-based approaches with more complex models and highlights the importance of validating our labels before training.
