@@ -29,10 +29,10 @@
 
 [13] J. Wu, B. Gu, R. Zhou, *et al.*, "BRIDGE: Benchmarking large language models for understanding real-world clinical practice text," arXiv:2504.19467, 2025. <!-- Read by: Karman. Note says a peer-reviewed version appeared in Nat. Biomed. Eng. (2026): cite that version if confirmed -->
 
-[14] S. Kathirvel and L. Mookiah, "Medical specialty classification using large language models (LLMs)," in *Proc. Int. FLAIRS Conf.*, vol. 38, 2025, doi: 10.32473/flairs.38.1.138953. <!-- Read by: Gabriel -->
+[14] T. Boyle, "Medical Transcriptions," Kaggle, 2018. [Online]. Available: https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions <!-- Dataset; data originally scraped from mtsamples.com -->
 
-[15] S. Kapoor and A. Narayanan, "Leakage and the reproducibility crisis in machine-learning-based science," *Patterns*, vol. 4, no. 9, Art. no. 100804, 2023, doi: 10.1016/j.patter.2023.100804. <!-- Read by: Gabriel -->
+[15] S. Kathirvel and L. Mookiah, "Medical specialty classification using large language models (LLMs)," in *Proc. Int. FLAIRS Conf.*, vol. 38, 2025, doi: 10.32473/flairs.38.1.138953. <!-- Read by: Gabriel -->
 
-[16] G. Varoquaux and V. Cheplygina, "Machine learning for medical imaging: methodological failures and recommendations for the future," *npj Digit. Med.*, vol. 5, Art. no. 48, 2022, doi: 10.1038/s41746-022-00592-y. <!-- Read by: Gabriel -->
+[16] S. Kapoor and A. Narayanan, "Leakage and the reproducibility crisis in machine-learning-based science," *Patterns*, vol. 4, no. 9, Art. no. 100804, 2023, doi: 10.1016/j.patter.2023.100804. <!-- Read by: Gabriel -->
 
-[17] T. Boyle, "Medical Transcriptions," Kaggle, 2018. [Online]. Available: https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions <!-- Dataset; data originally scraped from mtsamples.com -->
+[17] G. Varoquaux and V. Cheplygina, "Machine learning for medical imaging: methodological failures and recommendations for the future," *npj Digit. Med.*, vol. 5, Art. no. 48, 2022, doi: 10.1038/s41746-022-00592-y. <!-- Read by: Gabriel -->
