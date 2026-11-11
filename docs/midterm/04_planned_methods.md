@@ -1,14 +1,14 @@
 > AI-drafted (Claude Code, Nov 3). Owner: Yuhan Zhang to review and rewrite before Nov 4.
 > Budget: about 0.5 page. From `docs/model_proposal.md` and Issue #3. Joachims, Joulin and Peluso (cited in the proposal) are not cited yet; Yuhan read them on Nov 5, so he can add them.
 > Training scope: Standard, decided by the team (#26).
-> FLAG: add Yuhan's truncation strategy in one line (e.g. first 512 tokens) once he confirms (#22).
+> Truncation strategy resolved Nov 5: measured 64.2% of notes exceed 512 tokens, so head+tail truncation (256+256) is used (#22).
 
 # IV. Planned Methods
 
 **Models.** We compare five models in three families, all trained on the same split.
 (1) *Baselines:* a majority-class reference line, which exposes imbalance artefacts, and a keyword-rule model whose two keywords per class are selected by mutual information on the training set only and which predicts by keyword vote.
 (2) *Linear models:* TF-IDF features with class-weighted logistic regression and with a linear SVM. Simple models matched transformers on full clinical documents [8], and logistic regression was as good as complex models once leakage was removed [15].
-(3) *Transformer:* Bio_ClinicalBERT [7], fine-tuned with a classification head. Notes longer than 512 tokens are truncated, a known limitation of BERT-type models on long clinical text [9]; at least 36% of our notes exceed that length. We prefer supervised fine-tuning to LLM prompting because it is reproducible and fits the compute budget [10].
+(3) *Transformer:* Bio_ClinicalBERT [7], fine-tuned with a classification head. The 512-token limit matters here: measured with its own tokenizer, the median note is 665 tokens and 64.2% exceed 512. We use head+tail truncation (first and last 256 tokens) so the opening and the impression are kept, and we report the share of truncated notes as a limitation [9]. We prefer supervised fine-tuning to LLM prompting because it is reproducible and fits the compute budget [10].
 
 **Leakage experiment.** Each model is also run on a masked variant of the text with the label strings removed (8.7% of notes contain their own label); the score gap measures how much performance depends on this residual leakage.
 

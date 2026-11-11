@@ -109,8 +109,8 @@ ax.text(BOX_X + 0.12, fy + 0.64,
         "Independent validation (not part of the pipeline)\n"
         "Blind audit of 220 notes. Human-reviewed stratum:\n"
         "kappa 0.847 (60 notes). Auto-mapped stratum: error\n"
-        "rate 13.8%, or 5.0% excluding the 14 General\n"
-        "Medicine merge cases (160 notes).",
+        "rate 13.8%, or 6.9% excluding the 11 disagreements\n"
+        "from labels merged into General Medicine (160 notes).",
         fontsize=5.6, color=GREY, va="top", ha="left", linespacing=1.3, zorder=3)
 
 ax.text(0.06, H - 0.22, "Figure 2. Data cleaning pipeline",

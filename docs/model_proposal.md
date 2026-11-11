@@ -45,7 +45,15 @@ spec's baseline options explicitly include rule models.
   (Alsentzer et al., NAACL 2019 Clinical NLP Workshop), so it understands
   medical vocabulary and context. Fine-tuned on our notes with a
   classification head; expected to be the strongest model. The 512-token
-  limit is handled by truncation (most notes fit under it).
+  limit is real on our data: measured with the Bio_ClinicalBERT tokenizer,
+  the median note is 665 tokens and 64.2% of notes exceed 512 (22.2% exceed
+  1024, maximum 2574). We therefore use head+tail truncation (first 256 and
+  last 256 tokens), which keeps the opening and the impression/conclusion,
+  rather than first-512 truncation. Chunking with pooling (about 1.97 chunks
+  per note, roughly 2x compute) and Clinical-Longformer (4096 tokens, roughly
+  8x compute) were considered; head+tail truncation is the primary setting
+  because it fits the free-tier budget, with chunking as a robustness check
+  if time allows.
 
 Caveat supported by the literature: transformers are not guaranteed to beat
 linear baselines on clinical text (Gao et al., IEEE JBHI 2021); keeping the

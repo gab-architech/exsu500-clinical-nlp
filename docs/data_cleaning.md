@@ -303,16 +303,18 @@ human-reviewed texts and 160 from the auto-mapped texts, sampled with
 |---|---:|---:|---|
 | Human-reviewed | 60 | 86.7% | Cohen's kappa **0.847** (95% bootstrap CI 0.742 to 0.941) |
 | Auto-mapped | 160 | 86.3% | error rate **13.8%**, 22 notes (95% Wilson CI 9.3% to 19.9%) |
-| Auto-mapped, sensitivity analysis | 160 | 95.0% | error rate **5.0%**, 8 notes (2.6% to 9.6%), excluding the 14 General Medicine merge cases |
+| Auto-mapped, sensitivity analysis | 160 | 93.1% | error rate **6.9%**, 11 notes (3.9% to 11.9%), excluding the 11 disagreements from labels merged into General Medicine |
 | Pooled | 220 | 86.4% | Cohen's kappa **0.848** (0.791 to 0.894) |
 
 Reading of the disagreements:
 
-- **14 of the 22 auto-mapped disagreements are definitional, not errors.** They
-  are notes whose raw label is deliberately merged into General Medicine
-  (Pain Management, Physical Medicine - Rehab, Sleep Medicine, Endocrinology,
-  Rheumatology, Diets and Nutritions, Allergy / Immunology); the blind reviewer
-  placed them under Orthopedic (8) or Cardiovascular / Pulmonary (4).
+- **11 of the 22 auto-mapped disagreements are definitional, not errors.** They
+  come from raw labels that are deliberately merged into General Medicine
+  (Pain Management 8, Physical Medicine - Rehab 1, Sleep Medicine 1, Diets and
+  Nutritions 1); the other 3 are notes with the raw label General Medicine. The
+  blind reviewer placed these under Orthopedic (8), Cardiovascular / Pulmonary
+  (4), Neurology (1) and Obstetrics / Gynecology / Pediatrics (1). Setting the
+  11 merged-label cases aside gives the sensitivity estimate above.
 - **6 of the 8 disagreements on the human-reviewed stratum involve Radiology.**
   An imaging report can reasonably be filed under the imaging specialty or the
   clinical specialty that ordered it. This is a limitation of the class
