@@ -1,5 +1,5 @@
 > AI-drafted (Claude Code, Nov 3). Owner: Jessica Oentoro to review and rewrite before Nov 4.
-> IEEE style, numbered in order of first citation across 01 to 04 (Introduction first). Each entry's "Read by" is in an HTML comment from its literature note. Joachims, Joulin, Peluso, Dahl and Gaber were read on Nov 5 and are not listed yet: add them only if a section cites them, then renumber.
+> IEEE style. Numbers match the citations in 01 to 04 as of Nov 11. Gaber [18] was added at the end, so it is cited before [13] in Related Work: strict first-citation order would need the section texts renumbered. Each entry's "Read by" is in an HTML comment from its literature note.
 
 # References
 
@@ -19,7 +19,7 @@
 
 [8] S. Gao *et al.*, "Limitations of transformers on clinical text classification," *IEEE J. Biomed. Health Inform.*, vol. 25, no. 9, pp. 3596-3607, 2021, doi: 10.1109/JBHI.2021.3062322. <!-- Read by: Karman -->
 
-[9] Y. Li, R. M. Wehbe, F. S. Ahmad, H. Wang, and Y. Luo, "A comparative study of pretrained language models for long clinical text," *J. Am. Med. Inform. Assoc.*, vol. 30, no. 2, pp. 295-304, 2023, doi: 10.1093/jamia/ocac225. <!-- Read by: Karman (no date in note) -->
+[9] Y. Li, R. M. Wehbe, F. S. Ahmad, H. Wang, and Y. Luo, "A comparative study of pretrained language models for long clinical text," *J. Am. Med. Inform. Assoc.*, vol. 30, no. 2, pp. 295-304, 2023, doi: 10.1093/jamia/ocac225. <!-- Read by: Karman -->
 
 [10] M. Sushil *et al.*, "A comparative study of large language model-based zero-shot inference and task-specific supervised classification of breast cancer pathology reports," *J. Am. Med. Inform. Assoc.*, vol. 31, no. 10, pp. 2315-2327, 2024, doi: 10.1093/jamia/ocae146. <!-- Read by: Karman -->
 
@@ -27,12 +27,14 @@
 
 [12] Q. Chen *et al.*, "Benchmarking large language models for biomedical natural language processing applications and recommendations," *Nat. Commun.*, vol. 16, Art. no. 3280, 2025, doi: 10.1038/s41467-025-56989-2. <!-- Read by: Karman -->
 
-[13] J. Wu, B. Gu, R. Zhou, *et al.*, "BRIDGE: Benchmarking large language models for understanding real-world clinical practice text," arXiv:2504.19467, 2025. <!-- Read by: Karman. Note says a peer-reviewed version appeared in Nat. Biomed. Eng. (2026): cite that version if confirmed -->
+[13] J. Wu, B. Gu, R. Zhou, *et al.*, "BRIDGE: Benchmarking large language models for understanding real-world clinical practice texts," *Nat. Biomed. Eng.*, 2026, doi: 10.1038/s41551-026-01719-2. <!-- Read by: Karman -->
 
-[14] T. Boyle, "Medical Transcriptions," Kaggle, 2018. [Online]. Available: https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions <!-- Dataset; data originally scraped from mtsamples.com -->
+[14] S. Kathirvel and L. Mookiah, "Medical specialty classification using large language models (LLMs)," in *Proc. Int. FLAIRS Conf.*, vol. 38, 2025, doi: 10.32473/flairs.38.1.138953. <!-- Read by: Gabriel -->
 
-[15] S. Kathirvel and L. Mookiah, "Medical specialty classification using large language models (LLMs)," in *Proc. Int. FLAIRS Conf.*, vol. 38, 2025, doi: 10.32473/flairs.38.1.138953. <!-- Read by: Gabriel -->
+[15] S. Kapoor and A. Narayanan, "Leakage and the reproducibility crisis in machine-learning-based science," *Patterns*, vol. 4, no. 9, Art. no. 100804, 2023, doi: 10.1016/j.patter.2023.100804. <!-- Read by: Gabriel -->
 
-[16] S. Kapoor and A. Narayanan, "Leakage and the reproducibility crisis in machine-learning-based science," *Patterns*, vol. 4, no. 9, Art. no. 100804, 2023, doi: 10.1016/j.patter.2023.100804. <!-- Read by: Gabriel -->
+[16] G. Varoquaux and V. Cheplygina, "Machine learning for medical imaging: methodological failures and recommendations for the future," *npj Digit. Med.*, vol. 5, Art. no. 48, 2022, doi: 10.1038/s41746-022-00592-y. <!-- Read by: Gabriel -->
 
-[17] G. Varoquaux and V. Cheplygina, "Machine learning for medical imaging: methodological failures and recommendations for the future," *npj Digit. Med.*, vol. 5, Art. no. 48, 2022, doi: 10.1038/s41746-022-00592-y. <!-- Read by: Gabriel -->
+[17] T. Boyle, "Medical Transcriptions," Kaggle, 2018. [Online]. Available: https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions <!-- Dataset; data originally scraped from mtsamples.com -->
+
+[18] F. Gaber *et al.*, "Evaluating large language model workflows in clinical decision support for triage and referral and diagnosis," *npj Digit. Med.*, vol. 8, Art. no. 263, 2025, doi: 10.1038/s41746-025-01684-1. <!-- Read by: Yuhan -->
