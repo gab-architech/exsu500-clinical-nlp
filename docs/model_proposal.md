@@ -46,14 +46,16 @@ spec's baseline options explicitly include rule models.
   medical vocabulary and context. Fine-tuned on our notes with a
   classification head; expected to be the strongest model. The 512-token
   limit is real on our data: measured with the Bio_ClinicalBERT tokenizer,
-  the median note is 665 tokens and 64.2% of notes exceed 512 (22.2% exceed
-  1024, maximum 2574). We therefore use head+tail truncation (first 256 and
-  last 256 tokens), which keeps the opening and the impression/conclusion,
-  rather than first-512 truncation. Chunking with pooling (about 1.97 chunks
-  per note, roughly 2x compute) and Clinical-Longformer (4096 tokens, roughly
-  8x compute) were considered; head+tail truncation is the primary setting
-  because it fits the free-tier budget, with chunking as a robustness check
-  if time allows.
+  the median note is 652 tokens and 62.5% of notes exceed 512 (22.3% exceed
+  1024, maximum 4357). We therefore use head+tail truncation (first 256 and
+  last 256 tokens), which keeps the opening and the impression/conclusion
+  rather than first-512 truncation, and retains 59.6% of the dataset's
+  tokens. Chunking with late fusion, capped at 3 chunks per note (1,530
+  tokens, about 94% coverage, about 1.5x compute) is the pre-registered
+  robustness check: it is applied at evaluation only, and only if macro-F1 on
+  notes over 512 tokens is clearly lower than on shorter notes on validation.
+  Clinical-Longformer (4096 tokens, roughly 8x compute) is not run and is
+  listed as future work.
 
 Caveat supported by the literature: transformers are not guaranteed to beat
 linear baselines on clinical text (Gao et al., IEEE JBHI 2021); keeping the
@@ -79,10 +81,13 @@ during the Issue #17 reading.
 | Keyword rule | seconds, CPU |
 | TF-IDF + logistic regression | under a minute, CPU |
 | TF-IDF + linear SVM | under a minute, CPU |
-| ClinicalBERT fine-tuning | about 20-30 min per run (2,230 notes, 3 epochs) |
+| ClinicalBERT fine-tuning | 3 epochs over the 1,560 training notes at 512 tokens, batch 16 = about 98 steps per epoch (seconds to about a minute per epoch); about 20-30 min per full run including tokenization, evaluation and checkpoint saving; six runs (three seeds, original and label-masked text) |
 
-A few seeds of ClinicalBERT fit within roughly 2 hours; the whole comparison
-is comfortably inside the free-tier budget.
+The whole comparison (five models, six ClinicalBERT runs, three seeds on
+original and masked text) needs about 2.5 to 3 hours of GPU time, comfortably
+inside the free-tier budget; the chunking robustness check adds inference
+only. These are estimates from the step count, not measurements; the first
+Colab run replaces them with measured wall-clock times.
 
 ## Planned leakage experiment
 

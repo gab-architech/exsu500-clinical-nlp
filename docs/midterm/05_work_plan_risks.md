@@ -1,5 +1,5 @@
 > AI-drafted (Claude, planning thread, Nov 3; risks table revised with Claude Code, Nov 5). Owner: Gabriel.
-> Resolved Nov 5: truncation strategy set (head+tail, 256+256) after measuring 64.2% of notes over 512 tokens; see `docs/midterm_numbers.md`.
+> Resolved Nov 12 on the full dataset: 62.5% of notes exceed 512 tokens (median 652). Primary setting head+tail truncation (256+256), pre-registered fallback chunking with late fusion (3 chunks), Clinical-Longformer as future work; see `docs/midterm_numbers.md`.
 
 # V. Work Plan and Risks
 
@@ -13,8 +13,8 @@
 |---|---|
 | Small classes (smallest: 7 test notes) give unstable per-class scores | Macro-F1 as primary metric; bootstrap 95% CIs; per-class results reported |
 | General Medicine merges 8 raw labels and is heterogeneous (14 blind-audit disagreements) | Per-class error analysis; General Medicine reported separately |
-| Notes over 512 tokens (64.2% of the final dataset, median 665 tokens) are truncated by ClinicalBERT | Head+tail truncation (256+256) fixed in advance; truncated share reported as a limitation; compared with TF-IDF models, which have no length limit |
-| Limited free GPU compute | Small number of seeds; saved checkpoints |
+| Notes over 512 tokens (62.5% of the final dataset, median 652 tokens) are truncated by ClinicalBERT | Head+tail truncation (256+256) fixed in advance, 59.6% of tokens kept; truncated share reported as a limitation; pre-registered trigger on validation only for evaluation-time chunking with late fusion (at most 3 chunks per note, 1,530 tokens, about 94% coverage); Clinical-Longformer (about 8x compute) left as future work |
+| Limited free GPU compute (about 2.5 to 3 hours in total: six ClinicalBERT runs, three seeds on original and label-masked text, plus the linear models) | Small number of seeds only; checkpoints saved to Drive |
 | Rule-based suggestions could anchor reviewers (48.5% match with final labels) | Reviewers read each full note and could override; blind audit measured agreement (κ = 0.85) |
 | Near-duplicate notes across piles could inflate scores (11 pairs at cosine 0.8 or above; 9 test notes) | Test macro-F1 reported with and without those notes |
 | MTSamples are sample transcriptions, not real routing data | Stated as a limit on generalisability |
