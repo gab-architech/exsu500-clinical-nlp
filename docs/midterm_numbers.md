@@ -11,7 +11,7 @@ Source: `data/README.md`, `docs/data_cleaning.md`
 - MTSamples (Kaggle `tboyle10/medicaltranscriptions`, `mtsamples.csv`), CC0 as listed on Kaggle
 - Raw: 4,999 rows, 6 columns, about 40 raw specialty labels
 - Leakage measured in EDA: `keywords` contains the label in 97.9% of rows that have keywords (3,850 of 3,931); the label string appears in the transcription itself in 8.7% of rows with text (431 of 4,966). Only `transcription` is used as model input.
-- Duplication: 95.9% of raw rows duplicate another row's text
+- Duplication: at the raw level, only 206 of the 4,966 rows with text carry a text that appears exactly once (the rest are copies); most of that duplication sits in the document-type and Surgery labels and is removed by Table 1 steps 2 and 3, leaving 661 duplicate rows at the deduplication step (2,940 rows to 2,279 unique texts, a 22.5% reduction there).
 
 ## 2. Cleaning steps (Table 1)
 

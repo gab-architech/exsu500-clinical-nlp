@@ -94,7 +94,8 @@ for i in range(len(ys) - 1):
 note(ys[1] + BOX_H - 0.06, "no text = no signal")
 note(ys[2] + BOX_H - 0.06, "document type is not\na routing destination")
 note(ys[3] + BOX_H - 0.06, "Surgery is a procedure,\nnot a specialty")
-note(ys[4] + BOX_H - 0.06, "95.9% of raw rows\nduplicate another text")
+note(ys[4] + BOX_H - 0.06,
+     "661 of these 2,940 rows\nduplicate a text (22.5%);\nmost raw duplication went\nwith the labels above")
 note(ys[4] + BOX_H - 0.60, "+48 surgery-only texts\n= 2,327 candidates", color=BLUE, size=6.3)
 note(ys[5] + BOX_H - 0.06, "keyword-rule suggestions\nagreed 48.5% with humans")
 note(ys[6] + BOX_H - 0.06, "no routing class = excluded")

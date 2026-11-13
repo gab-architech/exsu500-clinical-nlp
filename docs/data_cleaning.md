@@ -1,7 +1,7 @@
 # Data cleaning and labelling
 
 Author: Yuhan Zhang (Modelling lead)
-Last updated: Oct 26, 2026
+Last updated: Nov 12, 2026
 Input: `mtsamples.csv` (4,999 rows, 6 columns: `description`,
 `medical_specialty`, `sample_name`, `transcription`, `keywords`,
 `Unnamed: 0`).
@@ -127,18 +127,23 @@ by a human.
 
 **What:** normalize every transcription and keep one example per unique text.
 
-**Why:** 95.9% of the raw rows duplicate another row's text; most notes are
-filed under several labels. The evaluation protocol requires the same note
-text to stay inside a single split (no leakage across train / validation /
-test), so the split is built at the text level: one text = one example = one
-label. Collapsing first makes that guarantee explicit.
+**Why:** notes are filed under several labels, so the same text can appear in
+multiple rows with different labels. The evaluation protocol requires the same
+note text to stay inside a single split (no leakage across train / validation
+/ test), so the split is built at the text level: one text = one example = one
+label. Collapsing first makes that guarantee explicit. (For context,
+duplication is far worse in the raw data: of the 4,966 rows that have text,
+only 206 carry a text that appears exactly once. Most of that duplication
+sits in the document-type and Surgery labels and is already removed by
+Steps 3 and 4, so it does not affect this step's count.)
 
 **Tool:** `normalize_text()` (defined in notebook Section 5: lowercase, strip
 punctuation, collapse whitespace) followed by
 `work.groupby("_norm")[LABEL_COL].apply(lambda s: sorted(set(s)))` to list the
 labels carried by each unique text.
 
-**Count:** 2,940 rows collapse to **2,279 unique texts**:
+**Count:** 2,940 rows collapse to **2,279 unique texts** (661 duplicate rows,
+a 22.5% reduction at this step):
 
 - **578 texts** are filed under 2+ real specialties (label conflicts, for
   example one angiogram under both `Cardiovascular / Pulmonary` and
