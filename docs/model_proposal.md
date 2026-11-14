@@ -49,11 +49,13 @@ spec's baseline options explicitly include rule models.
   the median note is 652 tokens and 62.5% of notes exceed 512 (22.3% exceed
   1024, maximum 4357). We therefore use head+tail truncation (first 256 and
   last 256 tokens), which keeps the opening and the impression/conclusion
-  rather than first-512 truncation, and retains 59.6% of the dataset's
-  tokens. Chunking with late fusion, capped at 3 chunks per note (1,530
-  tokens, about 94% coverage, about 1.5x compute) is the pre-registered
-  robustness check: it is applied at evaluation only, and only if macro-F1 on
-  notes over 512 tokens is clearly lower than on shorter notes on validation.
+  rather than first-512 truncation, and retains 59.7% of the dataset's
+  tokens. Chunking with late fusion, capped at 3 chunks of 512 tokens each
+  (covering about 94% of notes, about 2x inference) is the pre-registered
+  robustness check: it is applied at evaluation only, and only if, on
+  validation, macro-F1 on notes over 512 tokens is more than 3 points (0.03)
+  lower than on shorter notes, with both subgroup scores reported regardless.
+  This is a fixed decision rule, not a significance test.
   Clinical-Longformer (4096 tokens, roughly 8x compute) is not run and is
   listed as future work.
 
