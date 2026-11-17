@@ -1,11 +1,12 @@
 > AI-drafted (Claude, planning thread, Nov 3; risks table revised with Claude Code, Nov 5). Owner: Gabriel.
+> Timeline updated Nov 17 to the team-agreed dates; the submitted midterm (`EXSU500_Midterm_Report_Group5_submitted.pdf`) shows the earlier plan.
 > Resolved Nov 12 on the full dataset: 62.5% of notes exceed 512 tokens (median 652). Primary setting head+tail truncation (256+256), pre-registered fallback chunking with late fusion (3 chunks), Clinical-Longformer as future work; see `docs/midterm_numbers.md`.
 
 # V. Work Plan and Risks
 
 *Roles.* Gabriel Barrere (data lead, coordination), Yuhan Zhang (modelling lead), Jessica Oentoro (writing lead), Karman Kang (interface lead, writing support). All members contribute code and text through a shared GitHub repository.
 
-*Timeline.* Baseline and classical models are trained first (Nov 10 to 20), followed by ClinicalBERT fine-tuning with multiple seeds (Nov 16 to 27). The test set is evaluated once, after all models are finalised (Nov 27). The manuscript, model card and repository documentation follow (Nov 28 to Dec 6), then the recorded presentation (Dec 7 to 10), for submission on Dec 11.
+*Timeline.* Validation runs for every model are completed by Nov 22. Models are locked on Nov 25, when the test set is evaluated once in a single final run. The full manuscript draft follows by Dec 1 and the recorded presentation by Dec 3, for team submission on Dec 4 (course deadline Dec 11).
 
 *Risks and mitigations.*
 

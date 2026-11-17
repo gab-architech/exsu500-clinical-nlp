@@ -121,6 +121,18 @@ All members contribute code and writing and commit under their own accounts.
 
 **October 26, 2026:** EDA and label cleaning complete: final dataset of 2,230 notes across 11 classes. The pipeline and every decision are documented in [docs/data_cleaning.md](docs/data_cleaning.md).
 
+## Timeline to the final submission
+
+Team-agreed dates (course deadline: Fri Dec 11).
+
+| Date | Milestone |
+|---|---|
+| Sun Nov 22 | Validation runs done for every model (validation split only) |
+| Wed Nov 25 | Model lock, then the single `--final` test-set run |
+| Tue Dec 1 | Full manuscript draft |
+| Thu Dec 3 | Video recorded |
+| Fri Dec 4 | Team submission |
+
 ## Use of Generative AI statement
 
 | Tool + version | Date | Used for | How output was verified |

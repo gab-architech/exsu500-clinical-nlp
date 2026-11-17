@@ -30,7 +30,7 @@ Guiding principle from the spec: novelty is NOT required. Competence, honesty an
 - Task type: single-label, multi-class text classification (11 classes; final list confirmed by manual validation)
 - Dataset: MTSamples, Kaggle tboyle10/medicaltranscriptions (`mtsamples.csv`), CC0 as listed on Kaggle. Known issues (document-type labels, Surgery overlap, duplicates, label leakage in keywords/description/note text, rare classes) are listed in README.md
 - Splits and metrics: split frozen Nov 3 (`splits/split_seed42.csv`: 70/15/15, stratified, seed 42, duplicates kept within one split); macro-F1 primary; training scope: Standard (#26)
-- Next deliverable: Nov 9 Midterm Report. data/README.md and 01_data_check.ipynb still have placeholders.
+- Midterm submitted (Group 5). Next deliverable: final, team target Fri Dec 4 (course deadline Dec 11). Timeline in README: validation runs done Nov 22, model lock and single `--final` test run Nov 25, manuscript draft Dec 1, video Dec 3.
 - Branch/PR workflow: proposed, confirm with team (docs-only changes currently go straight to main)
 
 ## Deadlines (all 23:59 Eastern, submitted on myCourses)
@@ -154,6 +154,7 @@ Structure: title/authors, abstract (<=250 words), introduction & clinical motiva
 - [ ] At least one original figure
 - [ ] Honest statement of what the model cannot do and what would be needed before clinical use
 - [ ] Contribution statement consistent with commit history
+- [ ] Word file properties set (File > Properties): title = paper title, author = the four authors, not the template's "Paper Title" / "IEEE"
 
 ## Video (Dec 11, max 7:00, content after 7:00 is not marked)
 
