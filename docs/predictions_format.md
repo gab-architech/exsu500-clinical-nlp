@@ -1,5 +1,7 @@
 # Prediction file format
 
+> **Test predictions are generated once, after the model lock on Wed Nov 25.** Until then, write and evaluate validation predictions only (`--split val`).
+
 Every model's predictions go through one evaluation script (`src/evaluate.py`). This is the format it expects. Check a file with:
 
 ```bash
