@@ -15,8 +15,7 @@ without the test notes listed in this file. The threshold is fixed before any
 modelling.
 """
 
-import hashlib
-import re
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -24,26 +23,16 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 ROOT = Path(__file__).resolve().parents[1]  # repo root, so paths work from any folder
+sys.path.insert(0, str(ROOT / "src"))
+from data import load_notes, normalize_text  # noqa: E402  (shared note loading, src/data.py)
+
 THRESHOLD = 0.8
 
 
-def normalize_text(s):
-    """Lowercase, strip punctuation, collapse whitespace (same as notebooks/02_eda.ipynb, Section 5)."""
-    s = s.lower()
-    s = re.sub(r"[^a-z0-9\s]", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
-
-
 def main():
-    raw = pd.read_csv(ROOT / "data" / "mtsamples.csv")
-    raw = raw[raw["transcription"].notna()].copy()
-    raw["norm"] = raw["transcription"].map(normalize_text)
-    # text_id = first 8 characters of the SHA-1 of the normalized text
-    raw["text_id"] = raw["norm"].map(lambda n: hashlib.sha1(n.encode()).hexdigest()[:8])
-
-    notes = pd.read_csv(ROOT / "labels" / "final_labels.csv")
-    notes = notes.merge(pd.read_csv(ROOT / "splits" / "split_seed42.csv"), on="text_id")
-    notes = notes.merge(raw.drop_duplicates("text_id")[["text_id", "norm"]], on="text_id")
+    # All 2,230 final notes with their split (a data check, so every split is read)
+    notes = load_notes().rename(columns={"note_id": "text_id"})
+    notes["norm"] = notes["text"].map(normalize_text)
     assert len(notes) == 2230, f"Expected 2,230 notes, found {len(notes)}"
 
     # Cosine similarity of every pair; TF-IDF vectors are already unit length
