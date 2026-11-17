@@ -10,7 +10,7 @@
 
 # Use of Generative AI statement
 
-**Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code:** assisted with an initial literature search and draft summaries of candidate papers, and produced reference first drafts of the report sections, which section owners compared with their own drafts and rewrote. It also assisted with the implementation and debugging of code for blind-review statistics, data splitting, near-duplicate detection and Figure 1, and supported the preparation of the project's numbers sheet and Table I, document assembly using the IEEE template, formatting, length adjustments, citation renumbering, repository administration and issue tracking.
+**Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code:** produced reference first drafts of the report sections, which section owners compared with their own drafts and rewrote. It also assisted with the implementation and debugging of code for blind-review statistics, data splitting, near-duplicate detection and Figure 1, and supported the preparation of the project's numbers sheet and Table I, document assembly using the IEEE template, formatting, length adjustments, citation renumbering, repository administration and issue tracking.
 
 **Claude Code (Anthropic CLI), model backend selected per session (claude-sonnet-5.5 and kimi-k3), Oct 15 to Nov 5:** assisted with coding and debugging the data-cleaning pipeline and the two offline review tools, drafted literature notes and the model proposal, which the modelling lead reviewed and finalized, and flagged three suspicious first-pass labels in a targeted audit. Session logs are available to the instructors upon request.
 
