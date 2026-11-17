@@ -2,21 +2,24 @@
 
 Status: **draft for review by Yuhan (Modelling lead)**, Nov 17. Written by Gabriel with Claude Code. Nothing has been trained yet.
 
+**Decided by Gabriel (data lead), Nov 17:** items 2, 4 and 7, and the data part of item 1 (`src/data.py`, now on this branch). **Open for Yuhan:** items 3, 5 and 6, and confirming the `--masked` flag in his training script.
+
 Purpose: Yuhan runs ClinicalBERT on the original text (seeds 42, 43, 44) and Gabriel runs it on the masked text (same seeds), on separate Colab accounts. The two sets of runs are only comparable if they use one pipeline, with **one flag (`--masked`) as the only difference**. This document describes that pipeline step by step so it can be agreed before anyone trains.
 
 How to read it:
 - **Agreed**: already decided in `docs/model_proposal.md`, `docs/midterm_numbers.md` or Issue #22.
+- **DECIDED (Gabriel)**: data and process items settled by the data lead.
 - **TO DECIDE (Yuhan)**: open; a proposal is given where useful, but nothing is fixed until Yuhan confirms.
 
 > **Code status (flag).** As of Nov 17 there is no ClinicalBERT training code in the repository, on any branch. The structure below is therefore a proposal for how Yuhan's code could be organised so the flag works, not a change to existing code.
 
-## 0. Proposed code layout (TO DECIDE, Yuhan)
+## 0. Code layout (data part DECIDED; `--masked` TO CONFIRM, Yuhan)
 
 The smallest structure that makes `--masked` the only difference:
 
 | File | Content | Owner |
 |---|---|---|
-| `src/data.py` | `load_split_notes(split)`: rebuilds note text from `data/mtsamples.csv` and returns `note_id, text, label` for one split (step 1) | Yuhan |
+| `src/data.py` | `load_split_notes(split)`: rebuilds note text from `data/mtsamples.csv` and returns `note_id, text, label` for one split (step 1). **Done (Nov 17)**; `scripts/check_near_duplicates.py` now uses it too (output unchanged) | Gabriel |
 | `src/masking.py` | `mask_label_strings(text)`: the one masking function used by **every** model family, TF-IDF included (step 2) | Yuhan |
 | `src/train_clinicalbert.py` | `--seed N [--masked] --split val`: trains, saves the checkpoint, writes predictions (steps 3 to 6) | Yuhan |
 
@@ -31,11 +34,11 @@ The smallest structure that makes `--masked` the only difference:
 4. Check the counts before training: **train 1,560, val 335**. Stop if they differ.
 5. **The test split is never loaded before Wed Nov 25.** `load_split_notes` should refuse `"test"` unless an explicit final flag is set.
 
-**TO DECIDE (Yuhan):**
-- *Which raw text represents a note ID.* A few IDs have several raw strings that differ only in whitespace or punctuation (e.g. the ERCP note filed under Surgery and Gastroenterology). Proposal: keep the first occurrence in file order, so both runs see the identical string.
-- *Model input.* Proposal: feed the raw `transcription` (not the normalized lowercase text), so the tokenizer sees the text as written. `keywords` and `description` are never used (label leakage, `docs/data_cleaning.md`).
+**DECIDED (Gabriel, Nov 17):**
+- *Which raw text represents a note ID:* a few IDs have several raw strings that differ only in whitespace or punctuation (e.g. the ERCP note filed under Surgery and Gastroenterology). The **first occurrence in file order** is used, so both runs see the identical string.
+- *Model input:* the raw `transcription` **as written** (not the normalized lowercase text). `keywords` and `description` are never used (label leakage, `docs/data_cleaning.md`).
 
-**Suggestion (flag):** the note ID logic is now needed in three places (the EDA notebook, `scripts/check_near_duplicates.py` and the training code). The team rule is that a function used twice moves to `src/`, so `src/data.py` would become the single copy.
+Both are implemented in `src/data.py` (`load_split_notes`), which every model should use. It checks the counts and refuses the test split unless `final=True`.
 
 ## 2. Masking
 
@@ -43,7 +46,7 @@ Masking removes the specialty name from the note text, so we can measure how muc
 
 **Agreed:** the masked variant removes "label strings" from the text (`docs/model_proposal.md`). Only the `transcription` is masked; `keywords` and `description` are already excluded for every run.
 
-**What exactly is masked: TO DECIDE (Yuhan).** The 8.7% figure in the midterm counted rows whose **own raw label**, as a whole string, appears anywhere in the text (case-insensitive, all 4,966 raw rows; `notebooks/02_eda.ipynb`, cell 16). That is a measurement, not a masking rule: a composite label such as "Cardiovascular / Pulmonary" almost never appears word for word, so a rule based on it would mask very little. Two options:
+**What exactly is masked: TO DECIDE (Yuhan).** Measured on the 2,230 final notes (Nov 17, counts only), see the table after the options. The 8.7% figure in the midterm counted rows whose **own raw label**, as a whole string, appears anywhere in the text (case-insensitive, all 4,966 raw rows; `notebooks/02_eda.ipynb`, cell 16). That is a measurement, not a masking rule: a composite label such as "Cardiovascular / Pulmonary" almost never appears word for word, so a rule based on it would mask very little. Two options:
 
 | | Option A: specialty names | Option B: specialty names and related word forms |
 |---|---|---|
@@ -51,6 +54,16 @@ Masking removes the specialty name from the note text, so we can measure how muc
 | Matching | whole words, case-insensitive, longest term first | same |
 | Strength | Simple, auditable, close to "label strings removed" in the midterm | Removes more of the direct cue |
 | Weakness | Leaves "urologist" or "cardiology clinic" in place | Starts to remove clinical content ("neurologic exam" is real clinical signal), and the list is a judgment call |
+
+**Measured effect of each option** (whole words, case-insensitive, all 2,230 notes; script output only, no note text):
+
+| Option | Terms | Notes changed | Words replaced | Most-replaced terms |
+|---|---:|---:|---:|---|
+| A: specialty names (list above) | 24 | 528 (23.7%) | 1,145 | pulmonary 560, cardiovascular 269, orthopedic 48, neurology 46 |
+| B: A plus related forms | 58 | 771 (34.6%) | 2,050 | pulmonary 560, cardiovascular 269, neurologic 255, neurological 165, psychiatric 161 |
+| C: A without "cardiovascular" and "pulmonary", plus "cardiology" and "pulmonology" | 24 | 241 (10.8%) | | |
+
+Why option C was added: in options A and B most replacements are not specialty labels. "Cardiovascular" is mostly a physical-exam or review-of-systems heading (77% of uses are followed by a colon, e.g. "CARDIOVASCULAR: regular rate"), and "pulmonary" is mostly clinical content (only 4% are headings; e.g. "pulmonary embolism"). Masking them removes exam structure and clinical meaning rather than the filing label, and hits General Medicine notes hardest (40% changed under A). The same applies to "neurologic" and "psychiatric" in option B (61% and 37% headings). Option C keeps to discipline names and changes 10.8% of notes, close to the 8.7% measured in the EDA.
 
 Proposal for the list either way: build it once in code from the raw label names (plus, for B, a short fixed list written down **before** any results), and do not tune it after seeing scores.
 
@@ -79,7 +92,7 @@ Steps:
 2. If the note fits, use all of it. If not, keep the first part and the last part of the token sequence and drop the middle.
 3. Add the special tokens (`[CLS]` at the start, `[SEP]` at the end), pad to 512, and build the attention mask.
 
-**TO DECIDE (Yuhan), small but exact:** 512 positions include the 2 special tokens, so only **510** text tokens fit. "256 + 256" is therefore not literally possible. Proposal: first **255** + last **255** text tokens. Whatever is chosen, both runs use the same numbers, and the figure "59.7% of tokens kept" in `docs/midterm_numbers.md` should be recomputed with them.
+**DECIDED (Gabriel, Nov 17):** 512 positions include the 2 special tokens, so only **510** text tokens fit and "256 + 256" is not literally possible. Head+tail uses the **first 255 + last 255** text tokens. The figure "59.7% of tokens kept" in `docs/midterm_numbers.md` should be recomputed with 255 + 255 at the first tokenizer run.
 
 ## 4. Training
 
@@ -137,16 +150,18 @@ The same rule applies to every seed and both runs. Checkpoints are saved to Goog
 
 **Test set:** test predictions are written once, after the model lock on Wed Nov 25, from the saved checkpoints, and evaluated with `python src/evaluate.py --split test --final`.
 
-## Also needed before training (flag)
+## Package versions (DECIDED, Gabriel, Nov 17)
 
-- `requirements.txt` only gives minimum versions (`transformers>=4.40`, `torch>=2.2`). Both Colab accounts need the same versions: pin them from the environment Yuhan trains in.
+`requirements.txt` only gives minimum versions (`transformers>=4.40`, `torch>=2.2`). Rule: at the **first real Colab run**, record the exact versions of the key libraries (`torch`, `transformers`, `tokenizers`, `datasets`, `scikit-learn`, `numpy`, `pandas`) with `pip freeze`, pin them in `requirements.txt`, and both accounts install from that file for every later run.
 
-## Decisions for Yuhan (summary)
+## Decisions (summary)
 
-1. Code layout and the `--masked` flag (section 0)
-2. Which raw text represents a note ID; raw vs normalized input (section 1)
-3. Masking: option A or B, and the replacement token (section 2)
-4. Head+tail split: 255 + 255 or another exact split (section 3)
-5. Learning rate, optimizer, weight decay, warmup, class weighting (section 4)
-6. Checkpoint rule: final epoch vs best validation epoch, and which metric (section 5)
-7. Pinned package versions
+| # | Item | Status |
+|---|---|---|
+| 1 | Code layout | `src/data.py` done (Gabriel). **Yuhan to confirm** his training script takes `--seed` and `--masked` and calls `load_split_notes` |
+| 2 | Which raw text per note ID; input as written | Decided (Gabriel): first occurrence; raw text |
+| 3 | Masking: option A, B or C, and the replacement token | **Yuhan to decide** |
+| 4 | Head+tail split | Decided (Gabriel): 255 + 255 |
+| 5 | Learning rate, optimizer, weight decay, warmup, class weighting | **Yuhan to decide** |
+| 6 | Checkpoint rule: final epoch vs best validation epoch (and metric) | **Yuhan to decide** |
+| 7 | Package versions | Decided (Gabriel): pin from the first real Colab run |
