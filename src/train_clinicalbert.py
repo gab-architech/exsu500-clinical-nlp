@@ -116,7 +116,7 @@ class WeightedTrainer(Trainer):
         super().__init__(**kwargs)
         self.class_weights = class_weights
 
-    def compute_loss(self, model, inputs, return_outputs=False):
+    def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
         labels = inputs.pop("labels")
         outputs = model(**inputs)
         loss = torch.nn.functional.cross_entropy(
@@ -184,7 +184,7 @@ def main():
         per_device_eval_batch_size=BATCH_SIZE,
         max_grad_norm=GRADIENT_CLIP,
         fp16=torch.cuda.is_available(),
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
         metric_for_best_model="eval_macro_f1",
@@ -193,7 +193,6 @@ def main():
         seed=args.seed,
         data_seed=args.seed,
         report_to=[],  # no wandb/tensorboard
-        logging_dir=str(checkpoint_dir / "logs"),
         logging_strategy="epoch",
     )
 
@@ -203,7 +202,7 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         compute_metrics=compute_metrics,
         optimizers=(optimizer, scheduler),
     )
