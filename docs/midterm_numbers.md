@@ -114,6 +114,16 @@ Source: `docs/model_proposal.md`, Issue #3
 - Compute: Colab free tier, single T4. Training set 1,560 notes at 512 tokens, batch 16 = about 98 steps per epoch, so one epoch is seconds to about a minute. Budget 20 to 30 min per **full run** (3 epochs plus tokenization, validation evaluation and checkpoint saving), which is not per epoch. The leakage experiment repeats each run on the masked text, so three seeds = six runs = **about 2.5 to 3 hours of GPU time in total**; the chunking check adds inference only. All figures are estimates from the step count, not measurements; nothing has been trained yet.
 - External reference: CLiGNet best leakage-free macro-F1 0.279 on 40 raw classes (Barman 2026); not directly comparable with our 11 classes
 
+## 7b. Measured at the first ClinicalBERT runs (Gabriel, masked text, Nov 18)
+
+Source: `results/run_logs/clinicalbert_masked_seed{42,43,44}.json`, `notebooks/05_clinicalbert_masked.ipynb`, PR #28. These are measurements; where they differ from the estimates in section 7, these replace them.
+
+- Masking (option C, `src/masking.py`): 241 of 2,230 final notes contain at least one masked term (10.8%); by split, train 159, val 35, test 47. This replaces the 8.7% EDA figure for the masked runs (that figure measured raw label strings on 4,966 rows, a different quantity).
+- Head+tail with 255 + 255 text tokens (2 of the 512 positions hold [CLS] and [SEP]): 59.7% of tokens kept on train + val (1,895 notes; median 650 tokens, 62.8% over 510). Test was not read. Same figure as the 256 + 256 estimate.
+- Compute: Colab free tier, Tesla T4, 2.7 to 2.9 min per full run (3 epochs, tokenization, validation, checkpoint), so about 9 min for 3 seeds. The 20 to 30 min per run budget in section 7 was far too high; 6 runs (original + masked) take about 20 min of GPU time.
+- Checkpoint size: 414 MB per seed with weights only (`model.safetensors` plus config and tokenizer). With the optimizer state the Trainer saves by default it is 1.3 GB per seed.
+- Exact versions: torch 2.14.1 (+cu130 on Colab), transformers 5.22.1, tokenizers 0.23.3, datasets 4.8.5, scikit-learn 1.6.1, numpy 2.4.6, pandas 2.2.3 (pinned in `requirements.txt`).
+
 ## Captions
 
 **Table 1.** Data cleaning steps from the raw MTSamples dataset to the final 2,230 notes. Rows until step 3, unique normalized texts from step 4. Counts from `docs/data_cleaning.md`.
