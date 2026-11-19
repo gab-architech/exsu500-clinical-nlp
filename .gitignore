@@ -9,6 +9,9 @@ data/*
 *.safetensors
 *.ckpt
 checkpoints/
+models/
+*.joblib
+*.pkl
 outputs/
 runs/
 wandb/
