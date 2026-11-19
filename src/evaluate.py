@@ -170,7 +170,7 @@ def save_figures(m, classes, stem, fig_dir):
         for j in range(len(classes)):
             if cm[i, j] >= 0.005:
                 ax.text(j, i, f"{cm[i, j] * 100:.0f}", ha="center", va="center", fontsize=4.5,
-                        color="black" if cm[i, j] > 0.5 else "white")
+                        color="white" if cm[i, j] > 0.5 else "black")
     ax.set_xticks(range(len(classes)), names, rotation=60, ha="right", fontsize=5)
     ax.set_yticks(range(len(classes)), names, fontsize=5)
     ax.set_xlabel("Predicted class")
