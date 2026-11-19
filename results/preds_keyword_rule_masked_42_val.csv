@@ -1,0 +1,336 @@
+note_id,true_label,pred_label,prob_Cardiovascular / Pulmonary,prob_ENT / Ophthalmology,prob_Gastroenterology,prob_General Medicine,prob_Hematology - Oncology,prob_Neurology,prob_Obstetrics / Gynecology / Pediatrics,prob_Orthopedic,prob_Psychiatry / Psychology,prob_Radiology,prob_Urology / Nephrology
+000694c6,Gastroenterology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0066f844,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+00f99e7c,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+015de361,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+01ef8061,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+02af4672,Hematology - Oncology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+02c872c1,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+036ecd3f,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+04677e0d,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+05868886,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0591fc7b,Obstetrics / Gynecology / Pediatrics,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+062c9068,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+07a8852e,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+082cc0f0,General Medicine,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+09302667,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0aa48bbe,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0b2a7dfa,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0e17c6e9,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0ecf0212,Hematology - Oncology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0f028319,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0f5080c2,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+0fea8a5c,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+107c57f2,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+111ec574,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+11d14e58,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+12cb9d57,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+142f8b71,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+164c9f93,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+166c9fb0,Psychiatry / Psychology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+18d79959,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+19bd3800,Hematology - Oncology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1bcdfb3b,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1bfe379b,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+1dd1d8de,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1e7cbb69,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+1f3ce4da,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+20ae9fdf,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+210e1a95,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+21e7b5fb,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+223480ce,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+22363a01,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+272a979b,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2739f5d8,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+27a67f24,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+28105179,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+29b62ec1,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2a9ce6d6,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2af02cfa,Hematology - Oncology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2b26877a,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2bff1298,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2c71f09c,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2c8b9b1e,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2e7e7112,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2ef837d8,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+2f443ed4,Hematology - Oncology,Orthopedic,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+2f50e968,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2fa56f90,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+2fe2913f,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+302920fd,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+30cf3412,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3100d240,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+313664cb,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+316651a9,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3308d58a,Hematology - Oncology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+33631e17,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+34251f8b,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+351f4bad,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+359b1f36,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+361b7617,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+36dc253c,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+371ad519,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+3729f6a2,Radiology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+37aa7da6,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+39abf7bb,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+39cafbd3,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+3c60be54,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3caaa470,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+3d345455,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3d499af1,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3d79e036,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3d80ca82,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+3de3d2b1,Gastroenterology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+3e55f665,Urology / Nephrology,Hematology - Oncology,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+3f35705a,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+40eae8be,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+40fe1109,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+414aa309,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+417dc105,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+41b2456e,Hematology - Oncology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+4265737e,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4290f82d,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+42916fbb,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+436df9ea,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+442cd9a0,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+45642639,Hematology - Oncology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+4586ea84,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+4658fed4,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+471a34c9,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+472b3ac4,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+4892bf0f,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+48bb8c1a,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+490dbf56,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+4aa48e23,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+4b515231,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+4bb53c54,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4c3e04e3,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4d57814b,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+4dbe4a0a,Hematology - Oncology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4e0d8026,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+4fcf2903,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+517085e8,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+5190cfa2,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+51a119b7,ENT / Ophthalmology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+52508ae5,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+52f270a6,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+54748d73,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5575d7fd,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+56128bc9,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+571e3269,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+57e29715,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+58a99bf0,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5960f36b,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5a2cdef2,Hematology - Oncology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5a6b5d12,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+5a878e8e,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5ad49b84,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5c03770a,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5dcf5bff,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+5ddb6e9b,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5de811c9,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+5e9a55b5,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+5ee25ba2,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+5f30eb75,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+602f43db,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+61dde247,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+61e5ab44,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6281514e,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+62e7004e,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+62f035eb,Radiology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+632bc097,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+63407a61,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+63de85d7,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+6418e0d3,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+64d48549,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+66a8ef85,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+69431a90,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6aaa0be1,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+6cb7842d,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+6dd6d0c8,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6e631daf,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6f687fe1,Neurology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6f92ab65,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6fe8ebc6,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+6fef2d2c,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+70cb2db5,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+713bb58d,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+71b064d6,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+71dcae57,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+72ac4672,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+73e98bf0,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+73eddbda,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+74fe863b,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+75a2aeff,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+75dc0933,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7643629e,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+76b5f763,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+76d63b1a,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+79ba98d3,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7a68348b,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7afb5f1e,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+7f277c2e,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+80f46fe5,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8125f723,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+817805f4,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+822e9adc,Hematology - Oncology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+84b74fba,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+84b99fa2,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+84e7a721,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+875dd55c,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8775c0c0,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+892ea406,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8a1ac65c,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8a415414,Gastroenterology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8c4ae65f,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8c983948,Gastroenterology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8cb66050,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+8cc6f1db,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+8d01052e,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+8deea1b2,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+8e886690,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+90d7402a,Gastroenterology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+91495fcf,Hematology - Oncology,Hematology - Oncology,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+91a648be,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+91bc6d13,ENT / Ophthalmology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+942cf819,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+947f0113,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+95bb08a9,ENT / Ophthalmology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+97dd0484,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+98e7ad0a,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+990a5bb0,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+990f6724,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+992f3b39,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+9b48b52e,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+9b6583f0,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+9b7d0e6b,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9d619099,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+9ecf4eca,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a0ccb932,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a192ea1c,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a489b225,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a50cdce5,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a62d7330,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a67e2af8,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a6844c01,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a687afa4,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+a8da1eb8,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+a945ef3e,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+a9bd0961,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aa035eb9,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aa1f443f,Psychiatry / Psychology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aa36407d,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aaf5bd49,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+ab404920,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+acc20539,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+adcffdd0,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ae0330d4,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aeaf6153,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+aed2bbba,Gastroenterology,Gastroenterology,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+af0bb732,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+b22d807d,Radiology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+b26085cf,Neurology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+b39ac596,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+b5458b67,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+b581de69,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+b6158e61,Obstetrics / Gynecology / Pediatrics,Obstetrics / Gynecology / Pediatrics,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+b78f2699,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+b93a20d2,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ba38a223,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+bb11fd73,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bb2b69a1,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bb44a805,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bb513d0e,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bc54a14c,Psychiatry / Psychology,Psychiatry / Psychology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+bca7dc49,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bcab23db,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bd87905d,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+be69d744,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+bea5f140,Psychiatry / Psychology,Psychiatry / Psychology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+bec07f1e,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+bfc86b57,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c003766a,Hematology - Oncology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c061395c,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c078ec76,Neurology,Neurology,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+c0ed17e8,Radiology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c1514cd7,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c1975273,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c1b55734,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c238febe,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c24e9e1d,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c250c41b,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c2a4174d,Orthopedic,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c2b99703,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c373722c,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c38c4e68,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c4307170,Radiology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c52ae766,Psychiatry / Psychology,Psychiatry / Psychology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+c56caf49,ENT / Ophthalmology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c595d77c,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+c5d2fe7b,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c6121973,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c8005281,Neurology,ENT / Ophthalmology,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c8405183,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+c874bafb,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ca537eae,General Medicine,ENT / Ophthalmology,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+cbc14d9d,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+cbd4a59d,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ccc127ad,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+ce92bbfd,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+cfb65cdf,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d27e6cd5,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d2baeeb8,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+d301ed2e,Neurology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d3101c9e,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d5242b2e,Neurology,Orthopedic,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+d564ca16,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d5f75119,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d73c6ec9,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d8fbf5bb,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+d94b1c54,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+d9d5e9aa,Obstetrics / Gynecology / Pediatrics,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+da232ebf,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+db99db9d,Urology / Nephrology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+dc7d844a,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+dd07984a,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+dd6d2b8e,ENT / Ophthalmology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+dd8ddf56,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+dda14b6c,Gastroenterology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+ddb457cf,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+df0c6ac0,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+df74e53c,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e05a39b0,Radiology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+e0907d30,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e156823b,Gastroenterology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e1c1dc2b,Urology / Nephrology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e25a9037,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2720b14,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e27a898d,General Medicine,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e2ad5101,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e39f9022,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e3b50811,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e3b62b4c,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e4bb55e8,Neurology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+e560d45c,Psychiatry / Psychology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+e65f7739,Obstetrics / Gynecology / Pediatrics,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+e916d841,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+eba56e45,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+ecc916d0,Orthopedic,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+ed32e9c3,Gastroenterology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ed600507,Psychiatry / Psychology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ef04dec8,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+efcea10d,Orthopedic,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+f057d2c0,Psychiatry / Psychology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+f2579ff5,Cardiovascular / Pulmonary,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+f6b0cc08,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+f6d3334d,Cardiovascular / Pulmonary,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+f737be9a,General Medicine,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+f7928e01,Neurology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+f8eb2a35,ENT / Ophthalmology,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+f98eeae5,Urology / Nephrology,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+fb5d6228,Cardiovascular / Pulmonary,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+fceab55b,ENT / Ophthalmology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+fddfc9ba,Obstetrics / Gynecology / Pediatrics,Cardiovascular / Pulmonary,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+fecb3921,Hematology - Oncology,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ff9f95a0,Obstetrics / Gynecology / Pediatrics,General Medicine,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ffc21c93,Obstetrics / Gynecology / Pediatrics,Radiology,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0

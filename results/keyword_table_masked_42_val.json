@@ -1,0 +1,161 @@
+{
+  "model": "keyword_rule",
+  "masked": true,
+  "split": "val",
+  "seed": 42,
+  "n_train": 1560,
+  "n_keyword_entries": 22,
+  "keywords": {
+    "Cardiovascular / Pulmonary": [
+      {
+        "term": "ventricular",
+        "mi": 0.07438418242465833,
+        "df": 106
+      },
+      {
+        "term": "coronary",
+        "mi": 0.06059554175539576,
+        "df": 138
+      }
+    ],
+    "ENT / Ophthalmology": [
+      {
+        "term": "eye",
+        "mi": 0.05082442514821009,
+        "df": 125
+      },
+      {
+        "term": "intraocular",
+        "mi": 0.043435132077026053,
+        "df": 31
+      }
+    ],
+    "Gastroenterology": [
+      {
+        "term": "colonoscopy",
+        "mi": 0.04192725095060989,
+        "df": 53
+      },
+      {
+        "term": "esophagus",
+        "mi": 0.04120400884845213,
+        "df": 51
+      }
+    ],
+    "General Medicine": [
+      {
+        "term": "procedure",
+        "mi": 0.04152100236646132,
+        "df": 824
+      },
+      {
+        "term": "preoperative",
+        "mi": 0.040743244665343986,
+        "df": 573
+      }
+    ],
+    "Hematology - Oncology": [
+      {
+        "term": "biopsy",
+        "mi": 0.021362949198118486,
+        "df": 135
+      },
+      {
+        "term": "carcinoma",
+        "mi": 0.01701207137645333,
+        "df": 60
+      }
+    ],
+    "Neurology": [
+      {
+        "term": "sensory",
+        "mi": 0.05927148186392864,
+        "df": 104
+      },
+      {
+        "term": "brain",
+        "mi": 0.057848044960394224,
+        "df": 95
+      }
+    ],
+    "Obstetrics / Gynecology / Pediatrics": [
+      {
+        "term": "uterus",
+        "mi": 0.0823063366715546,
+        "df": 78
+      },
+      {
+        "term": "vaginal",
+        "mi": 0.058488394870258156,
+        "df": 69
+      }
+    ],
+    "Orthopedic": [
+      {
+        "term": "tourniquet",
+        "mi": 0.0961082357027899,
+        "df": 90
+      },
+      {
+        "term": "extremity",
+        "mi": 0.07258374263865083,
+        "df": 196
+      }
+    ],
+    "Psychiatry / Psychology": [
+      {
+        "term": "suicidal",
+        "mi": 0.04621001956473201,
+        "df": 28
+      },
+      {
+        "term": "axis",
+        "mi": 0.03599847795578848,
+        "df": 33
+      }
+    ],
+    "Radiology": [
+      {
+        "term": "impression",
+        "mi": 0.04796824708070035,
+        "df": 352
+      },
+      {
+        "term": "patient",
+        "mi": 0.03675791411459428,
+        "df": 1326
+      }
+    ],
+    "Urology / Nephrology": [
+      {
+        "term": "cystoscopy",
+        "mi": 0.03702209188625087,
+        "df": 35
+      },
+      {
+        "term": "urethra",
+        "mi": 0.03656713526957356,
+        "df": 33
+      }
+    ]
+  },
+  "vote_stats": {
+    "notes": 335,
+    "no_hit": 18,
+    "tie": 105,
+    "changed_by_tie_rule": 86,
+    "predicted_per_class": {
+      "Cardiovascular / Pulmonary": 125,
+      "ENT / Ophthalmology": 2,
+      "Gastroenterology": 1,
+      "General Medicine": 97,
+      "Hematology - Oncology": 2,
+      "Neurology": 8,
+      "Obstetrics / Gynecology / Pediatrics": 1,
+      "Orthopedic": 2,
+      "Psychiatry / Psychology": 3,
+      "Radiology": 94,
+      "Urology / Nephrology": 0
+    }
+  }
+}

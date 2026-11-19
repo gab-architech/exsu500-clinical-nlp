@@ -1,0 +1,19 @@
+{
+  "model": "keyword_rule",
+  "masked": false,
+  "split": "val",
+  "seed": 42,
+  "n_train": 1560,
+  "n_eval": 335,
+  "macro_f1": 0.1567199381690936,
+  "accuracy": 0.14925373134328357,
+  "hyperparameters": {
+    "lr_C": null
+  },
+  "versions": {
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6"
+  },
+  "note": "metrics recomputed from the committed prediction file"
+}

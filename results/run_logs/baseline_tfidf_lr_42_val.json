@@ -1,0 +1,19 @@
+{
+  "model": "tfidf_lr",
+  "masked": false,
+  "split": "val",
+  "seed": 42,
+  "n_train": 1560,
+  "n_eval": 335,
+  "macro_f1": 0.862288196655877,
+  "accuracy": 0.8537313432835821,
+  "hyperparameters": {
+    "lr_C": 500.0
+  },
+  "versions": {
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6"
+  },
+  "note": "metrics recomputed from the committed prediction file"
+}
