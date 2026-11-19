@@ -1,0 +1,38 @@
+{
+  "model": "clinicalbert_masked",
+  "seed": 44,
+  "masked": true,
+  "masking_option": "C (see src/masking.py)",
+  "mask_token": "[MASK]",
+  "commit": "49789e4",
+  "gpu": "Tesla T4",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "datasets": "4.8.5",
+    "scikit-learn": "1.6.1",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3"
+  },
+  "hyperparameters": {
+    "model": "emilyalsentzer/Bio_ClinicalBERT",
+    "epochs": 3,
+    "batch_size": 16,
+    "max_length": 512,
+    "head_tail": "255+255",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "class_weighting": "inverse-frequency",
+    "fp16": true
+  },
+  "validation_loss_per_epoch": [
+    1.6726226806640625,
+    0.8614872097969055,
+    0.7091480493545532
+  ],
+  "validation_macro_f1": 0.813080763427908,
+  "wall_clock_seconds": 175.4
+}
