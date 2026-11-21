@@ -1,0 +1,51 @@
+{
+  "model": "clinicalbert",
+  "seed": 43,
+  "masked": false,
+  "masking_option": "none",
+  "mask_token": null,
+  "commit": "4832af0",
+  "gpu": "Tesla T4",
+  "python": "3.13.16",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "tokenizers": "0.23.3",
+    "datasets": "4.8.5",
+    "scikit-learn": "1.6.1",
+    "numpy": "2.4.6",
+    "pandas": "2.2.3"
+  },
+  "hyperparameters": {
+    "model": "emilyalsentzer/Bio_ClinicalBERT",
+    "epochs": 3,
+    "batch_size": 16,
+    "max_length": 512,
+    "head_tail": "255+255",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip": 1.0,
+    "class_weighting": "inverse-frequency",
+    "fp16": true
+  },
+  "validation_loss_per_epoch": [
+    1.7104134559631348,
+    0.9561948776245117,
+    0.8033306002616882
+  ],
+  "validation_macro_f1_per_epoch": [
+    0.5589074346040996,
+    0.7925272054654834,
+    0.8097546000146271
+  ],
+  "best_checkpoint": "/content/drive/MyDrive/exsu500/checkpoints/clinicalbert_seed43/checkpoint-294",
+  "best_checkpoint_step": 294,
+  "best_epoch": 3,
+  "n_train": 1560,
+  "n_val": 335,
+  "validation_macro_f1": 0.8097546000146271,
+  "wall_clock_seconds": 142.1,
+  "wall_clock_scope": "trainer.train() only, excludes tokenization, prediction and logging",
+  "commit_note": "recorded here from the local repository; the Colab copy of the code had no .git, and src/train_clinicalbert.py on Colab was verified by SHA-256 to match that commit"
+}
