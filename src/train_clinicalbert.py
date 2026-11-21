@@ -11,7 +11,7 @@ docs/clinicalbert_pipeline.md (PR #28).
 Loads data with src/data.load_split_notes, masks with
 src/masking.mask_label_strings, trains 3 epochs with the settings agreed on
 PR #28, keeps the checkpoint with the best validation macro-F1, writes the
-validation predictions in docs/predictions_format.md format, and appends a run
+validation predictions in docs/predictions_format.md format, and writes a run
 log to results/run_logs/. The test split is never loaded here (data.py refuses
 it); test predictions come from the saved checkpoints after the model lock.
 
@@ -21,6 +21,7 @@ identical for the original and masked runs, so they are not command-line flags.
 
 import argparse
 import json
+import platform
 import subprocess
 import sys
 import time
@@ -137,6 +138,11 @@ def main():
                         help="where predictions and run logs go; defaults to <repo>/results")
     args = parser.parse_args()
 
+    # Fail loudly instead of training on a CPU: on Colab a CPU run takes hours, and the
+    # default checkpoint path would silently write to the ephemeral /content anyway.
+    if not torch.cuda.is_available():
+        sys.exit("No CUDA device. Switch the Colab runtime to a T4 GPU before training.")
+
     suffix = "_masked" if args.masked else ""
     model_key = f"clinicalbert{suffix}"
     results_dir = args.results_dir or ROOT / "results"
@@ -190,6 +196,7 @@ def main():
         metric_for_best_model="eval_macro_f1",
         greater_is_better=True,
         save_total_limit=1,  # keep only the best checkpoint (Drive space)
+        save_only_model=True,  # weights and config only: optimizer state would triple the size
         seed=args.seed,
         data_seed=args.seed,
         report_to=[],  # no wandb/tensorboard
@@ -210,6 +217,12 @@ def main():
     start = time.time()
     trainer.train()
     wall_clock = time.time() - start
+
+    # The checkpoint directory a best model came from carries its global step, not an epoch
+    # number; convert it so the run log does not mislabel a step as an epoch.
+    best_ckpt = trainer.state.best_model_checkpoint
+    best_step = int(best_ckpt.split("checkpoint-")[-1]) if best_ckpt else None
+    best_epoch = round(best_step / steps_per_epoch) if best_step else None
 
     # Predict the validation split with the best checkpoint and write the
     # prediction file in the exact team format.
@@ -252,6 +265,7 @@ def main():
         "mask_token": MASK_TOKEN if args.masked else None,
         "commit": commit,
         "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else "CPU",
+        "python": platform.python_version(),
         "versions": {pkg: version(pkg) for pkg in
                      ["torch", "transformers", "tokenizers", "datasets", "scikit-learn", "numpy", "pandas"]},
         "hyperparameters": {
@@ -262,8 +276,15 @@ def main():
             "class_weighting": "inverse-frequency", "fp16": torch.cuda.is_available(),
         },
         "validation_loss_per_epoch": [h["eval_loss"] for h in trainer.state.log_history if "eval_loss" in h],
+        "validation_macro_f1_per_epoch": [h["eval_macro_f1"] for h in trainer.state.log_history if "eval_macro_f1" in h],
+        "best_checkpoint": str(trainer.state.best_model_checkpoint),
+        "best_checkpoint_step": best_step,
+        "best_epoch": best_epoch,
+        "n_train": int(len(train_dataset)),
+        "n_val": int(len(val_dataset)),
         "validation_macro_f1": val_macro_f1,
         "wall_clock_seconds": round(wall_clock, 1),
+        "wall_clock_scope": "trainer.train() only, excludes tokenization, prediction and logging",
     }
     (log_dir / f"{model_key}_seed{args.seed}.json").write_text(json.dumps(run_log, indent=2))
     print(f"wrote {log_dir / f'{model_key}_seed{args.seed}.json'}")
