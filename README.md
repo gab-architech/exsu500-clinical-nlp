@@ -96,12 +96,17 @@ requirements.txt                 pinned before final submission
 data/README.md                   download instructions (data itself is gitignored)
 notebooks/
   01_data_check.ipynb            dataset loads, class balance, lengths, duplicates
-  02_eda.ipynb                   (planned)
-  03_ onward                     (planned) one notebook per model, set by Modelling lead
-  NN_test_evaluation.ipynb       (planned) last notebook, only one that touches the test set
+  02_eda.ipynb                   EDA and data cleaning
+  05_clinicalbert_masked.ipynb   the masked ClinicalBERT run
+src/                             the pipeline, numbered in docs/run_order.md
+scripts/                         split, near-duplicate, table and figure scripts
+splits/split_seed42.csv          frozen 70/15/15 split, seed 42 (no text)
+labels/                          final labels and blind-review labels (no text)
+results/                         predictions, metrics, run logs, tables (no data)
+figures/                         manuscript and evaluation figures
 docs/
   CONTRIBUTIONS.md               CRediT + Use of Generative AI statements
-  model_card.md                  (planned)
+  model_card.md                  best-model card
 ```
 
 ## Team roles
@@ -138,5 +143,5 @@ Team-agreed dates (course deadline: Fri Dec 11).
 | Tool + version | Date | Used for | How output was verified |
 |---|---|---|---|
 | Claude Code, Claude Opus 5.5 | Sep 27 to Oct 9 | repo setup, README, data README, CLAUDE.md conventions, 01_data_check configuration | verified by review and a Colab run |
-| Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code | Sep 27 to Dec 4 (whole project) | initial literature search and draft summaries of candidate papers; reference first drafts of report sections; code for the blind-review statistics, data split, near-duplicate check, evaluation harness and figures; numbers sheet; document assembly in the IEEE template; repository administration and issue tracking | every cited paper read in full by a named team member, who verified or rewrote its note; sections reviewed and rewritten by their owners; scripts tested on dummy predictions and cross-checked against scikit-learn; numbers checked against `docs/midterm_numbers.md` |
+| Claude (Anthropic, Claude Opus 5.5), via the Claude desktop app and Claude Code | Sep 27 to Nov 20 (whole project, ongoing) | initial literature search and draft summaries of candidate papers; reference first drafts of report sections; code for the blind-review statistics, data split, near-duplicate check, evaluation harness and figures; numbers sheet; document assembly in the IEEE template; repository administration and issue tracking | every cited paper read in full by a named team member, who verified or rewrote its note; sections reviewed and rewritten by their owners; scripts tested on dummy predictions and cross-checked against scikit-learn; numbers checked against `docs/midterm_numbers.md` |
 | Claude Code (Anthropic CLI; model backend selected per session: claude-sonnet-5.5 and kimi-k3) | Oct 15 to Nov 5 | EDA and the data cleaning pipeline, the review tools, drafts of literature notes and the model proposal (each then reviewed and finalized by the modelling lead), and a targeted audit of the first-pass labels (3 suspicious labels flagged, each correction confirmed by the modelling lead). No AI assigned a final label. | pipeline re-run top to bottom (2,230 notes, 11 classes); session logs available to the instructors on request |

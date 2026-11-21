@@ -1,6 +1,6 @@
 # ClinicalBERT pipeline: shared spec for the original and masked runs
 
-Status: **agreed**, Nov 18. Written by Gabriel with Claude Code; open items decided by Yuhan (Modelling lead) on PR #28. Nothing has been trained yet.
+Status: **agreed**, Nov 18. Written by Gabriel with Claude Code; open items decided by Yuhan (Modelling lead) on PR #28. Both halves have since been trained (original and masked, seeds 42/43/44); results in `docs/results_validation.md`.
 
 **Decided by Gabriel (data lead), Nov 17:** items 2, 4 and 7, and the data part of item 1 (`src/data.py`). **Decided by Yuhan, Nov 18:** items 3, 5 and 6, and the training script (`src/masking.py`, `src/train_clinicalbert.py`, commit `2b24291`, with the transformers 5.x fix in `6b61391`). All items are now closed.
 
