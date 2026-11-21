@@ -327,10 +327,11 @@ def save_model(model_dir, name, vectorizer, model, meta, split) -> None:
 
     Models are written to models/, which is git-ignored: the course rules keep model files
     out of the repository, and the interface needs the fitted TF-IDF pipeline anyway. The
-    split is part of the file name so a later test run cannot overwrite the validation model.
+    file name carries only the model and seed (src/predict_test.py reloads it by that name);
+    the split is recorded in the metadata for provenance.
     """
     model_dir.mkdir(parents=True, exist_ok=True)
-    path = model_dir / f"{name}_{RANDOM_SEED}_{split}.joblib"
+    path = model_dir / f"{name}_{RANDOM_SEED}.joblib"
     meta = {**meta, "split": split, "scikit_learn": __import__("sklearn").__version__}
     joblib.dump({"vectorizer": vectorizer, "model": model, "meta": meta}, path, compress=3)
     print(f"  saved model {path.name} ({path.stat().st_size / 1e6:.1f} MB)")
