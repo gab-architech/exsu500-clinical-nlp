@@ -2,7 +2,7 @@
 
 Single source of truth for every number in the midterm report (Nov 9). If a number is not here, it does not go in the report. Each section names its source file; update the source first, then this sheet.
 
-Last checked: Nov 5, 2026 (literature counts; data numbers Nov 3), against `labels/final_labels.csv` (unchanged since 47d04d8) and `splits/split_seed42.csv` (c029afe).
+Last checked: Nov 20, 2026 (validation results, section 7b; literature counts Nov 5; data numbers Nov 3), against `labels/final_labels.csv` (unchanged since 47d04d8), `splits/split_seed42.csv` (c029afe) and `results/summary_val.csv`. Validation results and their caveats: `docs/results_validation.md`.
 
 ## 1. Dataset
 
@@ -111,7 +111,13 @@ Source: `docs/model_proposal.md`, Issue #3
 - 5 models, 3 families: majority class (reference line) and keyword-rule baseline; TF-IDF + logistic regression and TF-IDF + linear SVM; fine-tuned Bio_ClinicalBERT
 - Note length (Bio_ClinicalBERT tokenizer, all 2,230 notes, measured Nov 12): 1,644,702 tokens in total; median 652, mean 738, maximum 4,357. 62.5% of notes exceed 512 tokens (1,394 of 2,230), 22.3% exceed 1,024, 6.1% exceed 1,536, 1.7% exceed 2,048. Head+tail truncation (256+256) keeps 59.7% of all tokens; 3 chunks (1,536 tokens) fully cover 93.9% of notes. Word-count cross-check: median 415 words, 36.3% exceed 512 words. This supersedes the Nov 5 figure from a 400-note sample (median 665, 64.2% over 512, maximum 2,574; the longest note was not in the sample).
 - Truncation plan (decided Nov 12): primary setting head+tail, first and last 256 tokens, which keeps 59.7% of the dataset's tokens. Pre-registered robustness check: chunking with late fusion, capped at 3 chunks of 512 tokens each (covering about 94% of notes, about 2x inference), evaluation only. Trigger: on validation only, macro-F1 is reported separately for over-512 and ≤512 notes regardless of the gap, and chunking runs only if the over-512 macro-F1 is more than 3 points (0.03) lower; a fixed decision rule, not a significance test. Clinical-Longformer (4,096 tokens, about 8x compute) is not run; it is future work.
-- Compute: Colab free tier, single T4. Training set 1,560 notes at 512 tokens, batch 16 = about 98 steps per epoch, so one epoch is seconds to about a minute. Budget 20 to 30 min per **full run** (3 epochs plus tokenization, validation evaluation and checkpoint saving), which is not per epoch. The leakage experiment repeats each run on the masked text, so three seeds = six runs = **about 2.5 to 3 hours of GPU time in total**; the chunking check adds inference only. All figures are estimates from the step count, not measurements; nothing has been trained yet.
+- Compute: SUPERSEDED by section 7b. The original budget below was an estimate written before
+  any training; the measured values are in section 7b and in the run logs. Kept for the record:
+  Colab free tier, single T4. Training set 1,560 notes at 512 tokens, batch 16 = about 98 steps
+  per epoch, so one epoch is seconds to about a minute. Budget 20 to 30 min per **full run**
+  (3 epochs plus tokenization, validation evaluation and checkpoint saving), which is not per
+  epoch. The leakage experiment repeats each run on the masked text, so three seeds = six runs
+  = about 2.5 to 3 hours of GPU time in total. The estimate was far too high.
 - External reference: CLiGNet best leakage-free macro-F1 0.279 on 40 raw classes (Barman 2026); not directly comparable with our 11 classes
 
 ## 7b. Measured at the first ClinicalBERT runs (Gabriel, masked text, Nov 18)
@@ -120,8 +126,12 @@ Source: `results/run_logs/clinicalbert_masked_seed{42,43,44}.json`, `notebooks/0
 
 - Masking (option C, `src/masking.py`): 241 of 2,230 final notes contain at least one masked term (10.8%); by split, train 159, val 35, test 47. This replaces the 8.7% EDA figure for the masked runs (that figure measured raw label strings on 4,966 rows, a different quantity).
 - Head+tail with 255 + 255 text tokens (2 of the 512 positions hold [CLS] and [SEP]): 59.7% of tokens kept on train + val (1,895 notes; median 650 tokens, 62.8% over 510). Test was not read. Same figure as the 256 + 256 estimate.
-- Compute: Colab free tier, Tesla T4, 2.7 to 2.9 min per full run (3 epochs, tokenization, validation, checkpoint), so about 9 min for 3 seeds. The 20 to 30 min per run budget in section 7 was far too high; 6 runs (original + masked) take about 20 min of GPU time.
-- Checkpoint size: 414 MB per seed with weights only (`model.safetensors` plus config and tokenizer). With the optimizer state the Trainer saves by default it is 1.3 GB per seed.
+- Compute, measured (Nov 20, original-text seeds 42/43/44): 135.8, 142.1 and 143.4 s of
+  `trainer.train()` per run (2.3 to 2.4 min, 3 epochs), which excludes tokenization,
+  validation prediction and log writing. The masked half measured 2.7 to 2.9 min on the same
+  clock. End-to-end wall clock per Colab run, including setup, is a few minutes more.
+- Checkpoint size: 413 MiB per seed with weights only (`model.safetensors` plus config and
+  tokenizer). With the optimizer state the Trainer saves by default it is 1.3 GB per seed.
 - Exact versions: torch 2.14.1 (+cu130 on Colab), transformers 5.22.1, tokenizers 0.23.3, datasets 4.8.5, scikit-learn 1.6.1, numpy 2.4.6, pandas 2.2.3 (pinned in `requirements.txt`).
 
 ## Captions
