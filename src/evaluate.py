@@ -281,7 +281,7 @@ def main():
             "excl_near_dup": evaluate(df[~df["note_id"].isin(near_dup)].reset_index(drop=True), classes, idx["excl_near_dup"]),
         }
         out = {"model": model, "seed": seed, "split": split, "file": f.name, "classes": classes,
-               "near_duplicate_source": str(NEAR_DUP_PATH.relative_to(ROOT)), "n_near_dup_excluded": len(near_dup),
+               "near_duplicate_source": NEAR_DUP_PATH.relative_to(ROOT).as_posix(), "n_near_dup_excluded": len(near_dup),
                "bootstrap": {"resamples": N_BOOT, "seed": RANDOM_SEED, "interval": "95% percentile"},
                "subsets": {name: r[0] for name, r in results.items()}}
         (metrics_dir / f"{model}_{seed}_{split}.json").write_text(json.dumps(out, indent=2))
@@ -329,7 +329,7 @@ def main():
                      f"| {r['accuracy_mean']:.3f} ({r['accuracy_ci_low']:.3f} to {r['accuracy_ci_high']:.3f}) | {r['auroc_macro_ovr']:.3f} | {r['auprc_macro_ovr']:.3f} | {r['ece']:.3f} |")
     footnote = (f"Bootstrap: {N_BOOT} resamples, seed {RANDOM_SEED}, same draws for every model. With several seeds, the CI is pooled: "
                 "the seeds' scores are averaged on each draw. "
-                f"\"No near-duplicates\" excludes the {len(near_dup)} {args.split} notes listed in `{NEAR_DUP_PATH.relative_to(ROOT)}`.")
+                f"\"No near-duplicates\" excludes the {len(near_dup)} {args.split} notes listed in `{NEAR_DUP_PATH.relative_to(ROOT).as_posix()}`.")
     lines += ["", f"\\* {CLIGNET['note']}", footnote]
     (args.out_dir / f"summary_{args.split}.md").write_text("\n".join(lines) + "\n")
     print(f"\nWrote {len(files)} metrics files, {args.out_dir / f'summary_{args.split}.csv'} and figures in {args.fig_dir}")

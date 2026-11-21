@@ -59,7 +59,7 @@ Baselines: CPU only, same pinned scikit-learn, numpy and pandas, recorded in the
 | TF-IDF + linear SVM | 0.875 (0.831 to 0.910) | 0.875 (0.842 to 0.907) | 0.986 | 0.924 | 0.102 |
 | Bio_ClinicalBERT (3 seeds) | 0.805 (0.758 to 0.843) | 0.816 (0.776 to 0.854) | 0.980 | 0.889 | 0.208 |
 
-ClinicalBERT per seed: 0.789, 0.810, 0.816; standard deviation across seeds 0.014.
+ClinicalBERT per seed: 0.789, 0.810, 0.815; standard deviation across seeds 0.014.
 
 The two rule models emit 0 or 1 per class. Their AUROC and AUPRC are computed from those hard
 labels: the majority class gives a constant ranking (AUROC 0.500) and the keyword rule gives a
@@ -97,7 +97,7 @@ to be a false positive.
    general claim that linear models beat transformers on clinical text.
 4. **The best-epoch rule changed nothing here.** All three seeds selected epoch 3, the last
    epoch, and their per-epoch validation macro-F1 rises monotonically (0.624, 0.782, 0.789;
-   0.559, 0.793, 0.810; 0.627, 0.782, 0.816), so no optimism was added by early stopping. The
+   0.559, 0.793, 0.810; 0.627, 0.782, 0.815), so no optimism was added by early stopping. The
    real caveat is that validation was used to watch training and to report, and that no epoch
    was held out from that use.
 5. **The logistic-regression C was selected on validation.** The grid was first swept up to
@@ -223,9 +223,10 @@ to a single point at confidence 1.0 and reads as a calibration curve when it is 
 
 ## 11. What remains before the final report
 
-1. A predict-only path for the test split. Neither script can currently load a saved checkpoint
-   and write test predictions, which the model lock on Nov 25 requires. This must exist before
-   the lock, or the test run cannot be executed from the repository.
+1. A predict-only path for the test split. **Done Nov 20**: `src/predict_test.py` loads the
+   frozen baseline and ClinicalBERT artifacts, re-checks the baselines against the committed
+   validation predictions, then writes test predictions without refitting (section 12). The
+   run itself is still gated by the Nov 25 model lock, as item 2 describes.
 2. Read the test split once, from those checkpoints, and report the same table with test
    numbers, including macro-F1 with and without the 9 test notes that have a near-duplicate in
    another pile.
@@ -247,7 +248,12 @@ python src/validate_predictions.py results/preds_*_val.csv
 python src/evaluate.py --split val
 python scripts/make_results_tables.py
 python scripts/class_threshold_metrics.py
+
+# The single test run, after the Nov 25 model lock (the only step that reads test):
+python src/predict_test.py --final          # loads the frozen models, writes preds_*_test.csv
+python src/evaluate.py --split test --final # metrics, summary_test.csv/.md, figures
 ```
 
 The ClinicalBERT command needs an explicit `--output-dir`: the default writes under the
-repository, which on Colab is the ephemeral `/content`.
+repository, which on Colab is the ephemeral `/content`. The numbered step-by-step order
+(including which steps run on Colab) is in `docs/run_order.md`.

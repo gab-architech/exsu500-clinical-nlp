@@ -25,4 +25,4 @@
 | CLiGNet benchmark* | | | 0.279 | | | | | |
 
 \* Reference only (Barman and Barman 2026): 40 raw MTSamples labels and a different split, so not directly comparable with our 11 classes.
-Bootstrap: 1000 resamples, seed 42, same draws for every model. With several seeds, the CI is pooled: the seeds' scores are averaged on each draw. "No near-duplicates" excludes the 4 val notes listed in `results\near_duplicate_pairs.csv`.
+Bootstrap: 1000 resamples, seed 42, same draws for every model. With several seeds, the CI is pooled: the seeds' scores are averaged on each draw. "No near-duplicates" excludes the 4 val notes listed in `results/near_duplicate_pairs.csv`.
