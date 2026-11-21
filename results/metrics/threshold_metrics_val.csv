@@ -1,0 +1,78 @@
+model,model_label,class,support,sensitivity,specificity,one_hot
+majority_42,Majority class,Cardiovascular / Pulmonary,54,1.0,0.0,True
+majority_42,Majority class,ENT / Ophthalmology,33,0.0,1.0,True
+majority_42,Majority class,Gastroenterology,30,0.0,1.0,True
+majority_42,Majority class,General Medicine,43,0.0,1.0,True
+majority_42,Majority class,Hematology - Oncology,14,0.0,1.0,True
+majority_42,Majority class,Neurology,29,0.0,1.0,True
+majority_42,Majority class,Obstetrics / Gynecology / Pediatrics,26,0.0,1.0,True
+majority_42,Majority class,Orthopedic,52,0.0,1.0,True
+majority_42,Majority class,Psychiatry / Psychology,8,0.0,1.0,True
+majority_42,Majority class,Radiology,16,0.0,1.0,True
+majority_42,Majority class,Urology / Nephrology,30,0.0,1.0,True
+keyword_rule_42,Keyword rule,Cardiovascular / Pulmonary,54,0.4444,0.6406,True
+keyword_rule_42,Keyword rule,ENT / Ophthalmology,33,0.0,0.9934,True
+keyword_rule_42,Keyword rule,Gastroenterology,30,0.0333,1.0,True
+keyword_rule_42,Keyword rule,General Medicine,43,0.0233,0.6712,True
+keyword_rule_42,Keyword rule,Hematology - Oncology,14,0.0714,0.9969,True
+keyword_rule_42,Keyword rule,Neurology,29,0.2759,1.0,True
+keyword_rule_42,Keyword rule,Obstetrics / Gynecology / Pediatrics,26,0.0385,1.0,True
+keyword_rule_42,Keyword rule,Orthopedic,52,0.0,0.9929,True
+keyword_rule_42,Keyword rule,Psychiatry / Psychology,8,0.375,1.0,True
+keyword_rule_42,Keyword rule,Radiology,16,0.6875,0.7398,True
+keyword_rule_42,Keyword rule,Urology / Nephrology,30,0.0,1.0,True
+tfidf_lr_42,TF-IDF + logistic regression,Cardiovascular / Pulmonary,54,0.7778,0.9858,False
+tfidf_lr_42,TF-IDF + logistic regression,ENT / Ophthalmology,33,0.8182,0.9934,False
+tfidf_lr_42,TF-IDF + logistic regression,Gastroenterology,30,0.6333,1.0,False
+tfidf_lr_42,TF-IDF + logistic regression,General Medicine,43,0.6977,0.9555,False
+tfidf_lr_42,TF-IDF + logistic regression,Hematology - Oncology,14,0.5,0.9969,False
+tfidf_lr_42,TF-IDF + logistic regression,Neurology,29,0.7586,0.9967,False
+tfidf_lr_42,TF-IDF + logistic regression,Obstetrics / Gynecology / Pediatrics,26,0.8462,0.9968,False
+tfidf_lr_42,TF-IDF + logistic regression,Orthopedic,52,0.8077,0.9929,False
+tfidf_lr_42,TF-IDF + logistic regression,Psychiatry / Psychology,8,1.0,0.9969,False
+tfidf_lr_42,TF-IDF + logistic regression,Radiology,16,0.8125,0.9937,False
+tfidf_lr_42,TF-IDF + logistic regression,Urology / Nephrology,30,0.8667,1.0,False
+tfidf_svm_42,TF-IDF + linear SVM,Cardiovascular / Pulmonary,54,0.8148,0.9858,False
+tfidf_svm_42,TF-IDF + linear SVM,ENT / Ophthalmology,33,0.8485,0.9901,False
+tfidf_svm_42,TF-IDF + linear SVM,Gastroenterology,30,0.7333,0.9967,False
+tfidf_svm_42,TF-IDF + linear SVM,General Medicine,43,0.6744,0.9658,False
+tfidf_svm_42,TF-IDF + linear SVM,Hematology - Oncology,14,0.5,1.0,False
+tfidf_svm_42,TF-IDF + linear SVM,Neurology,29,0.8276,0.9935,False
+tfidf_svm_42,TF-IDF + linear SVM,Obstetrics / Gynecology / Pediatrics,26,0.9615,0.9968,False
+tfidf_svm_42,TF-IDF + linear SVM,Orthopedic,52,0.8846,0.9894,False
+tfidf_svm_42,TF-IDF + linear SVM,Psychiatry / Psychology,8,1.0,0.9969,False
+tfidf_svm_42,TF-IDF + linear SVM,Radiology,16,0.8125,0.9969,False
+tfidf_svm_42,TF-IDF + linear SVM,Urology / Nephrology,30,0.9667,1.0,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Cardiovascular / Pulmonary,54,0.7963,0.9715,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,ENT / Ophthalmology,33,0.9091,0.9934,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Gastroenterology,30,0.7667,0.9967,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,General Medicine,43,0.0,1.0,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Hematology - Oncology,14,0.4286,0.9969,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Neurology,29,0.6207,1.0,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Obstetrics / Gynecology / Pediatrics,26,0.8462,0.9935,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Orthopedic,52,0.8462,0.9682,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Psychiatry / Psychology,8,0.875,0.9939,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Radiology,16,0.875,0.9937,False
+clinicalbert_42,Bio_ClinicalBERT seed 42,Urology / Nephrology,30,0.8,0.9967,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Cardiovascular / Pulmonary,54,0.6296,0.9929,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,ENT / Ophthalmology,33,0.7576,0.9967,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Gastroenterology,30,0.7,0.9967,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,General Medicine,43,0.0465,1.0,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Hematology - Oncology,14,0.2143,1.0,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Neurology,29,0.5862,1.0,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Obstetrics / Gynecology / Pediatrics,26,0.6538,0.9968,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Orthopedic,52,0.8269,0.9788,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Psychiatry / Psychology,8,1.0,0.9939,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Radiology,16,0.8125,0.9937,False
+clinicalbert_43,Bio_ClinicalBERT seed 43,Urology / Nephrology,30,0.8,1.0,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Cardiovascular / Pulmonary,54,0.7407,0.9858,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,ENT / Ophthalmology,33,0.8182,0.9901,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Gastroenterology,30,0.7,0.9967,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,General Medicine,43,0.1395,1.0,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Hematology - Oncology,14,0.1429,0.9969,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Neurology,29,0.7586,1.0,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Obstetrics / Gynecology / Pediatrics,26,0.8846,0.9871,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Orthopedic,52,0.8462,0.9753,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Psychiatry / Psychology,8,1.0,0.9939,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Radiology,16,0.875,0.9937,False
+clinicalbert_44,Bio_ClinicalBERT seed 44,Urology / Nephrology,30,0.8667,0.9967,False

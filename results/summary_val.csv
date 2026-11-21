@@ -1,4 +1,6 @@
 model,subset,n_seeds,seeds,n_notes,macro_f1_mean,macro_f1_sd,macro_f1_ci_low,macro_f1_ci_high,accuracy_mean,accuracy_sd,accuracy_ci_low,accuracy_ci_high,auroc_macro_ovr,auprc_macro_ovr,ece,note
+clinicalbert,all,3.0000,42 43 44,335.0000,0.8048,0.0138,0.7581,0.8425,0.8159,0.0086,0.7761,0.8537,0.9801,0.8895,0.2081,CI pooled over seeds
+clinicalbert,excl_near_dup,3.0000,42 43 44,331.0000,0.8052,0.0145,0.7606,0.8426,0.8197,0.0087,0.7835,0.8550,0.9800,0.8879,0.2090,CI pooled over seeds
 clinicalbert_masked,all,3.0000,42 43 44,335.0000,0.8051,0.0141,0.7567,0.8437,0.8169,0.0075,0.7781,0.8557,0.9793,0.8875,0.2374,CI pooled over seeds
 clinicalbert_masked,excl_near_dup,3.0000,42 43 44,331.0000,0.8067,0.0126,0.7607,0.8421,0.8218,0.0060,0.7845,0.8580,0.9793,0.8863,0.2397,CI pooled over seeds
 keyword_rule,all,1.0000,42,335.0000,0.1567,,0.1011,0.2021,0.1493,,0.1134,0.1881,0.5447,0.1614,0.8507,single seed

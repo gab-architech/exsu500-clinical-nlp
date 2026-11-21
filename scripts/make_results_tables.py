@@ -32,8 +32,8 @@ DISPLAY = {
     "keyword_rule": "Keyword rule (MI, 2 per class)",
     "tfidf_lr": "TF-IDF + logistic regression",
     "tfidf_svm": "TF-IDF + linear SVM (Platt)",
-    "clinicalbert": "ClinicalBERT",
-    "clinicalbert_masked": "ClinicalBERT (masked)",
+    "clinicalbert": "Bio_ClinicalBERT (3 seeds)",
+    "clinicalbert_masked": "Bio_ClinicalBERT (masked, 3 seeds)",
 }
 ORDER = ["majority", "keyword_rule", "tfidf_lr", "tfidf_svm", "clinicalbert"]
 
@@ -74,6 +74,50 @@ def excluded_val_notes():
         if r.split_b == "val":
             excluded.add(r.id_b)
     return excluded
+
+
+def paired_vs_multiseed(models_a, model_b, n_boot=1000, seed=42):
+    """Paired bootstrap between a multi-seed model and a single-seed one.
+
+    models_a is a list of prediction-file name stems (one per seed) and model_b is one stem.
+    On every bootstrap draw the seeds of A are averaged first, then A minus B is taken. Because
+    the seeds are averaged inside each draw, the interval treats the seed set as fixed and does
+    NOT include training-seed variance; the seed standard deviation is the separate estimate of
+    that variability, and a seed-level t-test is the check that does treat the seed as the unit.
+    Each seed's own difference is also returned.
+    """
+    classes = sorted(pd.read_csv(ROOT / "labels" / "final_labels.csv")["label"].unique())
+    pos = {c: i for i, c in enumerate(classes)}
+    k = len(classes)
+
+    def load(stem):
+        d = pd.read_csv(RESULTS / f"preds_{stem}_val.csv", dtype={"note_id": str}).sort_values("note_id")
+        return d["note_id"].tolist(), d["true_label"].map(pos).to_numpy(), d["pred_label"].map(pos).to_numpy()
+
+    ids_b, y_b, p_b = load(model_b)
+    seeds = []
+    for stem in models_a:
+        ids_a, y_a, p_a = load(stem)
+        assert ids_a == ids_b and (y_a == y_b).all(), "all files must cover the same notes"
+        seeds.append(p_a)
+    y = y_b
+
+    def macro_f1(yt, yp):
+        cm = np.bincount(yt * k + yp, minlength=k * k).reshape(k, k)
+        tp = np.diag(cm).astype(float)
+        den = cm.sum(axis=0) + cm.sum(axis=1)
+        return np.divide(2 * tp, den, out=np.zeros_like(tp), where=den > 0).mean()
+
+    rng = np.random.default_rng(seed)
+    idx = rng.integers(0, len(y), size=(n_boot, len(y)))
+    pooled = np.array([np.mean([macro_f1(y[i], p[i]) for p in seeds]) - macro_f1(y[i], p_b[i]) for i in idx])
+    lo, hi = np.percentile(pooled, [2.5, 97.5])
+    mean_a = np.mean([macro_f1(y, p) for p in seeds])
+    per_seed = [float(macro_f1(y, p) - macro_f1(y, p_b)) for p in seeds]
+    return {"mean_a": float(mean_a), "mean_b": float(macro_f1(y, p_b)),
+            "diff": float(mean_a - macro_f1(y, p_b)),
+            "ci": (float(lo), float(hi)), "per_seed": per_seed,
+            "p_le_0": float((pooled <= 0).mean())}
 
 
 def paired_comparison(model_a="tfidf_lr", model_b="tfidf_svm", n_boot=1000, seed=42):
@@ -149,6 +193,9 @@ def main():
         if a is not None and b is not None:
             worst = max(worst, abs(a["macro_f1_mean"] - b["macro_f1_mean"]))
     paired = paired_comparison()
+    bert = paired_vs_multiseed(["clinicalbert_42", "clinicalbert_43", "clinicalbert_44"], "tfidf_svm_42")
+    bert_lr = paired_vs_multiseed(["clinicalbert_42", "clinicalbert_43", "clinicalbert_44"], "tfidf_lr_42")
+    seeds_txt = ", ".join(f"{d:+.3f}" for d in bert["per_seed"])
     lines += ["",
               f"95% bootstrap CIs, 1000 resamples, seed 42, identical draws for every model. "
               f"\"Degenerate\" marks models whose probabilities are one-hot, for which AUROC, "
@@ -164,14 +211,29 @@ def main():
               f"{paired['diff']:+.4f} (paired bootstrap 95% CI {paired['ci'][0]:+.4f} to "
               f"{paired['ci'][1]:+.4f}); on {paired['only_a_right']} notes only logistic "
               f"regression is right and on {paired['only_b_right']} only the SVM is "
-              f"(exact McNemar p = {paired['mcnemar_p']:.3f}). The two are statistically "
+              f"(exact McNemar p = {paired['mcnemar_p']:.3f}, which tests the proportion of "
+              f"notes classified correctly, not the macro-F1 difference; the bootstrap interval "
+              f"is the macro-F1 test and it includes zero). The two are statistically "
               f"indistinguishable on macro-F1 at this sample size, so the table does not rank "
               f"them; logistic regression has the lower calibration error.",
               "",
               "The logistic-regression regularisation strength C was selected on this same "
-              "validation split from a pre-declared grid (best C = 500, macro-F1 0.8623); the "
-              "reported score is therefore a selection maximum and its confidence interval does "
-              "not carry the selection uncertainty. Evidence: results/lr_c_sweep_42_val.json.",
+              "validation split over a pre-specified grid that was extended once, from a maximum "
+              "of 100 to 2000, after the first sweep put the optimum on the boundary; the second "
+              "sweep has an interior optimum at C = 500 (macro-F1 0.8623). The reported score is "
+              "therefore a selection maximum and its confidence interval does not carry the "
+              "selection uncertainty. Evidence: results/lr_c_sweep_42_val.json.",
+              "",
+              f"ClinicalBERT versus the linear models, paired on the same 335 notes with the three "
+              f"ClinicalBERT seeds averaged on each bootstrap draw: ClinicalBERT {bert['mean_a']:.3f} "
+              f"versus the linear SVM {bert['mean_b']:.3f}, difference {bert['diff']:+.4f} "
+              f"(95% CI {bert['ci'][0]:+.4f} to {bert['ci'][1]:+.4f}), per-seed differences "
+              f"{seeds_txt}. Versus logistic regression the difference is {bert_lr['diff']:+.4f} "
+              f"(95% CI {bert_lr['ci'][0]:+.4f} to {bert_lr['ci'][1]:+.4f}). The two marginal "
+              f"intervals overlap, so the paired comparison is the one to quote. This compares one "
+              f"fixed 3-epoch fine-tuning recipe with two linear bag-of-words models on a task whose "
+              f"classes are defined by procedure and anatomy vocabulary; it is not a general claim "
+              f"about transformers.",
               ]
     (RESULTS / "table_manuscript_val.md").write_text("\n".join(lines) + "\n")
 
