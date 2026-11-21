@@ -95,11 +95,15 @@ to be a false positive.
    3-epoch fine-tuning recipe. The classes are defined by procedure and anatomy vocabulary,
    which suits lexical models, and the transformer saw no hyperparameter search. This is not a
    general claim that linear models beat transformers on clinical text.
-4. **The best-epoch rule changed nothing here.** All three seeds selected epoch 3, the last
-   epoch, and their per-epoch validation macro-F1 rises monotonically (0.624, 0.782, 0.789;
-   0.559, 0.793, 0.810; 0.627, 0.782, 0.815), so no optimism was added by early stopping. The
-   real caveat is that validation was used to watch training and to report, and that no epoch
-   was held out from that use.
+4. **The best-epoch rule changed one run.** In the original-text runs all three seeds selected
+   epoch 3, the last epoch, and their per-epoch validation macro-F1 rises monotonically (0.624,
+   0.782, 0.789; 0.559, 0.793, 0.810; 0.627, 0.782, 0.815), so no optimism was added there by
+   early stopping. In the masked runs, seed 42 selected epoch 2 (`checkpoint-196`) while its
+   validation loss was still lowest at epoch 3 (1.59, 0.90, 0.75), because the rule selects on
+   macro-F1, not loss; seeds 43 and 44 selected epoch 3 (`checkpoint-294`). The masked seed 42
+   score is therefore a selection maximum over epochs. The real caveat for both halves is that
+   validation was used to watch training and to report, and that no epoch was held out from
+   that use.
 5. **The logistic-regression C was selected on validation.** The grid was first swept up to
    C = 100; the optimum landed on the boundary, so the grid was extended once to C = 2,000 and
    re-swept, giving an interior optimum at C = 500 (macro-F1 0.8623). The reported score is a
@@ -173,7 +177,7 @@ valid numbers but the notion of a probability threshold is degenerate for them.
 | `results/preds_{model}{_masked}_42_val.csv` | Per-note predictions, 335 rows, 11 class probabilities |
 | `results/preds_clinicalbert_{42,43,44}_val.csv` | The three ClinicalBERT seeds |
 | `results/run_logs/clinicalbert_seed{42,43,44}.json` | Full training logs: GPU, Python and package versions, hyperparameters, per-epoch validation loss and macro-F1, best checkpoint, wall clock, and the scope of that wall clock |
-| `results/run_logs/clinicalbert_masked_seed*.json` | Masked half: GPU, commit, versions, hyperparameters, per-epoch validation loss and the final validation macro-F1; no per-epoch macro-F1 and no best-epoch field, so the best-epoch rule cannot be audited for that half |
+| `results/run_logs/clinicalbert_masked_seed*.json` | Masked half: GPU, commit, versions, hyperparameters, per-epoch validation loss and the final validation macro-F1; no per-epoch macro-F1 and no best-epoch field. The best epoch is audited from the kept checkpoint folders instead (`save_total_limit=1`, 98 steps per epoch): seed 42 `checkpoint-196` (epoch 2), seeds 43 and 44 `checkpoint-294` (epoch 3); see section 5, item 4 |
 | `results/run_logs/baseline_*_val.json` | Metric records for the eight baseline runs: model, seed, split, sample counts, macro-F1, accuracy, versions, and the LR C. Not training logs |
 | `results/metrics/*.json` | Every metric, both subsets, per model and seed, including confusion counts |
 | `results/metrics/threshold_metrics_val.csv` | Per-class sensitivity and specificity at the 0.5 threshold |
