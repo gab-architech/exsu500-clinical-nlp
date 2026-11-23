@@ -95,11 +95,14 @@ to be a false positive.
    3-epoch fine-tuning recipe. The classes are defined by procedure and anatomy vocabulary,
    which suits lexical models, and the transformer saw no hyperparameter search. This is not a
    general claim that linear models beat transformers on clinical text.
-4. **The best-epoch rule changed nothing here.** All three seeds selected epoch 3, the last
-   epoch, and their per-epoch validation macro-F1 rises monotonically (0.624, 0.782, 0.789;
-   0.559, 0.793, 0.810; 0.627, 0.782, 0.815), so no optimism was added by early stopping. The
-   real caveat is that validation was used to watch training and to report, and that no epoch
-   was held out from that use.
+4. **The best-epoch rule changed nothing in the original-text runs.** There all three seeds
+   selected epoch 3, the last epoch, and their per-epoch validation macro-F1 rises
+   monotonically (0.624, 0.782, 0.789; 0.559, 0.793, 0.810; 0.627, 0.782, 0.815), so no
+   optimism was added by early stopping. It did change one masked run: seed 42 selected epoch
+   2 (its macro-F1 peaked before its validation loss did, which fell through epoch 3), and
+   masked seeds 43 and 44 selected epoch 3. So the rule was not a no-op across the whole
+   study, only across the reported original-text numbers. The real caveat is that validation
+   was used to watch training and to report, and that no epoch was held out from that use.
 5. **The logistic-regression C was selected on validation.** The grid was first swept up to
    C = 100; the optimum landed on the boundary, so the grid was extended once to C = 2,000 and
    re-swept, giving an interior optimum at C = 500 (macro-F1 0.8623). The reported score is a
@@ -173,7 +176,7 @@ valid numbers but the notion of a probability threshold is degenerate for them.
 | `results/preds_{model}{_masked}_42_val.csv` | Per-note predictions, 335 rows, 11 class probabilities |
 | `results/preds_clinicalbert_{42,43,44}_val.csv` | The three ClinicalBERT seeds |
 | `results/run_logs/clinicalbert_seed{42,43,44}.json` | Full training logs: GPU, Python and package versions, hyperparameters, per-epoch validation loss and macro-F1, best checkpoint, wall clock, and the scope of that wall clock |
-| `results/run_logs/clinicalbert_masked_seed*.json` | Masked half: GPU, commit, versions, hyperparameters, per-epoch validation loss and the final validation macro-F1; no per-epoch macro-F1 and no best-epoch field, so the best-epoch rule cannot be audited for that half |
+| `results/run_logs/clinicalbert_masked_seed*.json` | Masked half: GPU, commit, versions, hyperparameters, per-epoch validation loss and the final validation macro-F1; no per-epoch macro-F1 and no best-epoch field, so these logs alone cannot show which epoch each masked run kept. The kept checkpoint, reported by the data lead from the checkpoint folders on his Drive (`save_total_limit=1`, 98 steps per epoch, so the step number gives the epoch): seed 42 kept `checkpoint-196`, epoch 2; seeds 43 and 44 kept `checkpoint-294`, epoch 3. Those folders are not in this repository, so that half's selection is recorded, not independently auditable here |
 | `results/run_logs/baseline_*_val.json` | Metric records for the eight baseline runs: model, seed, split, sample counts, macro-F1, accuracy, versions, and the LR C. Not training logs |
 | `results/metrics/*.json` | Every metric, both subsets, per model and seed, including confusion counts |
 | `results/metrics/threshold_metrics_val.csv` | Per-class sensitivity and specificity at the 0.5 threshold |
@@ -223,17 +226,27 @@ to a single point at confidence 1.0 and reads as a calibration curve when it is 
 
 ## 11. What remains before the final report
 
-1. A predict-only path for the test split. **Done Nov 20**: `src/predict_test.py` loads the
-   frozen baseline and ClinicalBERT artifacts, re-checks the baselines against the committed
-   validation predictions, then writes test predictions without refitting (section 12). The
-   run itself is still gated by the Nov 25 model lock, as item 2 describes.
+1. A predict-only path for the test split. **Done, and hardened Nov 22** after review by the
+   data lead: `src/predict_test.py` now (a) loads every requested model, (b) re-predicts the
+   validation split with each and compares the labels against the committed
+   `results/preds_*_val.csv`, (c) appends to `results/test_runs.log`, and only then (d) reads
+   the test split. Nothing touches test until every model has loaded and reproduced its
+   committed validation predictions, so a missing or wrong artifact stops the run while test
+   is still closed, and a crash after the read is already logged. The ClinicalBERT loader
+   accepts either the checkpoint folder or the parent the Trainer wrote, using its single
+   `checkpoint-*` subfolder. `python src/predict_test.py --verify` runs steps (a) and (b) alone
+   and never opens test. The run itself is still gated by the Nov 25 model lock, as item 2
+   describes.
 2. Read the test split once, from those checkpoints, and report the same table with test
    numbers, including macro-F1 with and without the 9 test notes that have a near-duplicate in
    another pile.
-3. Decide, with the team, whether the ClinicalBERT recipe gets a second attempt (for example a
-   learning-rate search on validation) before the lock, given the gap above.
-4. Re-run the masked half at the final commit if a perfectly matched provenance pair is
-   required.
+3. ~~Decide whether the ClinicalBERT recipe gets a second attempt before the lock.~~
+   **Decided (data lead, Nov 21): freeze the recipe as is.** No learning-rate search before the
+   lock. The protocol is graded as heavily as the numbers, and "one fixed recipe loses to
+   TF-IDF on a vocabulary-driven task" is a clean, honest result. The modelling lead agrees.
+4. ~~Re-run the masked half at the final commit if a perfectly matched provenance pair is
+   required.~~ **Decided (Nov 21): not re-running.** The numbers would not change, and the
+   kept-checkpoint table in section 9 closes the audit gap in the provenance pair.
 
 ## 12. Reproduction
 
@@ -250,9 +263,15 @@ python scripts/make_results_tables.py
 python scripts/class_threshold_metrics.py
 
 # The single test run, after the Nov 25 model lock (the only step that reads test):
+python src/predict_test.py --verify         # optional dry run: load every model, check it against val
 python src/predict_test.py --final          # loads the frozen models, writes preds_*_test.csv
 python src/evaluate.py --split test --final # metrics, summary_test.csv/.md, figures
 ```
+
+`--final` already runs the `--verify` check before it reads test; the separate call is for
+running it on its own. Both take `--checkpoint-dir` if the ClinicalBERT folders live outside
+`models/` (for example on Drive), and the loader accepts either `clinicalbert_seed{N}/` or the
+`clinicalbert_seed{N}/checkpoint-<step>/` layout the Trainer writes.
 
 The ClinicalBERT command needs an explicit `--output-dir`: the default writes under the
 repository, which on Colab is the ephemeral `/content`. The numbered step-by-step order

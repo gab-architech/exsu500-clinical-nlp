@@ -16,7 +16,7 @@ after the Nov 25 model lock.
 | 07 | `python scripts/class_threshold_metrics.py` | local | `results/metrics/threshold_metrics_val.csv`, `table_threshold_metrics_val.md` |
 | 08 | `python scripts/make_figure1.py` and `make_figure2_cleaning_flow.py` | local | `figures/fig1_*`, `fig2_*` |
 | 09 | `python scripts/blind_review_stats.py --blind <file> --key <file>` | local | blind-review agreement stats |
-| 10 | `python src/predict_test.py --final` then `python src/evaluate.py --split test --final` | Colab (or local) | test predictions, test metrics and summary (single run) |
+| 10 | `python src/predict_test.py --verify`, then `python src/predict_test.py --final`, then `python src/evaluate.py --split test --final` | Colab (pinned env) | test predictions, test metrics and summary (single run) |
 
 Steps 01 and 02 read all 2,230 notes for data checks; step 10 is the only step that reads
 the test split for a modelling output. `src/data.py` refuses the test split unless
@@ -24,9 +24,11 @@ the test split for a modelling output. `src/data.py` refuses the test split unle
 `src/evaluate.py`) each log the run to `results/test_runs.log`. Step 10 must run where the
 frozen artifacts are: the `models/*_42.joblib` baselines and the
 `models/clinicalbert_seed{42,43,44}/` checkpoints (on Colab, pass `--checkpoint-dir` at the
-Drive copy saved by step 04, or copy them into `models/` first). These model files are
-git-ignored by design (the course rule keeps model weights out of the repository): a fresh
-clone regenerates them by re-running steps 03 and 04, which write these exact names.
+Drive copy saved by step 04, or copy them into `models/` first). The ClinicalBERT loader
+accepts either `clinicalbert_seed{N}/` or the `clinicalbert_seed{N}/checkpoint-<step>/`
+layout the Trainer writes, so a folder copied straight from Drive works as is. These model
+files are git-ignored by design (the course rule keeps model weights out of the repository):
+a fresh clone regenerates them by re-running steps 03 and 04, which write these exact names.
 
 `src/` holds the pipeline entry points plus the shared library (`data.py`, `masking.py`,
 `validate_predictions.py`); `scripts/` holds one-off analysis and figure scripts. The
