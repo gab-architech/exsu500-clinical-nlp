@@ -35,6 +35,10 @@ venv/
 # Personal Claude Code notes (each member keeps their own)
 CLAUDE.local.md
 
+# Local interface demo and the transfer package (the zip bundles ~1.3 GB of weights)
+specialty_router_package/
+specialty_router_package.zip
+
 # Label validation exports contain note text: never commit them.
 # Only IDs + labels go in the repo (e.g. labels/*.csv with no text column).
 validation/
